@@ -1,0 +1,293 @@
+# **[Work In Progress]** AS-11 X7 (MXF Program Contribution - SD)
+
+_This file is one rendering / view of this AMWA Specification and is a part of the Specification repository. Visit the AMWA [web page for this Specification](http://amwa.tv/projects/AS-11-X7.shtml) which has information about revisions and current development._
+
+# AS-11: Media Contribution File Formats
+
+The AMWA AS-11 Specifications define constrained media file formats for the delivery of finished media assets to a broadcaster or publisher. Each Specification is developed for a particular business purpose.
+
+
+
+# Purpose of the AS-11 X7 Specification
+
+## Aims
+
+This Specification aims to define a file format for the delivery of finished SD TV Programmes with intra-coded ("I-frame") picture essence. It aims to define:
+
+* a vendor-neutral and broadcaster-neutral package, using open technologies for delivery of finished programming from program producers and program distributors to broadcast stations
+* a package that is sufficiently simple so as to limit the scope for interoperability problems
+* a self-contained & play-out ready package
+
+## Some notes on practical use
+
+* The content may be delivered at the broadcast bit-rate, picture format and aspect ratio, or it may be transcoded at the broadcast station to the bit-rates and formats required for particular broadcast channels. Similar transcoding may be applied to audio and captions; additionally, specific audio and caption tracks may be selected for different broadcast channels.
+* The content may be pre-packaged for broadcast without further changes or it may be segmented for ease of insertion or replacement of interstitials.
+* There may be more than one package per programme.
+* The package may contain some pre and post roll content not for transmission.
+
+
+
+# Understanding the Specification Blocks Tree
+
+This Specification is formed of "Blocks" that naturally form a "tree". A rendering / view of this tree is shown below and is explained here.
+
+## Entities Summary
+The Specification-writing framework used to produce this Specification has several different types of component / entity. In summary:
+
+* Each Specification is composed of a single Top-Level **Block (B)**
+* Blocks are defined by containing **Artefacts (A)** or linking directly to other Blocks
+* Artefacts often refer to **Terms (T)** and **References (R)** as well as Blocks
+* Blocks are sometimes described by **Notes (N)**
+
+Each entity is identified by a unique URL.
+
+Some of the letters in brackets above are used in the tree view to identify the type of each entity.
+
+## Conformance
+
+An implementation complies with a Block if it complies with all of the Blocks / Artefacts from which it is constructed. "Informative" statements do not have to be complied with (details of "informative" statements are given below).
+
+* Compliance with some Blocks is not mandatory. Such Blocks are marked with an alternative "conformance" state (such as "optional" or "recommended").
+* The name / title of an entity is considered "informative", as is its "description" (if present).
+* "Note" entities are considered "informative".
+* Prose Artefacts are written as statements of fact. An implementation complies with one of these Artefacts if the stated fact is True for the implementation.
+* Some Artefacts are "data files" such as SMPTE Metadata Registers XML files or XML Schema files. Some of these may be partially rendered below. An implementation must always fully comply with these data files.
+
+_Note that an Artefact does not always make sense on its own: all of the Artefacts contained within a Block need to be read (in order) to understand the Block fully and correctly._
+
+## Parameter Blocks
+
+There are two special types of Block which allow the value of one Block to be set by another Block:
+
+* **Parameter Key Block (K)** -- this is a Block whose value must be set elsewhere in the Specification (it effectively defines a "variable" or an "argument")
+* **Parameter Value Block (V)** -- this is a Block which sets the value of a specific Parameter Key Block (K)
+
+
+
+# The Specification Blocks Tree
+
+[B] File Format
+    [B] Core MXF constraints
+        Conformance: mandatory
+        [B] MXF File Format
+            Conformance: mandatory
+            [A] The file conforms to <SMPTE ST 377:2004>.
+            [N] Later versions of MXF
+                [A] This does not prohibit the use of MXF version 1.3 (SMPTE ST 377-1:2011) for SD files. SMPTE encourages users to apply the most recent edition of standards where possible.
+        [B] Operational pattern 1a
+            Conformance: mandatory
+            [A] The file conforms to <SMPTE ST 378:2004>.
+            [N] Implementation Notes
+                [A] The file must be labelled as OP1a in the Operational Pattern property of all Partition Packs and the Preface Set, as required by <SMPTE ST 377-1:2011> in Section 7.1 and Annex A, respectively.
+        [B] Closed Complete Header
+            Conformance: mandatory
+            [A] The <Header Partition> is "Closed" and "Complete".
+            [N] Implementation Notes
+                [A] Byte 15 of the Header Partition Pack Key must be set to 04h and all Header Metadata must have correct values. Hence 'Distinguished Values' cannot be used for 'Best Effort' properties. See Section 6.2.3 of SMPTE ST 377-1:2011 for a full explanation.
+                    
+                    Late delivery of a file is the term used to describe a workflow where playout (broadcast) of a file starts before the file transfer from supplier to broadcaster has completed. To support late delivery a broadcaster must be able to trust the metadata that is contained at the beginning of the file.
+        [B] Header Metadata KLV Fill
+            Conformance: recommended
+            [A] When first created, the file includes a <KLV Fill> item of at least 8192 bytes in total length following the <Header Metadata>.
+            [N] Implementation Notes
+                [A] The "total length" is of the entire item and includes the length of the Key and Length fields.
+                    
+                    The extra space afforded by the KLV Fill allows Header Metadata to be edited and added to without rewriting the entire file.
+        [B] Generic Container
+            Conformance: mandatory
+            [A] The file uses the <Generic Container>.
+        [B] Internal Essence
+            Conformance: mandatory
+            [A] The <Generic Container> is internal to the file.
+        [B] Strict Frame Wrapping
+            Conformance: mandatory
+            [A] The <Generic Container> uses <Frame Wrapping>.
+            [A] If the <Generic Container> contains <Picture Essence> then the related <Edit Unit> duration is equal to the duration of a video frame of the <Picture Essence>.
+            [N] Implementation Notes
+                [A] For example, this means that if the <Picture Essence> is field-encoded then each <Edit Unit> contains the data assosiated with both of the video fields for a video frame.
+        [B] One-to-one Track mapping
+            Conformance: mandatory
+            [A] Each <Essence Track> in the <Top-Level File Package> is referenced by exactly one <Essence Track> in the <Material Package>.
+            [N] No division/combination of Audio Channels between Sound Tracks
+                [A] This prohibits:
+                    
+                    * the mapping of audio channels from a multi-channel Sound Track in a Source Package to single-channel Sound Tracks in the Material Package
+                    * the mapping of audio channels from single-channel Sound Tracks in a Source Package to multi-channel Sound Tracks in the Material Package
+                    
+                    which is specified in Annex E of SMPTE ST 382:2007.
+    [B] MXF Indexing and Partitioning strategy for CBE Essence
+        Conformance: mandatory
+        [B] Index precedes Essence
+            Conformance: mandatory
+            [A] The file contains a complete <Index Table> before the <Essence>.
+        [B] Index all Essence
+            Conformance: mandatory
+            [A] The <Index Table> indexes every <Edit Unit> of every <Essence Element> in the file.
+        [B] Single Essence Partition
+            Conformance: mandatory
+            [A] The <Generic Container> is entirely contained in exactly one <Partition>.
+        [N] Indexing and Partitions
+            [A] It's generally considered good MXF practice to have one 'thing' per Partition, so you'd have separate Partitions for Header Metadata, Essence, and Index Tables. This isn't a requirement but following best practice is encouraged.
+                
+                The Index Table could be placed in the Header Partition, its own Body Partition or in a Body Partition with the Essence. Indeed it could be distributed across all three of these locations. Decoders need to be able to cope with all of these posibilities.
+    [B] ST 386 with D-10 625i25 at 50 Mbps
+        Conformance: mandatory
+        [A] The file conforms to <SMPTE ST 386:2004> where the <Picture Essence> operates at "50 Mbit/s" using a "625/50 system".
+        [N] Implementation Notes
+            [A] All aspects of SMPTE ST 386:2004 must be followed. In addition to the mapping of the AES3 Sound Essence and D-10 Picture Essence, it also covers other things such as Index Tables and KAG size.
+                
+                The KLV Alignment Grid of any Partition containing an Essence Container must be 512.
+                
+                SMPTE ST 386:2004 specifies that there is exactly one Sound Track in each of the Material Package and Top-Level File Package.
+                
+                
+                ## D-10 Picture Essence
+                
+                While not strictly specified, the Picture Essence has 608 lines (576 of active picture plus 32 of vertical interval), as is conventional for D-10 pictures and which is alluded to in SMPTE ST 365:2001.
+                
+                The constraints on Picture Essence encoding here imply a "level" of "main".
+                
+                Standard Definition content can have an aspect ratio of 16/9 or 4/3.
+    [B] Embedded XML Documents
+        Conformance: mandatory
+        [A] An XML document defined by <XML DM for Programmes> is embedded in the file using <XML Document in Header Metadata Carriage>.
+            [B] XML DM for Programmes
+                [A] The namespace of the document's root element is <Programmes Descriptive Metadata>; the name of the document's root element is "Programmes_DM"; the Media type (MIME type) for the document is "application/xml"
+                    [B] Programmes Descriptive Metadata
+                        [A] http://vm-1274-user.virt.ch.bbc.co.uk/as/block/DM_Programmes/artefacts/DM_Programmes.xsd
+            [B] XML Document in Header Metadata Carriage
+                [A] The XML document is a complete XML document (with a single root element) that is UTF-8 encoded without a "Byte-Order Mark" (BOM).
+                [A] The XML document is carried in the <Header Metadata> according to <SMPTE RP 2057:2011>.
+                [A] The instance of "Text-Based DM Framework" is strongly referenced from a <Constrained Static DM Track>.
+                    [B] Constrained Static DM Track
+                        [A] A <Constrained Static DM Track> is a <Static Track (DM)> in the <Material Package> that contains a <Sequence>, which contains exactly one <DM Segment>, which strongly references an instance of a <DM Framework>.
+                        [N] Track Name
+                            [A] The "Track Name" property of an <Constrained Static DM Track> does not identify the <DM Scheme> whose <DM Framework> it references. In the absence of other requirements for "Track Name", it is suggested that files use a value corresponding to the <DM Scheme> used in the track, e.g. "AS_11_Core", "AS_11_UKDPP".
+                [A] The XML document is carried in the "UTF-8 Text Data" property of the "UTF-8 Text-based Set".
+                [A] In the "UTF-8 Text-based Set" the property "Text-based Metadata Payload Scheme ID" has the value of <DM_XML_Document>.
+                    [B] DM_XML_Document
+                        [A] http://vm-1274-user.virt.ch.bbc.co.uk/as/block/XMLDMLabel/artefacts/Labels.xml
+                [A] In the "UTF-8 Text-based Set" the property "Text Data Description" is present and has a value equal to the namespace of the root element of the XML document.
+                [A] <2-byte Local Length Encoding> is used for both the "Text-Based DM Framework" and the "UTF-8 Text-based Set".
+                [N] ST 2057 Implementation Notes
+                    [A] ## XML Document size limits
+                        The constraints mean that Byte 6 of the two set keys will be 53h. The amount of text data must be equal to or less than 65535 bytes.
+                        
+                        ## Amendment
+                        A crucial amendment to ST 2057 exists and must be read carefully -- it changes the ULs of various keys used in the Standard.
+    [B] AS-11 Segmentation DM
+        Conformance: mandatory
+        [A] The file contains exactly one <Program Segmentation Track>.
+            [B] Program Segmentation Track
+                [A] A <Program Segmentation Track> is a <Timeline Track> that contains a <Sequence> that is composed of zero or more <Filler> objects and one or more <DM Segment> objects.
+                [A] Each <DM Segment> object in the <Program Segmentation Track> represents, and aligns with, a region of program content in the <Source Essence>.
+                [A] Each <Filler> object in the <Program Segmentation Track> represents, and aligns with, a region of non-program content in the <Source Essence>.
+                [N] Track Name
+                    [A] The "Track Name" property of the <Program Segmentation Track> does not identify the segmentation metadata scheme. In the absence of other requirements for "Track Name", it is suggested that files use a value corresponding to the <DM Scheme> used in the track, e.g.  "AS_11_Segmentation".
+                [N] Determining SOM and EOM
+                    [A] The start and end timecodes for program regions, commonly referred to as "start of material" (som) and "end of material" (eom), can be determined based on the location of <DM Segment> objects on the <Program Segmentation Track> relative to the adjacent <Timecode Track> in the <Material Package> that contains the <Program Segmentation Track>.
+                [N] Non-Programme Content
+                    [A] Examples of non-programme content include: black, ident, clock.
+        [A] This <Track> is in the <Material Package>.
+        [A] Each <DM Segment> object in the <Track> strongly references an instance of <DM_AS_11_Segmentation>.
+            [B] DM_AS_11_Segmentation
+                The DM Scheme for AS-11 for programme segmentation details
+                [A] This <DM Scheme> is identified by <DM_AS_11_Segmentation> (the <DM Scheme Label>) and has the following members: <DM_AS_11_Segmentation_Framework> (the <DM Framework>).
+                    [B] DM_AS_11_Segmentation
+                        [A] http://vm-1274-user.virt.ch.bbc.co.uk/as/block/505L/artefacts/Labels.xml
+                    [B] DM_AS_11_Segmentation_Framework
+                        The DM Framework for AS-11 for programme segmentation details
+                        [A] http://vm-1274-user.virt.ch.bbc.co.uk/as/block/505F/artefacts/Groups.xml
+                        [A] http://vm-1274-user.virt.ch.bbc.co.uk/as/block/505F/artefacts/Elements.xml
+                        [A] http://vm-1274-user.virt.ch.bbc.co.uk/as/block/505F/artefacts/Types.xml
+        [N] Implementation Notes
+            [A] The <Track> can be identified by an MXF reader by the presence of <DM Segment> objects that each strongly reference an instance of the "DM_AS_11_Segmentation_Framework" <DM Framework>.
+        [N] Repetition of Header Metadata
+            [A] Repetition of Header Metadata in the Footer Partition is not considered to be another instance of any of the components of that Header Metadata.
+    [B] Specification Identification
+        Conformance: mandatory
+        [A] The <Specification_Identifiers> Element is present in the <Preface> of the <Header Partition>.
+            [B] Specification_Identifiers
+                An Element for signalling the file format Specification that is in use
+                [A] http://vm-1274-user.virt.ch.bbc.co.uk/as/block/SpecID/artefacts/Elements.xml
+                [A] http://vm-1274-user.virt.ch.bbc.co.uk/as/block/SpecID/artefacts/Types.xml
+                [N] SMPTE Registers Node: Specification_Identification (Elements Register)
+                    [A] http://vm-1274-user.virt.ch.bbc.co.uk/as/note/Specification_Identification_E/artefacts/Elements.xml
+        [A] The value of this Element includes the Label <Blocks_FF_7>.
+            [B] Blocks_FF_7
+                [A] http://vm-1274-user.virt.ch.bbc.co.uk/as/block/SpecID_L7/artefacts/Labels.xml
+    [B] Timecode constraints
+        Conformance: mandatory
+        [B] Timecode Track Presence
+            Conformance: mandatory
+            [A] The <Material Package> contains exactly one <Timecode Track>.
+            [N] Implementation Notes
+                [A] The Timecode properties must always properly match the content of the MXF file. This means that "Rounded Timecode Base" and "Drop Frame" need to be set appropriately.
+                    
+                    This Timecode Track provides "Synthetic Timecode" because its Timecode is "generated" from a single "Start Timecode" value that is associated with the beginning of the Material Package. This means that the Timecode is necessarily continuous throughout the entire playback of the MXF file.
+        [B] Timecode Track Precedence
+            Conformance: mandatory
+            [A] The <Timecode Track> in the <Material Package> defines the authoritative program timecode.
+            [N] Implementation Notes
+                [A] The authority of the Timecode Track in the Material Package needs to be respected by all components of a system that handles the file.
+    [B] Miscellaneous Content Constraints
+        Conformance: mandatory
+        [B] AFD present
+            Conformance: mandatory
+            [A] The "Active Format Descriptor" property of the <Picture Essence Descriptor> is present in the file.
+            [N] Implementation Notes
+                [A] Section G.2.5 of SMPTE ST 377-1:2011 describes compliant encoder and decoder behavior with respect to SMPTE ST 2016-1:2009.
+        [B] AFD 9 10 14
+            Conformance: mandatory
+            [A] The 4-bit AFD encoded in the "Active Format Descriptor" property of the <Picture Essence Descriptor> is one of the following decimal values: 9 or 10 or 14.
+            [N] Implementation Notes
+                [A] Section G.2.5 of SMPTE ST 377-1:2011 requires that the value of the "Active Format Descriptor" property be constant for the duration of the associated Picture Track.
+                    
+                    The AFD (as it is used here, where only a very restricted set of values are permitted) can be considered as telling the decoder what video transformations it can reasonably make when displaying the video. For example when displaying the video on a "problematic" screen the decoder could wish to "zoom and crop" or "pillarbox" or "letterbox" the video as appropriate (where a "problematic" screen could be one where the dimensions of the screen mean that if the video is displayed full-screen it does not have the stated "aspect ratio").
+        [B] 4 audio channels
+            Conformance: mandatory
+            [A] Only the channels in the <8-channel AES3 element> with a "channel number" of 1, 2, 3 or 4 are valid.
+        [B] Audio Channel Layout
+            Conformance: mandatory
+            [A] The audio channel with the "channel number" of 1 is the Left channel of Stereo Main Programme.
+                
+                The audio channel with the "channel number" of 2 is the Right channel of Stereo Main Programme.
+
+
+
+THIS AMWA SPECIFICATION IS BEING OFFERED WITHOUT ANY WARRANTY WHATSOEVER,
+AND IN PARTICULAR, ANY WARRANTY OF NON-INFRINGEMENT IS EXPRESSLY DISCLAIMED.
+ANY USE OF THIS SPECIFICATION SHALL BE MADE ENTIRELY AT THE IMPLEMENTER'S
+OWN RISK, AND NEITHER AMWA, NOR ANY OF ITS MEMBERS OR CONTRIBUTORS, SHALL
+HAVE ANY LIABILITY WHATSOEVER TO ANY IMPLEMENTER OR THIRD PARTY FOR ANY
+DAMAGES OF ANY NATURE WHATSOEVER, DIRECTLY OR INDIRECTLY, ARISING FROM THE
+USE OF THIS SPECIFICATION.
+
+Readers are advised that any IPR contribution forms associated with this
+project are available from the [AMWA](http://amwa.tv/)
+
+
+(c) AMWA 2016, Licensed under the Apache License, Version 2.0
+
+The following license applies to all parts of this Specification except
+as documented below:
+
+====
+
+Licensed under the Apache License, Version 2.0 (the "License");
+you may not use this Specification except in compliance with the License.
+You may obtain a copy of the License at
+
+   http://www.apache.org/licenses/LICENSE-2.0
+
+Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an "AS IS" BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the License for the specific language governing permissions and
+limitations under the License.
+
+====
+
+All files located in the "include" directory are externally maintained
+libraries used by this Specification which have their own licenses; we
+recommend you read them, as their terms may differ from the terms above.
