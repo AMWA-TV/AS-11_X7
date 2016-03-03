@@ -252,6 +252,10 @@ There are two special types of Block which allow the value of one Block to be se
             [A] The audio channel with the "channel number" of 1 is the Left channel of Stereo Main Programme.
                 
                 The audio channel with the "channel number" of 2 is the Right channel of Stereo Main Programme.
+        [N] Implementation Notes
+            [A] # Use of Audio Channels 3 & 4
+                
+                This Block imposes no restrictions on the contents of the audio channels with "channel number" 3 and 4. There is, however, no means to indicate (within the file) what they do contain.
 
 
 
