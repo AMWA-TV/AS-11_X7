@@ -148,6 +148,11 @@ There are two special types of Block which allow the value of one Block to be se
                 The constraints on Picture Essence encoding here imply a "level" of "main".
                 
                 Standard Definition content can have an aspect ratio of 16/9 or 4/3.
+    [B] Uncompressed 24-bit PCM audio at 48 kHz
+        Conformance: mandatory
+        [A] For each <Audio Channel> the <Sound Essence> is "uncompressed PCM audio data" per <SMPTE ST 382:2007>, sampled at 48 kHz with 24 bits per sample.
+        [N] Implementation Notes
+            [A] As per Section 6 of <SMPTE ST 382:2007> samples are stored as little-endian integers.
     [B] Embedded XML Documents
         Conformance: mandatory
         [A] An XML document defined by <XML DM for Programmes> is embedded in the file using <XML Document in Header Metadata Carriage>.

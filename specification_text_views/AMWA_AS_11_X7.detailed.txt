@@ -350,6 +350,28 @@ There are two special types of Block which allow the value of one Block to be se
                 
                 Standard Definition content can have an aspect ratio of 16/9 or 4/3.
                 <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/note/E33/artefacts/1.md>
+    [B] Uncompressed 24-bit PCM audio at 48 kHz
+        Conformance: mandatory
+        <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/block/230/>
+        [A] For each <Audio Channel> the <Sound Essence> is "uncompressed PCM audio data" per <SMPTE ST 382:2007>, sampled at 48 kHz with 24 bits per sample.
+            <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/block/230/artefacts/1.xml>
+            [T] Audio Channel
+                A distinct collection of sequenced audio samples that are intended for delivery to a single loudspeaker or other reproduction device.
+                <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/reference/SMPTE/ST0377-4/term/Audio%20Channel/>
+            [T] Sound Essence
+                A type of <Essence> containing sound data.
+                <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/reference/SMPTE/ST0377-1/term/Sound%20Essence/>
+                [T] Essence
+                    A bitstream comprising picture, sound or data.
+                    <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/reference/SMPTE/ST0377-1/term/Essence/>
+            [R] SMPTE ST 382:2007
+                <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/reference/SMPTE/ST0382/document/2007/>
+        [N] Implementation Notes
+            <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/note/029/>
+            [A] As per Section 6 of <SMPTE ST 382:2007> samples are stored as little-endian integers.
+                <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/note/029/artefacts/1.xml>
+                [R] SMPTE ST 382:2007
+                    <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/reference/SMPTE/ST0382/document/2007/>
     [B] Embedded XML Documents
         Conformance: mandatory
         <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/block/DM1/>
