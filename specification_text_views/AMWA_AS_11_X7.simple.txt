@@ -110,11 +110,13 @@ There are two special types of Block which allow the value of one Block to be se
                     which is specified in Annex E of SMPTE ST 382:2007.
     [B] Header Metadata KLV Fill
         Conformance: recommended
-        [A] When first created, the file includes a <KLV Fill> item of at least 8192 bytes in total length following the <Header Metadata>.
+        [A] When first created, the file includes a <KLV Fill> item of at least 4 MB in total length following the <Header Metadata>.
         [N] Implementation Notes
             [A] The "total length" is of the entire item and includes the length of the Key and Length fields.
                 
                 The extra space afforded by the KLV Fill allows Header Metadata to be edited and added to without rewriting the entire file.
+        [N] Definition of megabyte
+            [A] The unit symbol "MB" refers to a megabyte, which is 1 000 000 bytes.
     [B] MXF Indexing and Partitioning strategy for CBE Essence
         Conformance: mandatory
         [B] Index precedes Essence
