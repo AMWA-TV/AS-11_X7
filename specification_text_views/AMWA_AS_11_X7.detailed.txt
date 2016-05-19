@@ -482,10 +482,8 @@ There are two special types of Block which allow the value of one Block to be se
                 [A] <2-byte Local Length Encoding> is used for both the "Text-Based DM Framework" and the "UTF-8 Text-based Set".
                     <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/block/XML0/artefacts/6.md>
                     [T] 2-byte Local Length Encoding
-                        The syntax encoding defined in <SMPTE ST 377-1:2011> for "Local Sets" that uses 2-byte Tags and 2-byte Lengths.
+                        A syntax encoding for "Local Sets" that uses 2-byte Tags and 2-byte Lengths.
                         <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/term/2-byte%20Local%20Length%20Encoding/>
-                        [R] SMPTE ST 377-1:2011
-                            <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/external_reference_revision/SMPTE%20ST%20377-1-2011/>
                 [N] ST 2057 Implementation Notes
                     <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/note/E9/>
                     [A] ## XML Document size limits
