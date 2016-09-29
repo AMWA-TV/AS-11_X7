@@ -1,4 +1,4 @@
-# **[Work In Progress]** AS-11 X7 (MXF Program Contribution - SD)
+# **[Proposed Specification]** AS-11 X7 (MXF Program Contribution - SD)
 
 _This file is one rendering / view of this AMWA Specification and is a part of the Specification repository. Visit the AMWA [web page for this Specification](http://amwa.tv/projects/AS-11-X7.shtml) which has information about revisions and current development._
 
@@ -66,21 +66,21 @@ There are two special types of Block which allow the value of one Block to be se
 # The Specification Blocks Tree
 
 [B] File Format
-    <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/block/FF_7/>
+    <URL: http://www.amwa.tv/projects/rules/01/block/FF_7/>
     [B] Core MXF constraints
         Conformance: mandatory
-        <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/block/MXF_Core_12/>
+        <URL: http://www.amwa.tv/projects/rules/01/block/MXF_Core_12/>
         [B] MXF File Format
             Conformance: mandatory
-            <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/block/005/>
+            <URL: http://www.amwa.tv/projects/rules/01/block/005/>
             [A] The file conforms to <SMPTE ST 377:2004>.
-                <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/block/005/artefacts/1.md>
+                <URL: http://www.amwa.tv/projects/rules/01/block/005/artefacts/1.md>
                 [R] SMPTE ST 377:2004
                     <URL: http://www.amwa.tv/projects/rules/01/external_reference_revision/SMPTE%20ST%20377-1-2004/>
             [N] Later versions of MXF
-                <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/note/030/>
+                <URL: http://www.amwa.tv/projects/rules/01/note/030/>
                 [A] This does not prohibit the use of MXF version 1.3 (SMPTE ST 377-1:2011) for SD files. SMPTE encourages users to apply the most recent edition of standards where possible.
-                    <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/note/030/artefacts/1.md>
+                    <URL: http://www.amwa.tv/projects/rules/01/note/030/artefacts/1.md>
         [B] Operational pattern 1a
             Conformance: mandatory
             <URL: http://www.amwa.tv/projects/rules/01/block/010/>
@@ -323,11 +323,11 @@ There are two special types of Block which allow the value of one Block to be se
                 <URL: http://www.amwa.tv/projects/rules/01/note/007/artefacts/1.md>
     [B] ST 386 with D-10 625i25 at 50 Mbps
         Conformance: mandatory
-        <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/block/PE2/>
+        <URL: http://www.amwa.tv/projects/rules/01/block/PE2/>
         [A] The file conforms to <SMPTE ST 386:2004> where the <Picture Essence> operates at "50 Mbit/s" using a "625/50 system".
-            <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/block/PE2/artefacts/130.md>
+            <URL: http://www.amwa.tv/projects/rules/01/block/PE2/artefacts/130.md>
             [R] SMPTE ST 386:2004
-                <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/external_reference_revision/SMPTE%20ST%20386-2004/>
+                <URL: http://www.amwa.tv/projects/rules/01/external_reference_revision/SMPTE%20ST%20386-2004/>
             [T] Picture Essence
                 A type of <Essence> containing predominantly picture data.
                 <URL: http://www.amwa.tv/projects/rules/01/term/Picture%20Essence/>
@@ -335,7 +335,7 @@ There are two special types of Block which allow the value of one Block to be se
                     A bitstream comprising picture, sound or data.
                     <URL: http://www.amwa.tv/projects/rules/01/term/Essence/>
         [N] Implementation Notes
-            <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/note/E33/>
+            <URL: http://www.amwa.tv/projects/rules/01/note/E33/>
             [A] All aspects of SMPTE ST 386:2004 must be followed. In addition to the mapping of the AES3 Sound Essence and D-10 Picture Essence, it also covers other things such as Index Tables and KAG size.
                 
                 The KLV Alignment Grid of any Partition containing an Essence Container must be 512.
@@ -350,7 +350,7 @@ There are two special types of Block which allow the value of one Block to be se
                 The constraints on Picture Essence encoding here imply a "level" of "main".
                 
                 Standard Definition content can have an aspect ratio of 16/9 or 4/3.
-                <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/note/E33/artefacts/1.md>
+                <URL: http://www.amwa.tv/projects/rules/01/note/E33/artefacts/1.md>
     [B] Uncompressed 24-bit PCM audio at 48 kHz
         Conformance: mandatory
         <URL: http://www.amwa.tv/projects/rules/01/block/230/>
@@ -375,9 +375,9 @@ There are two special types of Block which allow the value of one Block to be se
                     <URL: http://www.amwa.tv/projects/rules/01/external_reference_revision/SMPTE%20ST%20382-2007/>
     [B] Embedded XML Documents
         Conformance: mandatory
-        <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/block/DM1/>
+        <URL: http://www.amwa.tv/projects/rules/01/block/DM1/>
         [A] An XML document defined by <XML DM for Programmes> is embedded in the file using <XML Document in Header Metadata Carriage>.
-            <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/block/DM1/artefacts/1.md>
+            <URL: http://www.amwa.tv/projects/rules/01/block/DM1/artefacts/1.md>
             [B] XML DM for Programmes
                 <URL: http://www.amwa.tv/projects/rules/01/block/XML_DM_Programmes/>
                 [A] The namespace of the document's root element is <Programmes Descriptive Metadata>; the name of the document's root element is "Programmes_DM"; the Media type (MIME type) for the document is "application/xml"
@@ -728,9 +728,9 @@ There are two special types of Block which allow the value of one Block to be se
                 <URL: http://www.amwa.tv/projects/rules/01/note/051/artefacts/1.md>
     [B] Specification Identification
         Conformance: mandatory
-        <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/block/SpecID_FF_7/>
+        <URL: http://www.amwa.tv/projects/rules/01/block/SpecID_FF_7/>
         [A] The <Specification_Identifiers> Element is present in the <Preface> of the <Header Partition>.
-            <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/block/SpecID_FF_7/artefacts/1.md>
+            <URL: http://www.amwa.tv/projects/rules/01/block/SpecID_FF_7/artefacts/1.md>
             [B] Specification_Identifiers
                 <URL: http://www.amwa.tv/projects/rules/01/block/SpecID/>
                 [A] http://www.amwa.tv/projects/rules/01/block/SpecID/artefacts/Elements.xml
@@ -763,11 +763,11 @@ There are two special types of Block which allow the value of one Block to be se
                         A bitstream comprising picture, sound or data.
                         <URL: http://www.amwa.tv/projects/rules/01/term/Essence/>
         [A] The value of this Element includes the Label <Blocks_FF_7>.
-            <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/block/SpecID_FF_7/artefacts/2.md>
+            <URL: http://www.amwa.tv/projects/rules/01/block/SpecID_FF_7/artefacts/2.md>
             [B] Blocks_FF_7
-                <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/block/SpecID_L7/>
-                [A] http://vm-1274-user.virt.ch.bbc.co.uk/as/block/SpecID_L7/artefacts/Labels.xml
-                    <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/block/SpecID_L7/artefacts/Labels.xml>
+                <URL: http://www.amwa.tv/projects/rules/01/block/SpecID_L7/>
+                [A] http://www.amwa.tv/projects/rules/01/block/SpecID_L7/artefacts/Labels.xml
+                    <URL: http://www.amwa.tv/projects/rules/01/block/SpecID_L7/artefacts/Labels.xml>
     [B] Timecode constraints
         Conformance: mandatory
         <URL: http://www.amwa.tv/projects/rules/01/block/TT0_r001/>
@@ -948,12 +948,12 @@ There are two special types of Block which allow the value of one Block to be se
                         <URL: http://www.amwa.tv/projects/rules/01/term/Material%20Package/>
     [B] Miscellaneous Content Constraints
         Conformance: mandatory
-        <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/block/995/>
+        <URL: http://www.amwa.tv/projects/rules/01/block/995/>
         [B] AFD present
             Conformance: mandatory
-            <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/block/350/>
+            <URL: http://www.amwa.tv/projects/rules/01/block/350/>
             [A] The "Active Format Descriptor" property of the <Picture Essence Descriptor> is present in the file.
-                <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/block/350/artefacts/1.md>
+                <URL: http://www.amwa.tv/projects/rules/01/block/350/artefacts/1.md>
                 [T] Picture Essence Descriptor
                     MXF technical metadata that describes the <Picture Essence>.
                     <URL: http://www.amwa.tv/projects/rules/01/term/Picture%20Essence%20Descriptor/>
@@ -964,14 +964,14 @@ There are two special types of Block which allow the value of one Block to be se
                             A bitstream comprising picture, sound or data.
                             <URL: http://www.amwa.tv/projects/rules/01/term/Essence/>
             [N] Implementation Notes
-                <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/note/036/>
+                <URL: http://www.amwa.tv/projects/rules/01/note/036/>
                 [A] Section G.2.5 of SMPTE ST 377-1:2011 describes compliant encoder and decoder behavior with respect to SMPTE ST 2016-1:2009.
-                    <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/note/036/artefacts/1.md>
+                    <URL: http://www.amwa.tv/projects/rules/01/note/036/artefacts/1.md>
         [B] AFD 9 10 14
             Conformance: mandatory
-            <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/block/351/>
+            <URL: http://www.amwa.tv/projects/rules/01/block/351/>
             [A] The 4-bit AFD encoded in the "Active Format Descriptor" property of the <Picture Essence Descriptor> is one of the following decimal values: 9 or 10 or 14.
-                <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/block/351/artefacts/1.md>
+                <URL: http://www.amwa.tv/projects/rules/01/block/351/artefacts/1.md>
                 [T] Picture Essence Descriptor
                     MXF technical metadata that describes the <Picture Essence>.
                     <URL: http://www.amwa.tv/projects/rules/01/term/Picture%20Essence%20Descriptor/>
@@ -982,32 +982,32 @@ There are two special types of Block which allow the value of one Block to be se
                             A bitstream comprising picture, sound or data.
                             <URL: http://www.amwa.tv/projects/rules/01/term/Essence/>
             [N] Implementation Notes
-                <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/note/037/>
+                <URL: http://www.amwa.tv/projects/rules/01/note/037/>
                 [A] Section G.2.5 of SMPTE ST 377-1:2011 requires that the value of the "Active Format Descriptor" property be constant for the duration of the associated Picture Track.
                     
                     The AFD (as it is used here, where only a very restricted set of values are permitted) can be considered as telling the decoder what video transformations it can reasonably make when displaying the video. For example when displaying the video on a "problematic" screen the decoder could wish to "zoom and crop" or "pillarbox" or "letterbox" the video as appropriate (where a "problematic" screen could be one where the dimensions of the screen mean that if the video is displayed full-screen it does not have the stated "aspect ratio").
-                    <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/note/037/artefacts/1.md>
+                    <URL: http://www.amwa.tv/projects/rules/01/note/037/artefacts/1.md>
         [B] 4 audio channels
             Conformance: mandatory
-            <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/block/140/>
+            <URL: http://www.amwa.tv/projects/rules/01/block/140/>
             [A] Only the channels in the <8-channel AES3 element> with a "channel number" of 1, 2, 3 or 4 are valid.
-                <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/block/140/artefacts/1.md>
+                <URL: http://www.amwa.tv/projects/rules/01/block/140/artefacts/1.md>
                 [T] 8-channel AES3 element
                     A way of multiplexing up to eight channels of AES3 audio data.
-                    <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/term/8-channel%20AES3%20element/>
+                    <URL: http://www.amwa.tv/projects/rules/01/term/8-channel%20AES3%20element/>
         [B] Audio Channel Layout
             Conformance: mandatory
-            <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/block/AL_Default_C/>
+            <URL: http://www.amwa.tv/projects/rules/01/block/AL_Default_C/>
             [A] The audio channel with the "channel number" of 1 is the Left channel of Stereo Main Programme.
                 
                 The audio channel with the "channel number" of 2 is the Right channel of Stereo Main Programme.
-                <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/block/AL_Default_C/artefacts/1.md>
+                <URL: http://www.amwa.tv/projects/rules/01/block/AL_Default_C/artefacts/1.md>
         [N] Implementation Notes
-            <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/note/E34/>
+            <URL: http://www.amwa.tv/projects/rules/01/note/E34/>
             [A] # Use of Audio Channels 3 & 4
                 
                 This Block imposes no restrictions on the contents of the audio channels with "channel number" 3 and 4. There is, however, no means to indicate (within the file) what they do contain.
-                <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/note/E34/artefacts/1.md>
+                <URL: http://www.amwa.tv/projects/rules/01/note/E34/artefacts/1.md>
 
 
 

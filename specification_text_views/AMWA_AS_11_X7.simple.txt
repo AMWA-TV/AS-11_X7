@@ -1,4 +1,4 @@
-# **[Work In Progress]** AS-11 X7 (MXF Program Contribution - SD)
+# **[Proposed Specification]** AS-11 X7 (MXF Program Contribution - SD)
 
 _This file is one rendering / view of this AMWA Specification and is a part of the Specification repository. Visit the AMWA [web page for this Specification](http://amwa.tv/projects/AS-11-X7.shtml) which has information about revisions and current development._
 
@@ -220,7 +220,7 @@ There are two special types of Block which allow the value of one Block to be se
                     [A] http://www.amwa.tv/projects/rules/01/note/Specification_Identification_E/artefacts/Elements.xml
         [A] The value of this Element includes the Label <Blocks_FF_7>.
             [B] Blocks_FF_7
-                [A] http://vm-1274-user.virt.ch.bbc.co.uk/as/block/SpecID_L7/artefacts/Labels.xml
+                [A] http://www.amwa.tv/projects/rules/01/block/SpecID_L7/artefacts/Labels.xml
     [B] Timecode constraints
         Conformance: mandatory
         [B] Timecode Track Presence
