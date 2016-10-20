@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>[Proposed Specification] AS-11 X7</title>
+    <link rel="stylesheet" href="./include/prettify/prettify.css" />
     <link rel="stylesheet" href="./include/jstree/themes/default/style.css" />
     <link rel="stylesheet" href="./include/bootstrap-3.3.5-dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="./include/bootstrap-3.3.5-dist/css/bootstrap-theme.min.css">
@@ -21,7 +22,7 @@
 
 <!-- START -->
 
-        <h1><span class="bg-success">[Proposed Specification]</span> AMWA AS-11 X7 <small> MXF Program Contribution - SD</small></h1>
+        <h1><span class="bg-success">[Proposed Specification]</span> AMWA AS-11 X7 <br><small> MXF Program Contribution - SD</small></h1>
         <hr>
 
 <!-- HEADER DOCUMENTS -->
@@ -113,24 +114,24 @@
         <div id="tree_legend">
             <p id="legend_intro">The following icons are used in the Specification Blocks Tree:</p>
             <dl class="dl-horizontal">
-                <dt><img src="include/block.png" width="20px" height="20px">Block</dt>
+                <dt><img alt="Block icon" src="include/block.png" width="20" height="20">Block</dt>
                 <dd>Its meaning is defined by its contents, which can be Artefacts or other Blocks.</dd>
-                <dt><img src="include/key.png" width="20px" height="20px">Parameter Key</dt>
+                <dt><img alt="Parameter Key icon" src="include/key.png" width="20" height="20">Parameter Key</dt>
                 <dd>A Block whose value must be set elsewhere in the Specification (it effectively declares a "variable" or an "argument")</dd>
-                <dt><img src="include/value.png" width="20px" height="20px">Parameter Value</dt>
+                <dt><img alt="Parameter Value icon" src="include/value.png" width="20" height="20">Parameter Value</dt>
                 <dd>A Block which sets the value of a specific Parameter Key Block</dd>
-                <dt><img src="include/note.png" width="20px" height="20px">Note</dt>
+                <dt><img alt="Note icon" src="include/note.png" width="20" height="20">Note</dt>
                 <dd>This provides informative guidance on the implementation or application of a Block.</dd>
-                <dt><img src="include/artefact.png" width="20px" height="20px">Artefact</dt>
+                <dt><img alt="Artefact icon" src="include/artefact.png" width="20" height="20">Artefact</dt>
                 <dd>A statement or a data file within a Block.</dd>
-                <dt><img src="include/noteartefact.png" width="20px" height="20px">Note Artefact</dt>
+                <dt><img alt="Note Artefact icon" src="include/noteartefact.png" width="20" height="20">Note Artefact</dt>
                 <dd>A statement or a data file within a Note.</dd>
             </dl>
 
             <dl class="dl-horizontal">
-                <dt><img src="include/value.png" width="20px" height="20px"><img src="include/key.png" width="20px" height="20px"><img src="include/block.png" width="20px" height="20px"></i></dt>
+                <dt><img alt="Parameter Value icon" src="include/value.png" width="20" height="20"><img alt="Parameter Key icon" src="include/key.png" width="20" height="20"><img alt="Block icon" src="include/block.png" width="20" height="20"></dt>
                 <dd>An icon with a solid fill denotes constraints that are <em>mandatory</em>.</dd>
-                <dt><img src="include/blockrec.png" width="20px" height="20px"></i></dt>
+                <dt><img alt="Non-mandatory Block icon" src="include/blockrec.png" width="20" height="20"></dt>
                 <dd>An icon with an outline style denotes constraints that are <em>not mandatory</em>.</dd>
             </dl>
         </div>
@@ -146,7 +147,7 @@
             <ul>
                 <li data-jstree='{"icon":"include/block.png"}' id='5b9ea7ea341b0905444bb53e57f6f58c'>
                     <div class='content_container clearfix'>
-                        <b>File Format</b>
+<b>File Format</b>
                     </div>
                     <ul>
                     <li data-jstree='{"icon":"include/file.png"}' id='5b9ea7ea341b0905444bb53e57f6f58c-info'>
@@ -161,7 +162,7 @@
                     </li>
                     <li data-jstree='{"icon":"include/block.png"}' id='6d7550b15ef0193bda6bc93181ed8dc3'>
                         <div class='content_container clearfix'>
-                            <b>Core MXF constraints</b>
+<b>Core MXF constraints</b>
                         </div>
                         <ul>
                         <li data-jstree='{"icon":"include/file.png"}' id='6d7550b15ef0193bda6bc93181ed8dc3-info'>
@@ -176,7 +177,7 @@
                         </li>
                         <li data-jstree='{"icon":"include/block.png"}' id='766b9d5c465d6e9dcd9ce1976d030a61'>
                             <div class='content_container clearfix'>
-                                <b>MXF File Format</b>
+<b>MXF File Format</b>
                             </div>
                             <ul>
                             <li data-jstree='{"icon":"include/file.png"}' id='766b9d5c465d6e9dcd9ce1976d030a61-info'>
@@ -191,12 +192,12 @@
                             </li>
                             <li data-jstree='{"icon":"include/artefact.png"}' id='dfce90d7c342a66578840b4fe877ec6d'>
                                 <div class='content_container clearfix'>
-                                    <p>The file conforms to <a class='' data-toggle='tooltip' href='#6b33509f50237acf914f7987486fb54a' title='Material Exchange Format (MXF) −− File Format Specification'>SMPTE ST 377:2004</a>.</p>
+<p>The file conforms to <a class='' data-toggle='tooltip' href='#6b33509f50237acf914f7987486fb54a' title='Material Exchange Format (MXF) −− File Format Specification'>SMPTE ST 377:2004</a>.</p>
                                 </div>
                             </li>
                             <li data-jstree='{"icon":"include/note.png"}' id='606c478969a3109d16d1d2f20d163e23'>
                                 <div class='content_container clearfix'>
-                                    <b>Later versions of MXF</b>
+<b>Later versions of MXF</b>
                                 </div>
                                 <ul>
                                 <li data-jstree='{"icon":"include/file.png"}' id='606c478969a3109d16d1d2f20d163e23-info'>
@@ -211,7 +212,7 @@
                                 </li>
                                 <li data-jstree='{"icon":"include/noteartefact.png"}' id='0c6fe45864ab7c8c00422f4c1f87872f'>
                                     <div class='content_container clearfix'>
-                                        <p>This does not prohibit the use of MXF version 1.3 (SMPTE ST 377-1:2011) for SD files. SMPTE encourages users to apply the most recent edition of standards where possible.</p>
+<p>This does not prohibit the use of MXF version 1.3 (SMPTE ST 377-1:2011) for SD files. SMPTE encourages users to apply the most recent edition of standards where possible.</p>
                                     </div>
                                 </li>
                                 </ul>
@@ -220,7 +221,7 @@
                         </li>
                         <li data-jstree='{"icon":"include/block.png"}' id='8d520290023a4266c6e57f5a05bb6ddf'>
                             <div class='content_container clearfix'>
-                                <b>Operational pattern 1a</b>
+<b>Operational pattern 1a</b>
                             </div>
                             <ul>
                             <li data-jstree='{"icon":"include/file.png"}' id='8d520290023a4266c6e57f5a05bb6ddf-info'>
@@ -235,12 +236,12 @@
                             </li>
                             <li data-jstree='{"icon":"include/artefact.png"}' id='e2ffa067618dd81f484a4aedab28eb81'>
                                 <div class='content_container clearfix'>
-                                    <p>The file conforms to <a class='' data-toggle='tooltip' href='#fe7b7090d8e7f7d10f9a11168624d72e' title='MXF Operational pattern 1A (Single Item, Single Package)'>SMPTE ST 378:2004</a>.</p>
+<p>The file conforms to <a class='' data-toggle='tooltip' href='#fe7b7090d8e7f7d10f9a11168624d72e' title='MXF Operational pattern 1A (Single Item, Single Package)'>SMPTE ST 378:2004</a>.</p>
                                 </div>
                             </li>
                             <li data-jstree='{"icon":"include/note.png"}' id='680c9464edf50635ce5a09c2cbf60eb8'>
                                 <div class='content_container clearfix'>
-                                    <b>Implementation Notes</b>
+<b>Implementation Notes</b>
                                 </div>
                                 <ul>
                                 <li data-jstree='{"icon":"include/file.png"}' id='680c9464edf50635ce5a09c2cbf60eb8-info'>
@@ -255,7 +256,7 @@
                                 </li>
                                 <li data-jstree='{"icon":"include/noteartefact.png"}' id='d631e6d1df6c7f970bf851f229742407'>
                                     <div class='content_container clearfix'>
-                                        <p>The file must be labelled as OP1a in the Operational Pattern property of all Partition Packs and the Preface Set, as required by <a class='' data-toggle='tooltip' href='#eba7ce4fd3c9ecc9a139eccb9617e415' title='Material Exchange Format (MXF) — File Format Specification'>SMPTE ST 377-1:2011</a> in Section 7.1 and Annex A, respectively.</p>
+<p>The file must be labelled as OP1a in the Operational Pattern property of all Partition Packs and the Preface Set, as required by <a class='' data-toggle='tooltip' href='#eba7ce4fd3c9ecc9a139eccb9617e415' title='Material Exchange Format (MXF) — File Format Specification'>SMPTE ST 377-1:2011</a> in Section 7.1 and Annex A, respectively.</p>
                                     </div>
                                 </li>
                                 </ul>
@@ -264,7 +265,7 @@
                         </li>
                         <li data-jstree='{"icon":"include/block.png"}' id='35e316b3b214c5620e7702ef507bfd43'>
                             <div class='content_container clearfix'>
-                                <b>Closed Complete Header</b>
+<b>Closed Complete Header</b>
                             </div>
                             <ul>
                             <li data-jstree='{"icon":"include/file.png"}' id='35e316b3b214c5620e7702ef507bfd43-info'>
@@ -279,12 +280,12 @@
                             </li>
                             <li data-jstree='{"icon":"include/artefact.png"}' id='0cd591dfeb60b5bf5e83722af6e91e99'>
                                 <div class='content_container clearfix'>
-                                    <p>The <a class='' data-toggle='tooltip' href='#45f1ce7af39bf59bacc68ef43c1c556a' title='The first &lt;Partition&gt; in the MXF file. This &lt;Partition&gt; always contains a copy of the &lt;Header Metadata&gt;.'>Header Partition</a> is "Closed" and "Complete".</p>
+<p>The <a class='' data-toggle='tooltip' href='#45f1ce7af39bf59bacc68ef43c1c556a' title='The first &lt;Partition&gt; in the MXF file. This &lt;Partition&gt; always contains a copy of the &lt;Header Metadata&gt;.'>Header Partition</a> is "Closed" and "Complete".</p>
                                 </div>
                             </li>
                             <li data-jstree='{"icon":"include/note.png"}' id='fa9e5b804c1795f6325c5c4ec8252b50'>
                                 <div class='content_container clearfix'>
-                                    <b>Implementation Notes</b>
+<b>Implementation Notes</b>
                                 </div>
                                 <ul>
                                 <li data-jstree='{"icon":"include/file.png"}' id='fa9e5b804c1795f6325c5c4ec8252b50-info'>
@@ -299,7 +300,7 @@
                                 </li>
                                 <li data-jstree='{"icon":"include/noteartefact.png"}' id='acf1364f008e29e70525d3c00c9087fd'>
                                     <div class='content_container clearfix'>
-                                        <p>Byte 15 of the Header Partition Pack Key must be set to 04h and all Header Metadata must have correct values. Hence 'Distinguished Values' cannot be used for 'Best Effort' properties. See Section 6.2.3 of SMPTE ST 377-1:2011 for a full explanation.</p>
+<p>Byte 15 of the Header Partition Pack Key must be set to 04h and all Header Metadata must have correct values. Hence 'Distinguished Values' cannot be used for 'Best Effort' properties. See Section 6.2.3 of SMPTE ST 377-1:2011 for a full explanation.</p>
                                     </div>
                                 </li>
                                 </ul>
@@ -308,7 +309,7 @@
                         </li>
                         <li data-jstree='{"icon":"include/block.png"}' id='d51a7114f1d52bc64eca9e8d416a7d67'>
                             <div class='content_container clearfix'>
-                                <b>Generic Container</b>
+<b>Generic Container</b>
                             </div>
                             <ul>
                             <li data-jstree='{"icon":"include/file.png"}' id='d51a7114f1d52bc64eca9e8d416a7d67-info'>
@@ -323,14 +324,14 @@
                             </li>
                             <li data-jstree='{"icon":"include/artefact.png"}' id='4afa10be8cd027bd1b999fb69c25aca7'>
                                 <div class='content_container clearfix'>
-                                    <p>The file uses the <a class='' data-toggle='tooltip' href='#bf37966dc6909b7f54f2e8b9115ba06d' title='MXF data structure used to store &lt;Essence&gt; data in an MXF file.'>Generic Container</a>.</p>
+<p>The file uses the <a class='' data-toggle='tooltip' href='#bf37966dc6909b7f54f2e8b9115ba06d' title='MXF data structure used to store &lt;Essence&gt; data in an MXF file.'>Generic Container</a>.</p>
                                 </div>
                             </li>
                             </ul>
                         </li>
                         <li data-jstree='{"icon":"include/block.png"}' id='5d959d64270eb9f6c7446fa32ad2447e'>
                             <div class='content_container clearfix'>
-                                <b>Internal Essence</b>
+<b>Internal Essence</b>
                             </div>
                             <ul>
                             <li data-jstree='{"icon":"include/file.png"}' id='5d959d64270eb9f6c7446fa32ad2447e-info'>
@@ -345,14 +346,14 @@
                             </li>
                             <li data-jstree='{"icon":"include/artefact.png"}' id='125d91ef6c336a20629a095e7106b5ad'>
                                 <div class='content_container clearfix'>
-                                    <p>The <a class='' data-toggle='tooltip' href='#bf37966dc6909b7f54f2e8b9115ba06d' title='MXF data structure used to store &lt;Essence&gt; data in an MXF file.'>Generic Container</a> is internal to the file.</p>
+<p>The <a class='' data-toggle='tooltip' href='#bf37966dc6909b7f54f2e8b9115ba06d' title='MXF data structure used to store &lt;Essence&gt; data in an MXF file.'>Generic Container</a> is internal to the file.</p>
                                 </div>
                             </li>
                             </ul>
                         </li>
                         <li data-jstree='{"icon":"include/block.png"}' id='8d92f51315f13fe0c4d1137049661067'>
                             <div class='content_container clearfix'>
-                                <b>Strict Frame Wrapping</b>
+<b>Strict Frame Wrapping</b>
                             </div>
                             <ul>
                             <li data-jstree='{"icon":"include/file.png"}' id='8d92f51315f13fe0c4d1137049661067-info'>
@@ -367,17 +368,17 @@
                             </li>
                             <li data-jstree='{"icon":"include/artefact.png"}' id='96b3b18c2e15a8b6fbdb2ebf330a535d'>
                                 <div class='content_container clearfix'>
-                                    <p>The <a class='' data-toggle='tooltip' href='#bf37966dc6909b7f54f2e8b9115ba06d' title='MXF data structure used to store &lt;Essence&gt; data in an MXF file.'>Generic Container</a> uses <a class='' data-toggle='tooltip' href='#245a4d1c9fde751e2d618a2811d49593' title='A method for dividing and interleaving &lt;Essence Element&gt;s for each frame of &lt;Picture Essence&gt;.'>Frame Wrapping</a>.</p>
+<p>The <a class='' data-toggle='tooltip' href='#bf37966dc6909b7f54f2e8b9115ba06d' title='MXF data structure used to store &lt;Essence&gt; data in an MXF file.'>Generic Container</a> uses <a class='' data-toggle='tooltip' href='#245a4d1c9fde751e2d618a2811d49593' title='A method for dividing and interleaving &lt;Essence Element&gt;s for each frame of &lt;Picture Essence&gt;.'>Frame Wrapping</a>.</p>
                                 </div>
                             </li>
                             <li data-jstree='{"icon":"include/artefact.png"}' id='e142907d78a419bea35457af293546f3'>
                                 <div class='content_container clearfix'>
-                                    <p>If the <a class='' data-toggle='tooltip' href='#bf37966dc6909b7f54f2e8b9115ba06d' title='MXF data structure used to store &lt;Essence&gt; data in an MXF file.'>Generic Container</a> contains <a class='' data-toggle='tooltip' href='#6d9c72436cb98e9faee73f2656efa7bb' title='A type of &lt;Essence&gt; containing predominantly picture data.'>Picture Essence</a> then the related <a class='' data-toggle='tooltip' href='#4e13594f29fcb36c791d21552b048165' title='A temporal division of a &lt;Track&gt;.'>Edit Unit</a> duration is equal to the duration of a video frame of the <a class='' data-toggle='tooltip' href='#6d9c72436cb98e9faee73f2656efa7bb' title='A type of &lt;Essence&gt; containing predominantly picture data.'>Picture Essence</a>.</p>
+<p>If the <a class='' data-toggle='tooltip' href='#bf37966dc6909b7f54f2e8b9115ba06d' title='MXF data structure used to store &lt;Essence&gt; data in an MXF file.'>Generic Container</a> contains <a class='' data-toggle='tooltip' href='#6d9c72436cb98e9faee73f2656efa7bb' title='A type of &lt;Essence&gt; containing predominantly picture data.'>Picture Essence</a> then the related <a class='' data-toggle='tooltip' href='#4e13594f29fcb36c791d21552b048165' title='A temporal division of a &lt;Track&gt;.'>Edit Unit</a> duration is equal to the duration of a video frame of the <a class='' data-toggle='tooltip' href='#6d9c72436cb98e9faee73f2656efa7bb' title='A type of &lt;Essence&gt; containing predominantly picture data.'>Picture Essence</a>.</p>
                                 </div>
                             </li>
                             <li data-jstree='{"icon":"include/note.png"}' id='1208e2b357bca6e82890f5bbdd73e204'>
                                 <div class='content_container clearfix'>
-                                    <b>Implementation Notes</b>
+<b>Implementation Notes</b>
                                 </div>
                                 <ul>
                                 <li data-jstree='{"icon":"include/file.png"}' id='1208e2b357bca6e82890f5bbdd73e204-info'>
@@ -392,7 +393,7 @@
                                 </li>
                                 <li data-jstree='{"icon":"include/noteartefact.png"}' id='565161eacbb37e2fdc6a1afc7aef6818'>
                                     <div class='content_container clearfix'>
-                                        <p>For example, this means that if the <a class='' data-toggle='tooltip' href='#6d9c72436cb98e9faee73f2656efa7bb' title='A type of &lt;Essence&gt; containing predominantly picture data.'>Picture Essence</a> is field-encoded then each <a class='' data-toggle='tooltip' href='#4e13594f29fcb36c791d21552b048165' title='A temporal division of a &lt;Track&gt;.'>Edit Unit</a> contains the data assosiated with both of the video fields for a video frame.</p>
+<p>For example, this means that if the <a class='' data-toggle='tooltip' href='#6d9c72436cb98e9faee73f2656efa7bb' title='A type of &lt;Essence&gt; containing predominantly picture data.'>Picture Essence</a> is field-encoded then each <a class='' data-toggle='tooltip' href='#4e13594f29fcb36c791d21552b048165' title='A temporal division of a &lt;Track&gt;.'>Edit Unit</a> contains the data assosiated with both of the video fields for a video frame.</p>
                                     </div>
                                 </li>
                                 </ul>
@@ -401,7 +402,7 @@
                         </li>
                         <li data-jstree='{"icon":"include/block.png"}' id='e9fa2dc9b596d44d7627baec84562398'>
                             <div class='content_container clearfix'>
-                                <b>One-to-one Track mapping</b>
+<b>One-to-one Track mapping</b>
                             </div>
                             <ul>
                             <li data-jstree='{"icon":"include/file.png"}' id='e9fa2dc9b596d44d7627baec84562398-info'>
@@ -416,12 +417,12 @@
                             </li>
                             <li data-jstree='{"icon":"include/artefact.png"}' id='9faa0adb7db244188f0a773967beb87b'>
                                 <div class='content_container clearfix'>
-                                    <p>Each <a class='' data-toggle='tooltip' href='#5307e0d9df24b87f5f7c0b9bab1c3497' title='A type of &lt;Track&gt; that references &lt;Essence&gt;.'>Essence Track</a> in the <a class='' data-toggle='tooltip' href='#c972a4fd0a8713e7298db9c1284e1269' title='A &lt;Source Package&gt; that is internal to the file and which is directly referenced by a &lt;Material Package&gt; of the file.'>Top-Level File Package</a> is referenced by exactly one <a class='' data-toggle='tooltip' href='#5307e0d9df24b87f5f7c0b9bab1c3497' title='A type of &lt;Track&gt; that references &lt;Essence&gt;.'>Essence Track</a> in the <a class='' data-toggle='tooltip' href='#2d90a6d5e37bc488b754432604d27810' title='An MXF data structure that describe an output timeline of the file.'>Material Package</a>.</p>
+<p>Each <a class='' data-toggle='tooltip' href='#5307e0d9df24b87f5f7c0b9bab1c3497' title='A type of &lt;Track&gt; that references &lt;Essence&gt;.'>Essence Track</a> in the <a class='' data-toggle='tooltip' href='#c972a4fd0a8713e7298db9c1284e1269' title='A &lt;Source Package&gt; that is internal to the file and which is directly referenced by a &lt;Material Package&gt; of the file.'>Top-Level File Package</a> is referenced by exactly one <a class='' data-toggle='tooltip' href='#5307e0d9df24b87f5f7c0b9bab1c3497' title='A type of &lt;Track&gt; that references &lt;Essence&gt;.'>Essence Track</a> in the <a class='' data-toggle='tooltip' href='#2d90a6d5e37bc488b754432604d27810' title='An MXF data structure that describe an output timeline of the file.'>Material Package</a>.</p>
                                 </div>
                             </li>
                             <li data-jstree='{"icon":"include/note.png"}' id='a3b6784bb1b79abc4909650e79417d9e'>
                                 <div class='content_container clearfix'>
-                                    <b>No division/combination of Audio Channels between Sound Tracks</b>
+<b>No division/combination of Audio Channels between Sound Tracks</b>
                                 </div>
                                 <ul>
                                 <li data-jstree='{"icon":"include/file.png"}' id='a3b6784bb1b79abc4909650e79417d9e-info'>
@@ -436,14 +437,14 @@
                                 </li>
                                 <li data-jstree='{"icon":"include/noteartefact.png"}' id='2bd40c7e647c2c2c6f93e134414f36e5'>
                                     <div class='content_container clearfix'>
-                                        <p>This prohibits:</p>
-                                        
-                                        <ul>
-                                        <li>the mapping of audio channels from a multi-channel Sound Track in a Source Package to single-channel Sound Tracks in the Material Package</li>
-                                        <li>the mapping of audio channels from single-channel Sound Tracks in a Source Package to multi-channel Sound Tracks in the Material Package</li>
-                                        </ul>
-                                        
-                                        <p>which is specified in Annex E of SMPTE ST 382:2007.</p>
+<p>This prohibits:</p>
+
+<ul>
+<li>the mapping of audio channels from a multi-channel Sound Track in a Source Package to single-channel Sound Tracks in the Material Package</li>
+<li>the mapping of audio channels from single-channel Sound Tracks in a Source Package to multi-channel Sound Tracks in the Material Package</li>
+</ul>
+
+<p>which is specified in Annex E of SMPTE ST 382:2007.</p>
                                     </div>
                                 </li>
                                 </ul>
@@ -454,7 +455,7 @@
                     </li>
                     <li data-jstree='{"icon":"include/blockrec.png"}' id='3a8264a2ccc88fe2c9b643ec8a501e49'>
                         <div class='content_container clearfix'>
-                            <b>Header Metadata KLV Fill</b> <em>(Recommended)</em>
+<b>Header Metadata KLV Fill</b> <em>(Recommended)</em>
                         </div>
                         <ul>
                         <li data-jstree='{"icon":"include/file.png"}' id='3a8264a2ccc88fe2c9b643ec8a501e49-info'>
@@ -469,12 +470,12 @@
                         </li>
                         <li data-jstree='{"icon":"include/artefact.png"}' id='7ae8c7637cfcc6b4ca8a6b67d42882d2'>
                             <div class='content_container clearfix'>
-                                <p>When first created, the file includes a <a class='' data-toggle='tooltip' href='#e150f270c1c3baec0b46a4b383c31e21' title='Refers to the well-defined means of inserting empty, &quot;fill&quot;, data in an MXF file.'>KLV Fill</a> item of at least 4 MB in total length following the <a class='' data-toggle='tooltip' href='#2441aa4867211062de2f85d2d3aae320' title='MXF data structures that collectively describe the data in the &lt;Essence&gt; data in an MXF file.'>Header Metadata</a>.</p>
+<p>When first created, the file includes a <a class='' data-toggle='tooltip' href='#e150f270c1c3baec0b46a4b383c31e21' title='Refers to the well-defined means of inserting empty, &quot;fill&quot;, data in an MXF file.'>KLV Fill</a> item of at least 4 MB in total length following the <a class='' data-toggle='tooltip' href='#2441aa4867211062de2f85d2d3aae320' title='MXF data structures that collectively describe the data in the &lt;Essence&gt; data in an MXF file.'>Header Metadata</a>.</p>
                             </div>
                         </li>
                         <li data-jstree='{"icon":"include/note.png"}' id='0ba226e6df1341fb2c116c143bc8fe16'>
                             <div class='content_container clearfix'>
-                                <b>Implementation Notes</b>
+<b>Implementation Notes</b>
                             </div>
                             <ul>
                             <li data-jstree='{"icon":"include/file.png"}' id='0ba226e6df1341fb2c116c143bc8fe16-info'>
@@ -489,16 +490,16 @@
                             </li>
                             <li data-jstree='{"icon":"include/noteartefact.png"}' id='cf7c474692caa559e3cef50d265e6ba6'>
                                 <div class='content_container clearfix'>
-                                    <p>The "total length" is of the entire item and includes the length of the Key and Length fields.</p>
-                                    
-                                    <p>The extra space afforded by the KLV Fill allows Header Metadata to be edited and added to without rewriting the entire file.</p>
+<p>The "total length" is of the entire item and includes the length of the Key and Length fields.</p>
+
+<p>The extra space afforded by the KLV Fill allows Header Metadata to be edited and added to without rewriting the entire file.</p>
                                 </div>
                             </li>
                             </ul>
                         </li>
                         <li data-jstree='{"icon":"include/note.png"}' id='04f75589b4a267ebe49219b48bca22ac'>
                             <div class='content_container clearfix'>
-                                <b>Definition of megabyte</b>
+<b>Definition of megabyte</b>
                             </div>
                             <ul>
                             <li data-jstree='{"icon":"include/file.png"}' id='04f75589b4a267ebe49219b48bca22ac-info'>
@@ -513,7 +514,7 @@
                             </li>
                             <li data-jstree='{"icon":"include/noteartefact.png"}' id='e4d772a516f1adfb5e66f3a3d3c51787'>
                                 <div class='content_container clearfix'>
-                                    <p>The unit symbol "MB" refers to a megabyte, which is 1 000 000 bytes.</p>
+<p>The unit symbol "MB" refers to a megabyte, which is 1 000 000 bytes.</p>
                                 </div>
                             </li>
                             </ul>
@@ -522,7 +523,7 @@
                     </li>
                     <li data-jstree='{"icon":"include/block.png"}' id='58141b3faea900fd3cd25b5efc33315d'>
                         <div class='content_container clearfix'>
-                            <b>MXF Indexing and Partitioning strategy for CBE Essence</b>
+<b>MXF Indexing and Partitioning strategy for CBE Essence</b>
                         </div>
                         <ul>
                         <li data-jstree='{"icon":"include/file.png"}' id='58141b3faea900fd3cd25b5efc33315d-info'>
@@ -537,7 +538,7 @@
                         </li>
                         <li data-jstree='{"icon":"include/block.png"}' id='a49882781731fbe40435fa7d625170aa'>
                             <div class='content_container clearfix'>
-                                <b>Index precedes Essence</b>
+<b>Index precedes Essence</b>
                             </div>
                             <ul>
                             <li data-jstree='{"icon":"include/file.png"}' id='a49882781731fbe40435fa7d625170aa-info'>
@@ -552,14 +553,14 @@
                             </li>
                             <li data-jstree='{"icon":"include/artefact.png"}' id='138a38309a3d42172562f8ad95d8c06f'>
                                 <div class='content_container clearfix'>
-                                    <p>The file contains a complete <a class='' data-toggle='tooltip' href='#6f54d6074203bd95a444f0d9aa44152c' title='A structure in an MXF file used to efficiently access &lt;Essence&gt; data.'>Index Table</a> before the <a class='' data-toggle='tooltip' href='#a2db301d86a5b89829270ea4b6909413' title='A bitstream comprising picture, sound or data.'>Essence</a>.</p>
+<p>The file contains a complete <a class='' data-toggle='tooltip' href='#6f54d6074203bd95a444f0d9aa44152c' title='A structure in an MXF file used to efficiently access &lt;Essence&gt; data.'>Index Table</a> before the <a class='' data-toggle='tooltip' href='#a2db301d86a5b89829270ea4b6909413' title='A bitstream comprising picture, sound or data.'>Essence</a>.</p>
                                 </div>
                             </li>
                             </ul>
                         </li>
                         <li data-jstree='{"icon":"include/block.png"}' id='560ae56fc21162d8bc79b185139e4cff'>
                             <div class='content_container clearfix'>
-                                <b>Index all Essence</b>
+<b>Index all Essence</b>
                             </div>
                             <ul>
                             <li data-jstree='{"icon":"include/file.png"}' id='560ae56fc21162d8bc79b185139e4cff-info'>
@@ -574,14 +575,14 @@
                             </li>
                             <li data-jstree='{"icon":"include/artefact.png"}' id='fb7f99a0e851a607c84b3cadf81d4aca'>
                                 <div class='content_container clearfix'>
-                                    <p>The <a class='' data-toggle='tooltip' href='#6f54d6074203bd95a444f0d9aa44152c' title='A structure in an MXF file used to efficiently access &lt;Essence&gt; data.'>Index Table</a> indexes every <a class='' data-toggle='tooltip' href='#4e13594f29fcb36c791d21552b048165' title='A temporal division of a &lt;Track&gt;.'>Edit Unit</a> of every <a class='' data-toggle='tooltip' href='#61982b5ed02ff43bdf04c4f760ac762f' title='The entire essence stream of a single &lt;Track&gt;.'>Essence Element</a> in the file.</p>
+<p>The <a class='' data-toggle='tooltip' href='#6f54d6074203bd95a444f0d9aa44152c' title='A structure in an MXF file used to efficiently access &lt;Essence&gt; data.'>Index Table</a> indexes every <a class='' data-toggle='tooltip' href='#4e13594f29fcb36c791d21552b048165' title='A temporal division of a &lt;Track&gt;.'>Edit Unit</a> of every <a class='' data-toggle='tooltip' href='#61982b5ed02ff43bdf04c4f760ac762f' title='The entire essence stream of a single &lt;Track&gt;.'>Essence Element</a> in the file.</p>
                                 </div>
                             </li>
                             </ul>
                         </li>
                         <li data-jstree='{"icon":"include/block.png"}' id='8747238d2da9710dabbfafc160c09f08'>
                             <div class='content_container clearfix'>
-                                <b>Single Essence Partition</b>
+<b>Single Essence Partition</b>
                             </div>
                             <ul>
                             <li data-jstree='{"icon":"include/file.png"}' id='8747238d2da9710dabbfafc160c09f08-info'>
@@ -596,14 +597,14 @@
                             </li>
                             <li data-jstree='{"icon":"include/artefact.png"}' id='05d6ba6ea0fbcf4ff53d02eadb52dd98'>
                                 <div class='content_container clearfix'>
-                                    <p>The <a class='' data-toggle='tooltip' href='#bf37966dc6909b7f54f2e8b9115ba06d' title='MXF data structure used to store &lt;Essence&gt; data in an MXF file.'>Generic Container</a> is entirely contained in exactly one <a class='' data-toggle='tooltip' href='#bb30298ea161fa662a2f8aa4cb9bbfea' title='A portion of the MXF file. An MXF file consists of a sequence of Partitions.'>Partition</a>.</p>
+<p>The <a class='' data-toggle='tooltip' href='#bf37966dc6909b7f54f2e8b9115ba06d' title='MXF data structure used to store &lt;Essence&gt; data in an MXF file.'>Generic Container</a> is entirely contained in exactly one <a class='' data-toggle='tooltip' href='#bb30298ea161fa662a2f8aa4cb9bbfea' title='A portion of the MXF file. An MXF file consists of a sequence of Partitions.'>Partition</a>.</p>
                                 </div>
                             </li>
                             </ul>
                         </li>
                         <li data-jstree='{"icon":"include/note.png"}' id='689797ea4a96d1f895b073b5be1860f0'>
                             <div class='content_container clearfix'>
-                                <b>Indexing and Partitions</b>
+<b>Indexing and Partitions</b>
                             </div>
                             <ul>
                             <li data-jstree='{"icon":"include/file.png"}' id='689797ea4a96d1f895b073b5be1860f0-info'>
@@ -618,9 +619,9 @@
                             </li>
                             <li data-jstree='{"icon":"include/noteartefact.png"}' id='e2d801cd957f85f8a5668a4999d9e7d6'>
                                 <div class='content_container clearfix'>
-                                    <p>It's generally considered good MXF practice to have one 'thing' per Partition, so you'd have separate Partitions for Header Metadata, Essence, and Index Tables. This isn't a requirement but following best practice is encouraged.</p>
-                                    
-                                    <p>The Index Table could be placed in the Header Partition, its own Body Partition or in a Body Partition with the Essence. Indeed it could be distributed across all three of these locations. Decoders need to be able to cope with all of these posibilities.</p>
+<p>It's generally considered good MXF practice to have one 'thing' per Partition, so you'd have separate Partitions for Header Metadata, Essence, and Index Tables. This isn't a requirement but following best practice is encouraged.</p>
+
+<p>The Index Table could be placed in the Header Partition, its own Body Partition or in a Body Partition with the Essence. Indeed it could be distributed across all three of these locations. Decoders need to be able to cope with all of these posibilities.</p>
                                 </div>
                             </li>
                             </ul>
@@ -629,7 +630,7 @@
                     </li>
                     <li data-jstree='{"icon":"include/block.png"}' id='90fb33957955943a9ea6e9e6b1d6c4f8'>
                         <div class='content_container clearfix'>
-                            <b>ST 386 with D-10 625i25 at 50 Mbps</b>
+<b>ST 386 with D-10 625i25 at 50 Mbps</b>
                         </div>
                         <ul>
                         <li data-jstree='{"icon":"include/file.png"}' id='90fb33957955943a9ea6e9e6b1d6c4f8-info'>
@@ -644,12 +645,12 @@
                         </li>
                         <li data-jstree='{"icon":"include/artefact.png"}' id='3277fc33c7e7caa534fd899f48ab5fe9'>
                             <div class='content_container clearfix'>
-                                <p>The file conforms to <a class='' data-toggle='tooltip' href='#51f40a5e8a7102b6b0523c0889e69dd1' title='Mapping Type D-10 Essence Data to the MXF Generic Container'>SMPTE ST 386:2004</a> where the <a class='' data-toggle='tooltip' href='#6d9c72436cb98e9faee73f2656efa7bb' title='A type of &lt;Essence&gt; containing predominantly picture data.'>Picture Essence</a> operates at "50 Mbit/s" using a "625/50 system".</p>
+<p>The file conforms to <a class='' data-toggle='tooltip' href='#51f40a5e8a7102b6b0523c0889e69dd1' title='Mapping Type D-10 Essence Data to the MXF Generic Container'>SMPTE ST 386:2004</a> where the <a class='' data-toggle='tooltip' href='#6d9c72436cb98e9faee73f2656efa7bb' title='A type of &lt;Essence&gt; containing predominantly picture data.'>Picture Essence</a> operates at "50 Mbit/s" using a "625/50 system".</p>
                             </div>
                         </li>
                         <li data-jstree='{"icon":"include/note.png"}' id='58a475e54dc4e6419139842589e55588'>
                             <div class='content_container clearfix'>
-                                <b>Implementation Notes</b>
+<b>Implementation Notes</b>
                             </div>
                             <ul>
                             <li data-jstree='{"icon":"include/file.png"}' id='58a475e54dc4e6419139842589e55588-info'>
@@ -664,19 +665,19 @@
                             </li>
                             <li data-jstree='{"icon":"include/noteartefact.png"}' id='b2db1abe0cf6049dc6d987d3baa5ba1e'>
                                 <div class='content_container clearfix'>
-                                    <p>All aspects of SMPTE ST 386:2004 must be followed. In addition to the mapping of the AES3 Sound Essence and D-10 Picture Essence, it also covers other things such as Index Tables and KAG size.</p>
-                                    
-                                    <p>The KLV Alignment Grid of any Partition containing an Essence Container must be 512.</p>
-                                    
-                                    <p>SMPTE ST 386:2004 specifies that there is exactly one Sound Track in each of the Material Package and Top-Level File Package.</p>
-                                    
-                                    <h4 id="d-10-picture-essence">D-10 Picture Essence</h4>
-                                    
-                                    <p>While not strictly specified, the Picture Essence has 608 lines (576 of active picture plus 32 of vertical interval), as is conventional for D-10 pictures and which is alluded to in SMPTE ST 365:2001.</p>
-                                    
-                                    <p>The constraints on Picture Essence encoding here imply a "level" of "main".</p>
-                                    
-                                    <p>Standard Definition content can have an aspect ratio of 16/9 or 4/3.</p>
+<p>All aspects of SMPTE ST 386:2004 must be followed. In addition to the mapping of the AES3 Sound Essence and D-10 Picture Essence, it also covers other things such as Index Tables and KAG size.</p>
+
+<p>The KLV Alignment Grid of any Partition containing an Essence Container must be 512.</p>
+
+<p>SMPTE ST 386:2004 specifies that there is exactly one Sound Track in each of the Material Package and Top-Level File Package.</p>
+
+<h4>D-10 Picture Essence</h4>
+
+<p>While not strictly specified, the Picture Essence has 608 lines (576 of active picture plus 32 of vertical interval), as is conventional for D-10 pictures and which is alluded to in SMPTE ST 365:2001.</p>
+
+<p>The constraints on Picture Essence encoding here imply a "level" of "main".</p>
+
+<p>Standard Definition content can have an aspect ratio of 16/9 or 4/3.</p>
                                 </div>
                             </li>
                             </ul>
@@ -685,7 +686,7 @@
                     </li>
                     <li data-jstree='{"icon":"include/block.png"}' id='505f84fa5503689a814aceeb3e0c470e'>
                         <div class='content_container clearfix'>
-                            <b>Uncompressed 24-bit PCM audio at 48 kHz</b>
+<b>Uncompressed 24-bit PCM audio at 48 kHz</b>
                         </div>
                         <ul>
                         <li data-jstree='{"icon":"include/file.png"}' id='505f84fa5503689a814aceeb3e0c470e-info'>
@@ -700,12 +701,12 @@
                         </li>
                         <li data-jstree='{"icon":"include/artefact.png"}' id='77882d8b62483e416ae9c62b3b959086'>
                             <div class='content_container clearfix'>
-                                <p>For each <a class='' data-toggle='tooltip' href='#22dd147bbc7edf9dc85ffd2e7f560ab3' title='A distinct collection of sequenced audio samples that are intended for delivery to a single loudspeaker or other reproduction device.'>Audio Channel</a> the <a class='' data-toggle='tooltip' href='#47efcf43e040198dc7b9634190bde32a' title='A type of &lt;Essence&gt; containing sound data.'>Sound Essence</a> is "uncompressed PCM audio data" per <a class='' data-toggle='tooltip' href='#1c9d8ed763528ddeaa8ea11ec73e0638' title='Mapping AES3 and Broadcast Wave Audio into the MXF Generic Container'>SMPTE ST 382:2007</a>, sampled at 48 kHz with 24 bits per sample.</p>
+<p>For each <a class='' data-toggle='tooltip' href='#22dd147bbc7edf9dc85ffd2e7f560ab3' title='A distinct collection of sequenced audio samples that are intended for delivery to a single loudspeaker or other reproduction device.'>Audio Channel</a> the <a class='' data-toggle='tooltip' href='#47efcf43e040198dc7b9634190bde32a' title='A type of &lt;Essence&gt; containing sound data.'>Sound Essence</a> is "uncompressed PCM audio data" per <a class='' data-toggle='tooltip' href='#1c9d8ed763528ddeaa8ea11ec73e0638' title='Mapping AES3 and Broadcast Wave Audio into the MXF Generic Container'>SMPTE ST 382:2007</a>, sampled at 48 kHz with 24 bits per sample.</p>
                             </div>
                         </li>
                         <li data-jstree='{"icon":"include/note.png"}' id='e8c0e753fbf4af712ff119f220d829b9'>
                             <div class='content_container clearfix'>
-                                <b>Implementation Notes</b>
+<b>Implementation Notes</b>
                             </div>
                             <ul>
                             <li data-jstree='{"icon":"include/file.png"}' id='e8c0e753fbf4af712ff119f220d829b9-info'>
@@ -720,7 +721,7 @@
                             </li>
                             <li data-jstree='{"icon":"include/noteartefact.png"}' id='66425f48811eddbb1329d148f083d3a5'>
                                 <div class='content_container clearfix'>
-                                    <p>As per Section 6 of <a class='' data-toggle='tooltip' href='#1c9d8ed763528ddeaa8ea11ec73e0638' title='Mapping AES3 and Broadcast Wave Audio into the MXF Generic Container'>SMPTE ST 382:2007</a> samples are stored as little-endian integers.</p>
+<p>As per Section 6 of <a class='' data-toggle='tooltip' href='#1c9d8ed763528ddeaa8ea11ec73e0638' title='Mapping AES3 and Broadcast Wave Audio into the MXF Generic Container'>SMPTE ST 382:2007</a> samples are stored as little-endian integers.</p>
                                 </div>
                             </li>
                             </ul>
@@ -729,7 +730,7 @@
                     </li>
                     <li data-jstree='{"icon":"include/block.png"}' id='cad2238cba511d8d4f12ccdc8c90ddee'>
                         <div class='content_container clearfix'>
-                            <b>Embedded XML Documents</b>
+<b>Embedded XML Documents</b>
                         </div>
                         <ul>
                         <li data-jstree='{"icon":"include/file.png"}' id='cad2238cba511d8d4f12ccdc8c90ddee-info'>
@@ -744,12 +745,12 @@
                         </li>
                         <li data-jstree='{"icon":"include/artefact.png"}' id='b23990fa10597254806c30b4b523ce97'>
                             <div class='content_container clearfix'>
-                                <p>An XML document defined by <a class='btn btn-default btn-xs' data-toggle='tooltip' title='BLOCK: Click to show in the tree' href='#050f91eb90eb50eda8a4f6f63b534420'>XML DM for Programmes</a> is embedded in the file using <a class='btn btn-default btn-xs' data-toggle='tooltip' title='BLOCK: Click to show in the tree' href='#c80c980d188b75a2233259a59cadbcad'>XML Document in Header Metadata Carriage</a>.</p>
+<p>An XML document defined by <a class='btn btn-default btn-xs' data-toggle='tooltip' title='BLOCK: Click to show in the tree' href='#050f91eb90eb50eda8a4f6f63b534420'>XML DM for Programmes</a> is embedded in the file using <a class='btn btn-default btn-xs' data-toggle='tooltip' title='BLOCK: Click to show in the tree' href='#c80c980d188b75a2233259a59cadbcad'>XML Document in Header Metadata Carriage</a>.</p>
                             </div>
                         <ul>
                             <li data-jstree='{"icon":"include/block.png"}' id='050f91eb90eb50eda8a4f6f63b534420'>
                                 <div class='content_container clearfix'>
-                                    <b>XML DM for Programmes</b>
+<b>XML DM for Programmes</b>
                                 </div>
                                 <ul>
                                 <li data-jstree='{"icon":"include/file.png"}' id='050f91eb90eb50eda8a4f6f63b534420-info'>
@@ -764,12 +765,12 @@
                                 </li>
                                 <li data-jstree='{"icon":"include/artefact.png"}' id='3d488e2314fce33a467b383361410dad'>
                                     <div class='content_container clearfix'>
-                                        <p>The namespace of the document's root element is <a class='btn btn-default btn-xs' data-toggle='tooltip' title='BLOCK: Click to show in the tree' href='#7d8658fb683270aaf3d70520291d52bf'>Programmes Descriptive Metadata</a>; the name of the document's root element is "Programmes_DM"; the Media type (MIME type) for the document is "application/xml"</p>
+<p>The namespace of the document's root element is <a class='btn btn-default btn-xs' data-toggle='tooltip' title='BLOCK: Click to show in the tree' href='#7d8658fb683270aaf3d70520291d52bf'>Programmes Descriptive Metadata</a>; the name of the document's root element is "Programmes_DM"; the Media type (MIME type) for the document is "application/xml"</p>
                                     </div>
                                 <ul>
                                     <li data-jstree='{"icon":"include/block.png"}' id='7d8658fb683270aaf3d70520291d52bf'>
                                         <div class='content_container clearfix'>
-                                            <b>Programmes Descriptive Metadata</b>
+<b>Programmes Descriptive Metadata</b>
                                         </div>
                                         <ul>
                                         <li data-jstree='{"icon":"include/file.png"}' id='7d8658fb683270aaf3d70520291d52bf-info'>
@@ -784,7 +785,7 @@
                                         </li>
                                         <li data-jstree='{"icon":"include/artefact.png"}' id='1a240c3c34414652fefb3d88ec7b76a1'>
                                             <div class='content_container clearfix'>
-                                                <h3>XML Schema</h3><p class='lead'><span class='glyphicon glyphicon-link' aria-hidden='true'></span>View the <a href='include/specification_data_views/www.amwa.tv_c0f7b64/block/DM_Programmes/artefacts/DM_Programmes.html' target='_blank'>HTML Documentation</a> for the XML Schema</p><p>View the primary XML Schema file:<ul><li><a href='specification_data_files/www.amwa.tv_c0f7b64/block/DM_Programmes/artefacts/DM_Programmes.xsd' target='_blank'>specification_data_files/www.amwa.tv_c0f7b64/block/DM_Programmes/artefacts/DM_Programmes.xsd</a></li></ul></p><p>View the imported XML Schema file(s):<ul><li><a href='specification_data_files/www.amwa.tv_c0f7b64/block/DM_Programmes/artefacts/import/DM_Identification.xsd' target='_blank'>specification_data_files/www.amwa.tv_c0f7b64/block/DM_Programmes/artefacts/import/DM_Identification.xsd</a></li><li><a href='specification_data_files/www.amwa.tv_c0f7b64/block/DM_Programmes/artefacts/import/DM_Programmes_DomainSpecific.xsd' target='_blank'>specification_data_files/www.amwa.tv_c0f7b64/block/DM_Programmes/artefacts/import/DM_Programmes_DomainSpecific.xsd</a></li><li><a href='specification_data_files/www.amwa.tv_c0f7b64/block/DM_Programmes/artefacts/import/DM_InVisionAccessServices.xsd' target='_blank'>specification_data_files/www.amwa.tv_c0f7b64/block/DM_Programmes/artefacts/import/DM_InVisionAccessServices.xsd</a></li><li><a href='specification_data_files/www.amwa.tv_c0f7b64/block/DM_Programmes/artefacts/import/DM_ContentDetails.xsd' target='_blank'>specification_data_files/www.amwa.tv_c0f7b64/block/DM_Programmes/artefacts/import/DM_ContentDetails.xsd</a></li><li><a href='specification_data_files/www.amwa.tv_c0f7b64/block/DM_Programmes/artefacts/import/DM_Common.xsd' target='_blank'>specification_data_files/www.amwa.tv_c0f7b64/block/DM_Programmes/artefacts/import/DM_Common.xsd</a></li><li><a href='specification_data_files/www.amwa.tv_c0f7b64/block/DM_Programmes/artefacts/import/DM_Extras.xsd' target='_blank'>specification_data_files/www.amwa.tv_c0f7b64/block/DM_Programmes/artefacts/import/DM_Extras.xsd</a></li></ul></p><hr>
+<h3>XML Schema</h3><p class='lead'><span class='glyphicon glyphicon-link' aria-hidden='true'></span>View the <a href='include/specification_data_views/www.amwa.tv_c0f7b64/block/DM_Programmes/artefacts/DM_Programmes.html' target='_blank'>HTML Documentation</a> for the XML Schema</p><p>View the primary XML Schema file:</p><ul><li><a href='specification_data_files/www.amwa.tv_c0f7b64/block/DM_Programmes/artefacts/DM_Programmes.xsd' target='_blank'>specification_data_files/www.amwa.tv_c0f7b64/block/DM_Programmes/artefacts/DM_Programmes.xsd</a></li></ul><p>View the imported XML Schema file(s):</p><ul><li><a href='specification_data_files/www.amwa.tv_c0f7b64/block/DM_Programmes/artefacts/import/DM_Identification.xsd' target='_blank'>specification_data_files/www.amwa.tv_c0f7b64/block/DM_Programmes/artefacts/import/DM_Identification.xsd</a></li><li><a href='specification_data_files/www.amwa.tv_c0f7b64/block/DM_Programmes/artefacts/import/DM_Programmes_DomainSpecific.xsd' target='_blank'>specification_data_files/www.amwa.tv_c0f7b64/block/DM_Programmes/artefacts/import/DM_Programmes_DomainSpecific.xsd</a></li><li><a href='specification_data_files/www.amwa.tv_c0f7b64/block/DM_Programmes/artefacts/import/DM_InVisionAccessServices.xsd' target='_blank'>specification_data_files/www.amwa.tv_c0f7b64/block/DM_Programmes/artefacts/import/DM_InVisionAccessServices.xsd</a></li><li><a href='specification_data_files/www.amwa.tv_c0f7b64/block/DM_Programmes/artefacts/import/DM_ContentDetails.xsd' target='_blank'>specification_data_files/www.amwa.tv_c0f7b64/block/DM_Programmes/artefacts/import/DM_ContentDetails.xsd</a></li><li><a href='specification_data_files/www.amwa.tv_c0f7b64/block/DM_Programmes/artefacts/import/DM_Common.xsd' target='_blank'>specification_data_files/www.amwa.tv_c0f7b64/block/DM_Programmes/artefacts/import/DM_Common.xsd</a></li><li><a href='specification_data_files/www.amwa.tv_c0f7b64/block/DM_Programmes/artefacts/import/DM_Extras.xsd' target='_blank'>specification_data_files/www.amwa.tv_c0f7b64/block/DM_Programmes/artefacts/import/DM_Extras.xsd</a></li></ul><hr>
                                             </div>
                                         </li>
                                         </ul>
@@ -795,7 +796,7 @@
                             </li>
                             <li data-jstree='{"icon":"include/block.png"}' id='c80c980d188b75a2233259a59cadbcad'>
                                 <div class='content_container clearfix'>
-                                    <b>XML Document in Header Metadata Carriage</b>
+<b>XML Document in Header Metadata Carriage</b>
                                 </div>
                                 <ul>
                                 <li data-jstree='{"icon":"include/file.png"}' id='c80c980d188b75a2233259a59cadbcad-info'>
@@ -810,22 +811,22 @@
                                 </li>
                                 <li data-jstree='{"icon":"include/artefact.png"}' id='50b4dd79a002860207902753367c6d7d'>
                                     <div class='content_container clearfix'>
-                                        <p>The XML document is a complete XML document (with a single root element) that is UTF-8 encoded without a "Byte-Order Mark" (BOM).</p>
+<p>The XML document is a complete XML document (with a single root element) that is UTF-8 encoded without a "Byte-Order Mark" (BOM).</p>
                                     </div>
                                 </li>
                                 <li data-jstree='{"icon":"include/artefact.png"}' id='bcda1b79e73c0fbb69b0a3ce377e61c5'>
                                     <div class='content_container clearfix'>
-                                        <p>The XML document is carried in the <a class='' data-toggle='tooltip' href='#2441aa4867211062de2f85d2d3aae320' title='MXF data structures that collectively describe the data in the &lt;Essence&gt; data in an MXF file.'>Header Metadata</a> according to <a class='' data-toggle='tooltip' href='#f7a8f537dcf66aa8d3252571526dac0f' title='Text-Based Metadata Carriage in MXF'>SMPTE RP 2057:2011</a>.</p>
+<p>The XML document is carried in the <a class='' data-toggle='tooltip' href='#2441aa4867211062de2f85d2d3aae320' title='MXF data structures that collectively describe the data in the &lt;Essence&gt; data in an MXF file.'>Header Metadata</a> according to <a class='' data-toggle='tooltip' href='#f7a8f537dcf66aa8d3252571526dac0f' title='Text-Based Metadata Carriage in MXF'>SMPTE RP 2057:2011</a>.</p>
                                     </div>
                                 </li>
                                 <li data-jstree='{"icon":"include/artefact.png"}' id='d4521385683039fd7311ce95c520d5b9'>
                                     <div class='content_container clearfix'>
-                                        <p>The instance of "Text-Based DM Framework" is strongly referenced from a <a class='btn btn-default btn-xs' data-toggle='tooltip' title='BLOCK: Click to show in the tree' href='#e760b255354ec5ef3e2fdece2b5048ef'>Constrained Static DM Track</a>.</p>
+<p>The instance of "Text-Based DM Framework" is strongly referenced from a <a class='btn btn-default btn-xs' data-toggle='tooltip' title='BLOCK: Click to show in the tree' href='#e760b255354ec5ef3e2fdece2b5048ef'>Constrained Static DM Track</a>.</p>
                                     </div>
                                 <ul>
                                     <li data-jstree='{"icon":"include/block.png"}' id='e760b255354ec5ef3e2fdece2b5048ef'>
                                         <div class='content_container clearfix'>
-                                            <b>Constrained Static DM Track</b>
+<b>Constrained Static DM Track</b>
                                         </div>
                                         <ul>
                                         <li data-jstree='{"icon":"include/file.png"}' id='e760b255354ec5ef3e2fdece2b5048ef-info'>
@@ -840,12 +841,12 @@
                                         </li>
                                         <li data-jstree='{"icon":"include/artefact.png"}' id='2d8acdf33686fe73b58cbf7d550a44fa'>
                                             <div class='content_container clearfix'>
-                                                <p>A <a class='btn btn-default btn-xs' data-toggle='tooltip' title='BLOCK: Click to show in the tree' href='#e760b255354ec5ef3e2fdece2b5048ef'>Constrained Static DM Track</a> is a <a class='' data-toggle='tooltip' href='#13ba43a697ac75bb116fd800be5eeb3a' title='A &lt;Track&gt; carrying unchanging &lt;Descriptive Metadata&gt;.'>Static Track (DM)</a> in the <a class='' data-toggle='tooltip' href='#2d90a6d5e37bc488b754432604d27810' title='An MXF data structure that describe an output timeline of the file.'>Material Package</a> that contains a <a class='' data-toggle='tooltip' href='#e31d50d6645c26249b4577df773fe833' title='A Structural Metadata Class that is a Subclass of Structural Component.'>Sequence</a>, which contains exactly one <a class='' data-toggle='tooltip' href='#bfea06d3e4dc94d66915f7121358ad07' title='An MXF structure used to generically contain &lt;Descriptive Metadata&gt; on a &lt;Track&gt;.'>DM Segment</a>, which strongly references an instance of a <a class='' data-toggle='tooltip' href='#f979604d957514c6e9a7662e625194b4' title='A &lt;Descriptive Metadata&gt; Class that is a Subclass of Descriptive Framework.'>DM Framework</a>.</p>
+<p>A <a class='btn btn-default btn-xs' data-toggle='tooltip' title='BLOCK: Click to show in the tree' href='#e760b255354ec5ef3e2fdece2b5048ef'>Constrained Static DM Track</a> is a <a class='' data-toggle='tooltip' href='#13ba43a697ac75bb116fd800be5eeb3a' title='A &lt;Track&gt; carrying unchanging &lt;Descriptive Metadata&gt;.'>Static Track (DM)</a> in the <a class='' data-toggle='tooltip' href='#2d90a6d5e37bc488b754432604d27810' title='An MXF data structure that describe an output timeline of the file.'>Material Package</a> that contains a <a class='' data-toggle='tooltip' href='#e31d50d6645c26249b4577df773fe833' title='A Structural Metadata Class that is a Subclass of Structural Component.'>Sequence</a>, which contains exactly one <a class='' data-toggle='tooltip' href='#bfea06d3e4dc94d66915f7121358ad07' title='An MXF structure used to generically contain &lt;Descriptive Metadata&gt; on a &lt;Track&gt;.'>DM Segment</a>, which strongly references an instance of a <a class='' data-toggle='tooltip' href='#f979604d957514c6e9a7662e625194b4' title='A &lt;Descriptive Metadata&gt; Class that is a Subclass of Descriptive Framework.'>DM Framework</a>.</p>
                                             </div>
                                         </li>
                                         <li data-jstree='{"icon":"include/note.png"}' id='616f2b99990784da751f3ae9d8503990'>
                                             <div class='content_container clearfix'>
-                                                <b>Track Name</b>
+<b>Track Name</b>
                                             </div>
                                             <ul>
                                             <li data-jstree='{"icon":"include/file.png"}' id='616f2b99990784da751f3ae9d8503990-info'>
@@ -860,7 +861,7 @@
                                             </li>
                                             <li data-jstree='{"icon":"include/noteartefact.png"}' id='904e81e73c3574326d9b9020e6fa68d1'>
                                                 <div class='content_container clearfix'>
-                                                    <p>The "Track Name" property of an <a class='btn btn-default btn-xs' data-toggle='tooltip' title='BLOCK: Click to show in the tree' href='#e760b255354ec5ef3e2fdece2b5048ef'>Constrained Static DM Track</a> does not identify the <a class='' data-toggle='tooltip' href='#fa15b8750111a71e70cab0e6e5301908' title='A mechanism for defining collections of &lt;Descriptive Metadata&gt;.'>DM Scheme</a> whose <a class='' data-toggle='tooltip' href='#f979604d957514c6e9a7662e625194b4' title='A &lt;Descriptive Metadata&gt; Class that is a Subclass of Descriptive Framework.'>DM Framework</a> it references. In the absence of other requirements for "Track Name", it is suggested that files use a value corresponding to the <a class='' data-toggle='tooltip' href='#fa15b8750111a71e70cab0e6e5301908' title='A mechanism for defining collections of &lt;Descriptive Metadata&gt;.'>DM Scheme</a> used in the track, e.g. "AS_11_Core", "AS_11_UKDPP".</p>
+<p>The "Track Name" property of an <a class='btn btn-default btn-xs' data-toggle='tooltip' title='BLOCK: Click to show in the tree' href='#e760b255354ec5ef3e2fdece2b5048ef'>Constrained Static DM Track</a> does not identify the <a class='' data-toggle='tooltip' href='#fa15b8750111a71e70cab0e6e5301908' title='A mechanism for defining collections of &lt;Descriptive Metadata&gt;.'>DM Scheme</a> whose <a class='' data-toggle='tooltip' href='#f979604d957514c6e9a7662e625194b4' title='A &lt;Descriptive Metadata&gt; Class that is a Subclass of Descriptive Framework.'>DM Framework</a> it references. In the absence of other requirements for "Track Name", it is suggested that files use a value corresponding to the <a class='' data-toggle='tooltip' href='#fa15b8750111a71e70cab0e6e5301908' title='A mechanism for defining collections of &lt;Descriptive Metadata&gt;.'>DM Scheme</a> used in the track, e.g. "AS_11_Core", "AS_11_UKDPP".</p>
                                                 </div>
                                             </li>
                                             </ul>
@@ -871,17 +872,17 @@
                                 </li>
                                 <li data-jstree='{"icon":"include/artefact.png"}' id='cf4f540f5853718116c5f565822900c8'>
                                     <div class='content_container clearfix'>
-                                        <p>The XML document is carried in the "UTF-8 Text Data" property of the "UTF-8 Text-based Set".</p>
+<p>The XML document is carried in the "UTF-8 Text Data" property of the "UTF-8 Text-based Set".</p>
                                     </div>
                                 </li>
                                 <li data-jstree='{"icon":"include/artefact.png"}' id='3f1eb01338418dde660525008aa7c759'>
                                     <div class='content_container clearfix'>
-                                        <p>In the "UTF-8 Text-based Set" the property "Text-based Metadata Payload Scheme ID" has the value of <a class='btn btn-default btn-xs' data-toggle='tooltip' title='BLOCK: Click to show in the tree' href='#ab69d5b7ed1ef0f763d4fe94b6ad2213'>DM_XML_Document</a>.</p>
+<p>In the "UTF-8 Text-based Set" the property "Text-based Metadata Payload Scheme ID" has the value of <a class='btn btn-default btn-xs' data-toggle='tooltip' title='BLOCK: Click to show in the tree' href='#ab69d5b7ed1ef0f763d4fe94b6ad2213'>DM_XML_Document</a>.</p>
                                     </div>
                                 <ul>
                                     <li data-jstree='{"icon":"include/block.png"}' id='ab69d5b7ed1ef0f763d4fe94b6ad2213'>
                                         <div class='content_container clearfix'>
-                                            <b>DM_XML_Document</b>
+<b>DM_XML_Document</b>
                                         </div>
                                         <ul>
                                         <li data-jstree='{"icon":"include/file.png"}' id='ab69d5b7ed1ef0f763d4fe94b6ad2213-info'>
@@ -896,12 +897,12 @@
                                         </li>
                                         <li data-jstree='{"icon":"include/artefact.png"}' id='82a7449937d7940cfd055d2d6f441701'>
                                             <div class='content_container clearfix'>
-                                                <h3>SMPTE Metadata Registers &ndash; Labels</h3><table class="table table-bordered table-hover table-condensed"><thead><tr><th>Kind</th><th>UL</th><th>Symbol</th><th>Definition</th></tr></thead><tbody><tr><td>LEAF</td><td>urn:smpte:ul:060e2b34.04010101.0d010801.04010000</td><td>DM_XML_Document</td><td class="smpte_registers_class_definition_column">Descriptive Metadata XML Document in Header Metadata</td></tr></tbody></table><p>View the SMPTE Metadata Registers XML file(s):<ul><li><a href='specification_data_files/www.amwa.tv_c0f7b64/block/XMLDMLabel/artefacts/Labels.xml' target='_blank'>specification_data_files/www.amwa.tv_c0f7b64/block/XMLDMLabel/artefacts/Labels.xml</a></li></ul></p><hr>
+<h3>SMPTE Metadata Registers &ndash; Labels</h3><table class="table table-bordered table-hover table-condensed"><thead><tr><th>Kind</th><th>UL</th><th>Symbol</th><th>Definition</th></tr></thead><tbody><tr><td>LEAF</td><td>urn:smpte:ul:060e2b34.04010101.0d010801.04010000</td><td>DM_XML_Document</td><td class="smpte_registers_class_definition_column">Descriptive Metadata XML Document in Header Metadata</td></tr></tbody></table><p>View the SMPTE Metadata Registers XML file(s):</p><ul><li><a href='specification_data_files/www.amwa.tv_c0f7b64/block/XMLDMLabel/artefacts/Labels.xml' target='_blank'>specification_data_files/www.amwa.tv_c0f7b64/block/XMLDMLabel/artefacts/Labels.xml</a></li></ul><hr>
                                             </div>
                                         </li>
                                         <li data-jstree='{"icon":"include/note.png"}' id='626087bd9101a4331065dcc1ce033421'>
                                             <div class='content_container clearfix'>
-                                                <b>SMPTE Registers Node: MetadataPayloadSchemes</b>
+<b>SMPTE Registers Node: MetadataPayloadSchemes</b>
                                             </div>
                                             <ul>
                                             <li data-jstree='{"icon":"include/file.png"}' id='626087bd9101a4331065dcc1ce033421-info'>
@@ -916,7 +917,7 @@
                                             </li>
                                             <li data-jstree='{"icon":"include/noteartefact.png"}' id='6301558d50af9e530bf7fb7ecec21231'>
                                                 <div class='content_container clearfix'>
-                                                    <h3>SMPTE Metadata Registers &ndash; Labels</h3><table class="table table-bordered table-hover table-condensed"><thead><tr><th>Kind</th><th>UL</th><th>Symbol</th><th>Definition</th></tr></thead><tbody><tr><td>NODE</td><td>urn:smpte:ul:060e2b34.04010101.0d010801.04000000</td><td>MetadataPayloadSchemes</td><td class="smpte_registers_class_definition_column"></td></tr></tbody></table><p>View the SMPTE Metadata Registers XML file(s):<ul><li><a href='specification_data_files/www.amwa.tv_c0f7b64/note/MetadataPayloadSchemes/artefacts/Labels.xml' target='_blank'>specification_data_files/www.amwa.tv_c0f7b64/note/MetadataPayloadSchemes/artefacts/Labels.xml</a></li></ul></p><hr>
+<h3>SMPTE Metadata Registers &ndash; Labels</h3><table class="table table-bordered table-hover table-condensed"><thead><tr><th>Kind</th><th>UL</th><th>Symbol</th><th>Definition</th></tr></thead><tbody><tr><td>NODE</td><td>urn:smpte:ul:060e2b34.04010101.0d010801.04000000</td><td>MetadataPayloadSchemes</td><td class="smpte_registers_class_definition_column"></td></tr></tbody></table><p>View the SMPTE Metadata Registers XML file(s):</p><ul><li><a href='specification_data_files/www.amwa.tv_c0f7b64/note/MetadataPayloadSchemes/artefacts/Labels.xml' target='_blank'>specification_data_files/www.amwa.tv_c0f7b64/note/MetadataPayloadSchemes/artefacts/Labels.xml</a></li></ul><hr>
                                                 </div>
                                             </li>
                                             </ul>
@@ -927,17 +928,17 @@
                                 </li>
                                 <li data-jstree='{"icon":"include/artefact.png"}' id='5a7589d6bb98bff52264d9bfc6c11e5e'>
                                     <div class='content_container clearfix'>
-                                        <p>In the "UTF-8 Text-based Set" the property "Text Data Description" is present and has a value equal to the namespace of the root element of the XML document.</p>
+<p>In the "UTF-8 Text-based Set" the property "Text Data Description" is present and has a value equal to the namespace of the root element of the XML document.</p>
                                     </div>
                                 </li>
                                 <li data-jstree='{"icon":"include/artefact.png"}' id='e4ebd2c24a21e8f70cd9eff2997d0cf9'>
                                     <div class='content_container clearfix'>
-                                        <p><a class='' data-toggle='tooltip' href='#0be67c0d2e1ad69350757ff1235ce942' title='A syntax encoding for &quot;Local Sets&quot; that uses 2-byte Tags and 2-byte Lengths.'>2-byte Local Length Encoding</a> is used for both the "Text-Based DM Framework" and the "UTF-8 Text-based Set".</p>
+<p><a class='' data-toggle='tooltip' href='#0be67c0d2e1ad69350757ff1235ce942' title='A syntax encoding for &quot;Local Sets&quot; that uses 2-byte Tags and 2-byte Lengths.'>2-byte Local Length Encoding</a> is used for both the "Text-Based DM Framework" and the "UTF-8 Text-based Set".</p>
                                     </div>
                                 </li>
                                 <li data-jstree='{"icon":"include/note.png"}' id='f785b192cb18d24935d69bc923eecd30'>
                                     <div class='content_container clearfix'>
-                                        <b>ST 2057 Implementation Notes</b>
+<b>ST 2057 Implementation Notes</b>
                                     </div>
                                     <ul>
                                     <li data-jstree='{"icon":"include/file.png"}' id='f785b192cb18d24935d69bc923eecd30-info'>
@@ -952,13 +953,13 @@
                                     </li>
                                     <li data-jstree='{"icon":"include/noteartefact.png"}' id='5d5b72cdd3009c5ce71c6efe4575ff84'>
                                         <div class='content_container clearfix'>
-                                            <h4 id="xml-document-size-limits">XML Document size limits</h4>
-                                            
-                                            <p>The constraints mean that Byte 6 of the two set keys will be 53h. The amount of text data must be equal to or less than 65535 bytes.</p>
-                                            
-                                            <h4 id="amendment">Amendment</h4>
-                                            
-                                            <p>A crucial amendment to ST 2057 exists and must be read carefully -- it changes the ULs of various keys used in the Standard.</p>
+<h4>XML Document size limits</h4>
+
+<p>The constraints mean that Byte 6 of the two set keys will be 53h. The amount of text data must be equal to or less than 65535 bytes.</p>
+
+<h4>Amendment</h4>
+
+<p>A crucial amendment to ST 2057 exists and must be read carefully -- it changes the ULs of various keys used in the Standard.</p>
                                         </div>
                                     </li>
                                     </ul>
@@ -971,7 +972,7 @@
                     </li>
                     <li data-jstree='{"icon":"include/block.png"}' id='e11e5802145c365e6c9667ff70649fb7'>
                         <div class='content_container clearfix'>
-                            <b>AS-11 Segmentation DM</b>
+<b>AS-11 Segmentation DM</b>
                         </div>
                         <ul>
                         <li data-jstree='{"icon":"include/file.png"}' id='e11e5802145c365e6c9667ff70649fb7-info'>
@@ -986,12 +987,12 @@
                         </li>
                         <li data-jstree='{"icon":"include/artefact.png"}' id='7c0cc9679b50b7a711d9d0c9245fefc6'>
                             <div class='content_container clearfix'>
-                                <p>The file contains exactly one <a class='btn btn-default btn-xs' data-toggle='tooltip' title='BLOCK: Click to show in the tree' href='#c03a2dcf95a7722b2e712bd47e86f72e'>Program Segmentation Track</a>.</p>
+<p>The file contains exactly one <a class='btn btn-default btn-xs' data-toggle='tooltip' title='BLOCK: Click to show in the tree' href='#c03a2dcf95a7722b2e712bd47e86f72e'>Program Segmentation Track</a>.</p>
                             </div>
                         <ul>
                             <li data-jstree='{"icon":"include/block.png"}' id='c03a2dcf95a7722b2e712bd47e86f72e'>
                                 <div class='content_container clearfix'>
-                                    <b>Program Segmentation Track</b>
+<b>Program Segmentation Track</b>
                                 </div>
                                 <ul>
                                 <li data-jstree='{"icon":"include/file.png"}' id='c03a2dcf95a7722b2e712bd47e86f72e-info'>
@@ -1006,22 +1007,22 @@
                                 </li>
                                 <li data-jstree='{"icon":"include/artefact.png"}' id='44042ef050b6bb7043fc6cb01166743b'>
                                     <div class='content_container clearfix'>
-                                        <p>A <a class='btn btn-default btn-xs' data-toggle='tooltip' title='BLOCK: Click to show in the tree' href='#c03a2dcf95a7722b2e712bd47e86f72e'>Program Segmentation Track</a> is a <a class='' data-toggle='tooltip' href='#95702d9e1a85ceed443a5f54670378d1' title='A specialized MXF &lt;Track&gt; that describes a timeline by specifying an origin and rate.'>Timeline Track</a> that contains a <a class='' data-toggle='tooltip' href='#e31d50d6645c26249b4577df773fe833' title='A Structural Metadata Class that is a Subclass of Structural Component.'>Sequence</a> that is composed of zero or more <a class='' data-toggle='tooltip' href='#008fdaf504f335d0412e6a077c2d6cc1' title='An MXF structure used to describe empty space on a &lt;Timeline Track&gt;.'>Filler</a> objects and one or more <a class='' data-toggle='tooltip' href='#bfea06d3e4dc94d66915f7121358ad07' title='An MXF structure used to generically contain &lt;Descriptive Metadata&gt; on a &lt;Track&gt;.'>DM Segment</a> objects.</p>
+<p>A <a class='btn btn-default btn-xs' data-toggle='tooltip' title='BLOCK: Click to show in the tree' href='#c03a2dcf95a7722b2e712bd47e86f72e'>Program Segmentation Track</a> is a <a class='' data-toggle='tooltip' href='#95702d9e1a85ceed443a5f54670378d1' title='A specialized MXF &lt;Track&gt; that describes a timeline by specifying an origin and rate.'>Timeline Track</a> that contains a <a class='' data-toggle='tooltip' href='#e31d50d6645c26249b4577df773fe833' title='A Structural Metadata Class that is a Subclass of Structural Component.'>Sequence</a> that is composed of zero or more <a class='' data-toggle='tooltip' href='#008fdaf504f335d0412e6a077c2d6cc1' title='An MXF structure used to describe empty space on a &lt;Timeline Track&gt;.'>Filler</a> objects and one or more <a class='' data-toggle='tooltip' href='#bfea06d3e4dc94d66915f7121358ad07' title='An MXF structure used to generically contain &lt;Descriptive Metadata&gt; on a &lt;Track&gt;.'>DM Segment</a> objects.</p>
                                     </div>
                                 </li>
                                 <li data-jstree='{"icon":"include/artefact.png"}' id='4ae484ff7699f575b9699d3dea10f8ff'>
                                     <div class='content_container clearfix'>
-                                        <p>Each <a class='' data-toggle='tooltip' href='#bfea06d3e4dc94d66915f7121358ad07' title='An MXF structure used to generically contain &lt;Descriptive Metadata&gt; on a &lt;Track&gt;.'>DM Segment</a> object in the <a class='btn btn-default btn-xs' data-toggle='tooltip' title='BLOCK: Click to show in the tree' href='#c03a2dcf95a7722b2e712bd47e86f72e'>Program Segmentation Track</a> represents, and aligns with, a region of program content in the <a class='' data-toggle='tooltip' href='#ccdf24b35f7580ec0868e03c15731b53' title='&lt;Essence&gt; data referenced by a &lt;Source Package&gt;.'>Source Essence</a>.</p>
+<p>Each <a class='' data-toggle='tooltip' href='#bfea06d3e4dc94d66915f7121358ad07' title='An MXF structure used to generically contain &lt;Descriptive Metadata&gt; on a &lt;Track&gt;.'>DM Segment</a> object in the <a class='btn btn-default btn-xs' data-toggle='tooltip' title='BLOCK: Click to show in the tree' href='#c03a2dcf95a7722b2e712bd47e86f72e'>Program Segmentation Track</a> represents, and aligns with, a region of program content in the <a class='' data-toggle='tooltip' href='#ccdf24b35f7580ec0868e03c15731b53' title='&lt;Essence&gt; data referenced by a &lt;Source Package&gt;.'>Source Essence</a>.</p>
                                     </div>
                                 </li>
                                 <li data-jstree='{"icon":"include/artefact.png"}' id='2eba65e338ac564ca586d37c2932d15a'>
                                     <div class='content_container clearfix'>
-                                        <p>Each <a class='' data-toggle='tooltip' href='#008fdaf504f335d0412e6a077c2d6cc1' title='An MXF structure used to describe empty space on a &lt;Timeline Track&gt;.'>Filler</a> object in the <a class='btn btn-default btn-xs' data-toggle='tooltip' title='BLOCK: Click to show in the tree' href='#c03a2dcf95a7722b2e712bd47e86f72e'>Program Segmentation Track</a> represents, and aligns with, a region of non-program content in the <a class='' data-toggle='tooltip' href='#ccdf24b35f7580ec0868e03c15731b53' title='&lt;Essence&gt; data referenced by a &lt;Source Package&gt;.'>Source Essence</a>.</p>
+<p>Each <a class='' data-toggle='tooltip' href='#008fdaf504f335d0412e6a077c2d6cc1' title='An MXF structure used to describe empty space on a &lt;Timeline Track&gt;.'>Filler</a> object in the <a class='btn btn-default btn-xs' data-toggle='tooltip' title='BLOCK: Click to show in the tree' href='#c03a2dcf95a7722b2e712bd47e86f72e'>Program Segmentation Track</a> represents, and aligns with, a region of non-program content in the <a class='' data-toggle='tooltip' href='#ccdf24b35f7580ec0868e03c15731b53' title='&lt;Essence&gt; data referenced by a &lt;Source Package&gt;.'>Source Essence</a>.</p>
                                     </div>
                                 </li>
                                 <li data-jstree='{"icon":"include/note.png"}' id='445d9b94fef9e897a71ba647ffba5710'>
                                     <div class='content_container clearfix'>
-                                        <b>Track Name</b>
+<b>Track Name</b>
                                     </div>
                                     <ul>
                                     <li data-jstree='{"icon":"include/file.png"}' id='445d9b94fef9e897a71ba647ffba5710-info'>
@@ -1036,14 +1037,14 @@
                                     </li>
                                     <li data-jstree='{"icon":"include/noteartefact.png"}' id='5837cb682b834ec71c4b27a99e7b6663'>
                                         <div class='content_container clearfix'>
-                                            <p>The "Track Name" property of the <a class='btn btn-default btn-xs' data-toggle='tooltip' title='BLOCK: Click to show in the tree' href='#c03a2dcf95a7722b2e712bd47e86f72e'>Program Segmentation Track</a> does not identify the segmentation metadata scheme. In the absence of other requirements for "Track Name", it is suggested that files use a value corresponding to the <a class='' data-toggle='tooltip' href='#fa15b8750111a71e70cab0e6e5301908' title='A mechanism for defining collections of &lt;Descriptive Metadata&gt;.'>DM Scheme</a> used in the track, e.g.  "AS_11_Segmentation".</p>
+<p>The "Track Name" property of the <a class='btn btn-default btn-xs' data-toggle='tooltip' title='BLOCK: Click to show in the tree' href='#c03a2dcf95a7722b2e712bd47e86f72e'>Program Segmentation Track</a> does not identify the segmentation metadata scheme. In the absence of other requirements for "Track Name", it is suggested that files use a value corresponding to the <a class='' data-toggle='tooltip' href='#fa15b8750111a71e70cab0e6e5301908' title='A mechanism for defining collections of &lt;Descriptive Metadata&gt;.'>DM Scheme</a> used in the track, e.g.  "AS_11_Segmentation".</p>
                                         </div>
                                     </li>
                                     </ul>
                                 </li>
                                 <li data-jstree='{"icon":"include/note.png"}' id='9d0a8b5a33245e903f8a82d4e8089b6f'>
                                     <div class='content_container clearfix'>
-                                        <b>Determining SOM and EOM</b>
+<b>Determining SOM and EOM</b>
                                     </div>
                                     <ul>
                                     <li data-jstree='{"icon":"include/file.png"}' id='9d0a8b5a33245e903f8a82d4e8089b6f-info'>
@@ -1058,14 +1059,14 @@
                                     </li>
                                     <li data-jstree='{"icon":"include/noteartefact.png"}' id='eef674d3b8a537b9bd00f1050d298339'>
                                         <div class='content_container clearfix'>
-                                            <p>The start and end timecodes for program regions, commonly referred to as "start of material" (som) and "end of material" (eom), can be determined based on the location of <a class='' data-toggle='tooltip' href='#bfea06d3e4dc94d66915f7121358ad07' title='An MXF structure used to generically contain &lt;Descriptive Metadata&gt; on a &lt;Track&gt;.'>DM Segment</a> objects on the <a class='btn btn-default btn-xs' data-toggle='tooltip' title='BLOCK: Click to show in the tree' href='#c03a2dcf95a7722b2e712bd47e86f72e'>Program Segmentation Track</a> relative to the adjacent <a class='' data-toggle='tooltip' href='#577a597a799ec651dace5ea5bf204b2e' title='An MXF &lt;Track&gt; that stores one or more &lt;Timecode Component&gt;s.'>Timecode Track</a> in the <a class='' data-toggle='tooltip' href='#2d90a6d5e37bc488b754432604d27810' title='An MXF data structure that describe an output timeline of the file.'>Material Package</a> that contains the <a class='btn btn-default btn-xs' data-toggle='tooltip' title='BLOCK: Click to show in the tree' href='#c03a2dcf95a7722b2e712bd47e86f72e'>Program Segmentation Track</a>.</p>
+<p>The start and end timecodes for program regions, commonly referred to as "start of material" (som) and "end of material" (eom), can be determined based on the location of <a class='' data-toggle='tooltip' href='#bfea06d3e4dc94d66915f7121358ad07' title='An MXF structure used to generically contain &lt;Descriptive Metadata&gt; on a &lt;Track&gt;.'>DM Segment</a> objects on the <a class='btn btn-default btn-xs' data-toggle='tooltip' title='BLOCK: Click to show in the tree' href='#c03a2dcf95a7722b2e712bd47e86f72e'>Program Segmentation Track</a> relative to the adjacent <a class='' data-toggle='tooltip' href='#577a597a799ec651dace5ea5bf204b2e' title='An MXF &lt;Track&gt; that stores one or more &lt;Timecode Component&gt;s.'>Timecode Track</a> in the <a class='' data-toggle='tooltip' href='#2d90a6d5e37bc488b754432604d27810' title='An MXF data structure that describe an output timeline of the file.'>Material Package</a> that contains the <a class='btn btn-default btn-xs' data-toggle='tooltip' title='BLOCK: Click to show in the tree' href='#c03a2dcf95a7722b2e712bd47e86f72e'>Program Segmentation Track</a>.</p>
                                         </div>
                                     </li>
                                     </ul>
                                 </li>
                                 <li data-jstree='{"icon":"include/note.png"}' id='22350672195bb0c2e01f4b59f47f634f'>
                                     <div class='content_container clearfix'>
-                                        <b>Non-Programme Content</b>
+<b>Non-Programme Content</b>
                                     </div>
                                     <ul>
                                     <li data-jstree='{"icon":"include/file.png"}' id='22350672195bb0c2e01f4b59f47f634f-info'>
@@ -1080,14 +1081,14 @@
                                     </li>
                                     <li data-jstree='{"icon":"include/noteartefact.png"}' id='d5f5ba477b6e5130ccc3f00d247921ac'>
                                         <div class='content_container clearfix'>
-                                            <p>Examples of non-programme content include: black, ident, clock.</p>
+<p>Examples of non-programme content include: black, ident, clock.</p>
                                         </div>
                                     </li>
                                     </ul>
                                 </li>
                                 <li data-jstree='{"icon":"include/note.png"}' id='e1bd5d0aaa19942955616af9733c0131'>
                                     <div class='content_container clearfix'>
-                                        <b>Track Composition</b>
+<b>Track Composition</b>
                                     </div>
                                     <ul>
                                     <li data-jstree='{"icon":"include/file.png"}' id='e1bd5d0aaa19942955616af9733c0131-info'>
@@ -1102,7 +1103,7 @@
                                     </li>
                                     <li data-jstree='{"icon":"include/noteartefact.png"}' id='e553256f4481de7d231b60bc2a1f8034'>
                                         <div class='content_container clearfix'>
-                                            <p>Constraints set out in <a class='' data-toggle='tooltip' href='#eba7ce4fd3c9ecc9a139eccb9617e415' title='Material Exchange Format (MXF) — File Format Specification'>SMPTE ST 377-1:2011</a> and <a class='' data-toggle='tooltip' href='#fe7b7090d8e7f7d10f9a11168624d72e' title='MXF Operational pattern 1A (Single Item, Single Package)'>SMPTE ST 378:2004</a> mean that the <a class='btn btn-default btn-xs' data-toggle='tooltip' title='BLOCK: Click to show in the tree' href='#c03a2dcf95a7722b2e712bd47e86f72e'>Program Segmentation Track</a> is necessarily full from start to finish and is the same length as all other <a class='' data-toggle='tooltip' href='#95702d9e1a85ceed443a5f54670378d1' title='A specialized MXF &lt;Track&gt; that describes a timeline by specifying an origin and rate.'>Timeline Track</a>s in the <a class='' data-toggle='tooltip' href='#2d90a6d5e37bc488b754432604d27810' title='An MXF data structure that describe an output timeline of the file.'>Material Package</a>.</p>
+<p>Constraints set out in <a class='' data-toggle='tooltip' href='#eba7ce4fd3c9ecc9a139eccb9617e415' title='Material Exchange Format (MXF) — File Format Specification'>SMPTE ST 377-1:2011</a> and <a class='' data-toggle='tooltip' href='#fe7b7090d8e7f7d10f9a11168624d72e' title='MXF Operational pattern 1A (Single Item, Single Package)'>SMPTE ST 378:2004</a> mean that the <a class='btn btn-default btn-xs' data-toggle='tooltip' title='BLOCK: Click to show in the tree' href='#c03a2dcf95a7722b2e712bd47e86f72e'>Program Segmentation Track</a> is necessarily full from start to finish and is the same length as all other <a class='' data-toggle='tooltip' href='#95702d9e1a85ceed443a5f54670378d1' title='A specialized MXF &lt;Track&gt; that describes a timeline by specifying an origin and rate.'>Timeline Track</a>s in the <a class='' data-toggle='tooltip' href='#2d90a6d5e37bc488b754432604d27810' title='An MXF data structure that describe an output timeline of the file.'>Material Package</a>.</p>
                                         </div>
                                     </li>
                                     </ul>
@@ -1113,17 +1114,17 @@
                         </li>
                         <li data-jstree='{"icon":"include/artefact.png"}' id='de91870ecf8ca40da2722dc6d9328519'>
                             <div class='content_container clearfix'>
-                                <p>This <a class='' data-toggle='tooltip' href='#a6e70078edee6f3408e4ecf62cc077e8' title='MXF data structure used to describe the content structure.'>Track</a> is in the <a class='' data-toggle='tooltip' href='#2d90a6d5e37bc488b754432604d27810' title='An MXF data structure that describe an output timeline of the file.'>Material Package</a>.</p>
+<p>This <a class='' data-toggle='tooltip' href='#a6e70078edee6f3408e4ecf62cc077e8' title='MXF data structure used to describe the content structure.'>Track</a> is in the <a class='' data-toggle='tooltip' href='#2d90a6d5e37bc488b754432604d27810' title='An MXF data structure that describe an output timeline of the file.'>Material Package</a>.</p>
                             </div>
                         </li>
                         <li data-jstree='{"icon":"include/artefact.png"}' id='0a63f58b16e44abcb749371feade419c'>
                             <div class='content_container clearfix'>
-                                <p>Each <a class='' data-toggle='tooltip' href='#bfea06d3e4dc94d66915f7121358ad07' title='An MXF structure used to generically contain &lt;Descriptive Metadata&gt; on a &lt;Track&gt;.'>DM Segment</a> object in the <a class='' data-toggle='tooltip' href='#a6e70078edee6f3408e4ecf62cc077e8' title='MXF data structure used to describe the content structure.'>Track</a> strongly references an instance of <a class='btn btn-default btn-xs' data-toggle='tooltip' title='BLOCK: Click to show in the tree' href='#ec18d2b32fcd00072dcf9ab0db804088'>DM_AS_11_Segmentation</a>.</p>
+<p>Each <a class='' data-toggle='tooltip' href='#bfea06d3e4dc94d66915f7121358ad07' title='An MXF structure used to generically contain &lt;Descriptive Metadata&gt; on a &lt;Track&gt;.'>DM Segment</a> object in the <a class='' data-toggle='tooltip' href='#a6e70078edee6f3408e4ecf62cc077e8' title='MXF data structure used to describe the content structure.'>Track</a> strongly references an instance of <a class='btn btn-default btn-xs' data-toggle='tooltip' title='BLOCK: Click to show in the tree' href='#ec18d2b32fcd00072dcf9ab0db804088'>DM_AS_11_Segmentation</a>.</p>
                             </div>
                         <ul>
                             <li data-jstree='{"icon":"include/block.png"}' id='ec18d2b32fcd00072dcf9ab0db804088'>
                                 <div class='content_container clearfix'>
-                                    <b>DM_AS_11_Segmentation</b>
+<b>DM_AS_11_Segmentation</b>
                                 </div>
                                 <ul>
                                 <li data-jstree='{"icon":"include/file.png"}' id='ec18d2b32fcd00072dcf9ab0db804088-info'>
@@ -1138,12 +1139,12 @@
                                 </li>
                                 <li data-jstree='{"icon":"include/artefact.png"}' id='d9fe70fa45a25c6fbd80d7394a1c9406'>
                                     <div class='content_container clearfix'>
-                                        <p>This <a class='' data-toggle='tooltip' href='#fa15b8750111a71e70cab0e6e5301908' title='A mechanism for defining collections of &lt;Descriptive Metadata&gt;.'>DM Scheme</a> is identified by <a class='btn btn-default btn-xs' data-toggle='tooltip' title='BLOCK: Click to show in the tree' href='#91ac3ba485f904cb15d33492dd4f082c'>DM_AS_11_Segmentation</a> (the <a class='' data-toggle='tooltip' href='#df671ac703447bc0313d1f112aa729ec' title='An identifier for a &lt;DM Scheme&gt;. It is stored in an MXF file&apos;s Preface::DMSchemes property to signify the use of that &lt;DM Scheme&gt; in the file.'>DM Scheme Label</a>) and has the following members: <a class='btn btn-default btn-xs' data-toggle='tooltip' title='BLOCK: Click to show in the tree' href='#8ad1820789cd6e31c3bac115acd7f935'>DM_AS_11_Segmentation_Framework</a> (the <a class='' data-toggle='tooltip' href='#f979604d957514c6e9a7662e625194b4' title='A &lt;Descriptive Metadata&gt; Class that is a Subclass of Descriptive Framework.'>DM Framework</a>).</p>
+<p>This <a class='' data-toggle='tooltip' href='#fa15b8750111a71e70cab0e6e5301908' title='A mechanism for defining collections of &lt;Descriptive Metadata&gt;.'>DM Scheme</a> is identified by <a class='btn btn-default btn-xs' data-toggle='tooltip' title='BLOCK: Click to show in the tree' href='#91ac3ba485f904cb15d33492dd4f082c'>DM_AS_11_Segmentation</a> (the <a class='' data-toggle='tooltip' href='#df671ac703447bc0313d1f112aa729ec' title='An identifier for a &lt;DM Scheme&gt;. It is stored in an MXF file&apos;s Preface::DMSchemes property to signify the use of that &lt;DM Scheme&gt; in the file.'>DM Scheme Label</a>) and has the following members: <a class='btn btn-default btn-xs' data-toggle='tooltip' title='BLOCK: Click to show in the tree' href='#8ad1820789cd6e31c3bac115acd7f935'>DM_AS_11_Segmentation_Framework</a> (the <a class='' data-toggle='tooltip' href='#f979604d957514c6e9a7662e625194b4' title='A &lt;Descriptive Metadata&gt; Class that is a Subclass of Descriptive Framework.'>DM Framework</a>).</p>
                                     </div>
                                 <ul>
                                     <li data-jstree='{"icon":"include/block.png"}' id='91ac3ba485f904cb15d33492dd4f082c'>
                                         <div class='content_container clearfix'>
-                                            <b>DM_AS_11_Segmentation</b>
+<b>DM_AS_11_Segmentation</b>
                                         </div>
                                         <ul>
                                         <li data-jstree='{"icon":"include/file.png"}' id='91ac3ba485f904cb15d33492dd4f082c-info'>
@@ -1158,14 +1159,14 @@
                                         </li>
                                         <li data-jstree='{"icon":"include/artefact.png"}' id='9bfd558265e63bda967b24b2d8d8108c'>
                                             <div class='content_container clearfix'>
-                                                <h3>SMPTE Metadata Registers &ndash; Labels</h3><table class="table table-bordered table-hover table-condensed"><thead><tr><th>Kind</th><th>UL</th><th>Symbol</th><th>Definition</th></tr></thead><tbody><tr><td>LEAF</td><td>urn:smpte:ul:060e2b34.04010101.0d010701.0b020000</td><td>DM_AS_11_Segmentation</td><td class="smpte_registers_class_definition_column">AS-11 segmentation metadata scheme</td></tr></tbody></table><p>View the SMPTE Metadata Registers XML file(s):<ul><li><a href='specification_data_files/www.amwa.tv_c0f7b64/block/505L/artefacts/Labels.xml' target='_blank'>specification_data_files/www.amwa.tv_c0f7b64/block/505L/artefacts/Labels.xml</a></li></ul></p><hr>
+<h3>SMPTE Metadata Registers &ndash; Labels</h3><table class="table table-bordered table-hover table-condensed"><thead><tr><th>Kind</th><th>UL</th><th>Symbol</th><th>Definition</th></tr></thead><tbody><tr><td>LEAF</td><td>urn:smpte:ul:060e2b34.04010101.0d010701.0b020000</td><td>DM_AS_11_Segmentation</td><td class="smpte_registers_class_definition_column">AS-11 segmentation metadata scheme</td></tr></tbody></table><p>View the SMPTE Metadata Registers XML file(s):</p><ul><li><a href='specification_data_files/www.amwa.tv_c0f7b64/block/505L/artefacts/Labels.xml' target='_blank'>specification_data_files/www.amwa.tv_c0f7b64/block/505L/artefacts/Labels.xml</a></li></ul><hr>
                                             </div>
                                         </li>
                                         </ul>
                                     </li>
                                     <li data-jstree='{"icon":"include/block.png"}' id='8ad1820789cd6e31c3bac115acd7f935'>
                                         <div class='content_container clearfix'>
-                                            <b>DM_AS_11_Segmentation_Framework</b>
+<b>DM_AS_11_Segmentation_Framework</b>
                                         </div>
                                         <ul>
                                         <li data-jstree='{"icon":"include/file.png"}' id='8ad1820789cd6e31c3bac115acd7f935-info'>
@@ -1180,7 +1181,7 @@
                                         </li>
                                         <li data-jstree='{"icon":"include/artefact.png"}' id='4199e79bf31c83b325d87d3f19e4d4e5'>
                                             <div class='content_container clearfix'>
-                                                <div class="smpte_registers_class_group"><h4>Framework / Group</h4><p><strong>UL: </strong>urn:smpte:ul:060e2b34.027f0101.0d010701.0b020100</p><p><strong>Symbol: </strong>DM_AS_11_Segmentation_Framework</p><h4>Properties / Elements in the Framework:</h4><table class="smpte_registers_class_groups table table-bordered table-hover table-condensed"><thead><tr><th class="smpte_registers_class_ul_column">UL</th><th>Symbol</th><th class="smpte_registers_class_definition_column">Definition</th><th>Type Symbol</th><th>Is Optional</th><th>Restrictions</th></tr></thead><tbody><tr><td class="smpte_registers_class_ul_column">urn:smpte:ul:060e2b34.01010101.0d010701.0b020101</td><td>AS_11_Part_Number</td><td class="smpte_registers_class_definition_column">A number that both: uniquely identifies the part / segment within the programme; and identifies the position of the part / segment within the programme.</td><td>UInt16</td><td>false</td><td><br/></td></tr><tr><td class="smpte_registers_class_ul_column">urn:smpte:ul:060e2b34.01010101.0d010701.0b020102</td><td>AS_11_Part_Total</td><td class="smpte_registers_class_definition_column">The count of parts / segments in the entire programme.</td><td>UInt16</td><td>false</td><td><br/></td></tr></tbody></table></div><p>View the SMPTE Metadata Registers XML file(s):<ul><li><a href='specification_data_files/www.amwa.tv_c0f7b64/block/505F/artefacts/Groups.xml' target='_blank'>specification_data_files/www.amwa.tv_c0f7b64/block/505F/artefacts/Groups.xml</a></li><li><a href='specification_data_files/www.amwa.tv_c0f7b64/block/505F/artefacts/Elements.xml' target='_blank'>specification_data_files/www.amwa.tv_c0f7b64/block/505F/artefacts/Elements.xml</a></li><li><a href='specification_data_files/www.amwa.tv_c0f7b64/block/505F/artefacts/Types.xml' target='_blank'>specification_data_files/www.amwa.tv_c0f7b64/block/505F/artefacts/Types.xml</a></li></ul></p><hr>
+<div class="smpte_registers_class_group"><h4>Framework / Group</h4><p><strong>UL: </strong>urn:smpte:ul:060e2b34.027f0101.0d010701.0b020100</p><p><strong>Symbol: </strong>DM_AS_11_Segmentation_Framework</p><h4>Properties / Elements in the Framework:</h4><table class="smpte_registers_class_groups table table-bordered table-hover table-condensed"><thead><tr><th class="smpte_registers_class_ul_column">UL</th><th>Symbol</th><th class="smpte_registers_class_definition_column">Definition</th><th>Type Symbol</th><th>Is Optional</th><th>Restrictions</th></tr></thead><tbody><tr><td class="smpte_registers_class_ul_column">urn:smpte:ul:060e2b34.01010101.0d010701.0b020101</td><td>AS_11_Part_Number</td><td class="smpte_registers_class_definition_column">A number that both: uniquely identifies the part / segment within the programme; and identifies the position of the part / segment within the programme.</td><td>UInt16</td><td>false</td><td><br/></td></tr><tr><td class="smpte_registers_class_ul_column">urn:smpte:ul:060e2b34.01010101.0d010701.0b020102</td><td>AS_11_Part_Total</td><td class="smpte_registers_class_definition_column">The count of parts / segments in the entire programme.</td><td>UInt16</td><td>false</td><td><br/></td></tr></tbody></table></div><p>View the SMPTE Metadata Registers XML file(s):</p><ul><li><a href='specification_data_files/www.amwa.tv_c0f7b64/block/505F/artefacts/Groups.xml' target='_blank'>specification_data_files/www.amwa.tv_c0f7b64/block/505F/artefacts/Groups.xml</a></li><li><a href='specification_data_files/www.amwa.tv_c0f7b64/block/505F/artefacts/Elements.xml' target='_blank'>specification_data_files/www.amwa.tv_c0f7b64/block/505F/artefacts/Elements.xml</a></li><li><a href='specification_data_files/www.amwa.tv_c0f7b64/block/505F/artefacts/Types.xml' target='_blank'>specification_data_files/www.amwa.tv_c0f7b64/block/505F/artefacts/Types.xml</a></li></ul><hr>
                                             </div>
                                         </li>
                                         </ul>
@@ -1193,7 +1194,7 @@
                         </li>
                         <li data-jstree='{"icon":"include/note.png"}' id='71709e1aacfdcbc04ab91bf0f90cc282'>
                             <div class='content_container clearfix'>
-                                <b>Implementation Notes</b>
+<b>Implementation Notes</b>
                             </div>
                             <ul>
                             <li data-jstree='{"icon":"include/file.png"}' id='71709e1aacfdcbc04ab91bf0f90cc282-info'>
@@ -1208,14 +1209,14 @@
                             </li>
                             <li data-jstree='{"icon":"include/noteartefact.png"}' id='ca5e1b21a452ec88c02d839c2addd4ec'>
                                 <div class='content_container clearfix'>
-                                    <p>The <a class='' data-toggle='tooltip' href='#a6e70078edee6f3408e4ecf62cc077e8' title='MXF data structure used to describe the content structure.'>Track</a> can be identified by an MXF reader by the presence of <a class='' data-toggle='tooltip' href='#bfea06d3e4dc94d66915f7121358ad07' title='An MXF structure used to generically contain &lt;Descriptive Metadata&gt; on a &lt;Track&gt;.'>DM Segment</a> objects that each strongly reference an instance of the "DM_AS_11_Segmentation_Framework" <a class='' data-toggle='tooltip' href='#f979604d957514c6e9a7662e625194b4' title='A &lt;Descriptive Metadata&gt; Class that is a Subclass of Descriptive Framework.'>DM Framework</a>.</p>
+<p>The <a class='' data-toggle='tooltip' href='#a6e70078edee6f3408e4ecf62cc077e8' title='MXF data structure used to describe the content structure.'>Track</a> can be identified by an MXF reader by the presence of <a class='' data-toggle='tooltip' href='#bfea06d3e4dc94d66915f7121358ad07' title='An MXF structure used to generically contain &lt;Descriptive Metadata&gt; on a &lt;Track&gt;.'>DM Segment</a> objects that each strongly reference an instance of the "DM_AS_11_Segmentation_Framework" <a class='' data-toggle='tooltip' href='#f979604d957514c6e9a7662e625194b4' title='A &lt;Descriptive Metadata&gt; Class that is a Subclass of Descriptive Framework.'>DM Framework</a>.</p>
                                 </div>
                             </li>
                             </ul>
                         </li>
                         <li data-jstree='{"icon":"include/note.png"}' id='6b88436a2c282601ca21b4ac70f3f55e'>
                             <div class='content_container clearfix'>
-                                <b>Repetition of Header Metadata</b>
+<b>Repetition of Header Metadata</b>
                             </div>
                             <ul>
                             <li data-jstree='{"icon":"include/file.png"}' id='6b88436a2c282601ca21b4ac70f3f55e-info'>
@@ -1230,7 +1231,7 @@
                             </li>
                             <li data-jstree='{"icon":"include/noteartefact.png"}' id='d102e2d354dad9c53374a1646d9f2319'>
                                 <div class='content_container clearfix'>
-                                    <p>Repetition of Header Metadata in the Footer Partition is not considered to be another instance of any of the components of that Header Metadata.</p>
+<p>Repetition of Header Metadata in the Footer Partition is not considered to be another instance of any of the components of that Header Metadata.</p>
                                 </div>
                             </li>
                             </ul>
@@ -1239,7 +1240,7 @@
                     </li>
                     <li data-jstree='{"icon":"include/block.png"}' id='d08286242519735b75ead2909103eaa6'>
                         <div class='content_container clearfix'>
-                            <b>Specification Identification</b>
+<b>Specification Identification</b>
                         </div>
                         <ul>
                         <li data-jstree='{"icon":"include/file.png"}' id='d08286242519735b75ead2909103eaa6-info'>
@@ -1254,12 +1255,12 @@
                         </li>
                         <li data-jstree='{"icon":"include/artefact.png"}' id='708cfa833e57786a701e991fac406159'>
                             <div class='content_container clearfix'>
-                                <p>The <a class='btn btn-default btn-xs' data-toggle='tooltip' title='BLOCK: Click to show in the tree' href='#35be719938d234d4793846f59315ca8b'>Specification_Identifiers</a> Element is present in the <a class='' data-toggle='tooltip' href='#ad135e3f69cb6b33c83ac0b2d1e56343' title='The root of the Strong Reference tree of the &lt;Header Metadata&gt;.'>Preface</a> of the <a class='' data-toggle='tooltip' href='#45f1ce7af39bf59bacc68ef43c1c556a' title='The first &lt;Partition&gt; in the MXF file. This &lt;Partition&gt; always contains a copy of the &lt;Header Metadata&gt;.'>Header Partition</a>.</p>
+<p>The <a class='btn btn-default btn-xs' data-toggle='tooltip' title='BLOCK: Click to show in the tree' href='#35be719938d234d4793846f59315ca8b'>Specification_Identifiers</a> Element is present in the <a class='' data-toggle='tooltip' href='#ad135e3f69cb6b33c83ac0b2d1e56343' title='The root of the Strong Reference tree of the &lt;Header Metadata&gt;.'>Preface</a> of the <a class='' data-toggle='tooltip' href='#45f1ce7af39bf59bacc68ef43c1c556a' title='The first &lt;Partition&gt; in the MXF file. This &lt;Partition&gt; always contains a copy of the &lt;Header Metadata&gt;.'>Header Partition</a>.</p>
                             </div>
                         <ul>
                             <li data-jstree='{"icon":"include/block.png"}' id='35be719938d234d4793846f59315ca8b'>
                                 <div class='content_container clearfix'>
-                                    <b>Specification_Identifiers</b>
+<b>Specification_Identifiers</b>
                                 </div>
                                 <ul>
                                 <li data-jstree='{"icon":"include/file.png"}' id='35be719938d234d4793846f59315ca8b-info'>
@@ -1274,12 +1275,12 @@
                                 </li>
                                 <li data-jstree='{"icon":"include/artefact.png"}' id='b773448cacf0b2910fc2755347198b02'>
                                     <div class='content_container clearfix'>
-                                        <h3>SMPTE Metadata Registers &ndash; Elements</h3><table class="table table-bordered table-hover table-condensed"><thead><tr><th>Kind</th><th>UL</th><th>Symbol</th><th>Definition</th><th>Type Symbol</th><th>Restrictions</th></tr></thead><tbody><tr><td>LEAF</td><td>urn:smpte:ul:060e2b34.01010101.0d010801.01010000</td><td>Specification_Identifiers</td><td class="smpte_registers_class_definition_column">A set of AUIDs where each AUID identifies a "file format" "Block" to which the MXF file conforms. A "file format" "Block" is a "Block" (a Rules Framework Component) that is usually at (or close to) the root of a Rules-based Specification.</td><td>AUIDSet</td><td></td></tr></tbody></table><p>View the SMPTE Metadata Registers XML file(s):<ul><li><a href='specification_data_files/www.amwa.tv_c0f7b64/block/SpecID/artefacts/Elements.xml' target='_blank'>specification_data_files/www.amwa.tv_c0f7b64/block/SpecID/artefacts/Elements.xml</a></li><li><a href='specification_data_files/www.amwa.tv_c0f7b64/block/SpecID/artefacts/Types.xml' target='_blank'>specification_data_files/www.amwa.tv_c0f7b64/block/SpecID/artefacts/Types.xml</a></li></ul></p><hr>
+<h3>SMPTE Metadata Registers &ndash; Elements</h3><table class="table table-bordered table-hover table-condensed"><thead><tr><th>Kind</th><th>UL</th><th>Symbol</th><th>Definition</th><th>Type Symbol</th><th>Restrictions</th></tr></thead><tbody><tr><td>LEAF</td><td>urn:smpte:ul:060e2b34.01010101.0d010801.01010000</td><td>Specification_Identifiers</td><td class="smpte_registers_class_definition_column">A set of AUIDs where each AUID identifies a "file format" "Block" to which the MXF file conforms. A "file format" "Block" is a "Block" (a Rules Framework Component) that is usually at (or close to) the root of a Rules-based Specification.</td><td>AUIDSet</td><td></td></tr></tbody></table><p>View the SMPTE Metadata Registers XML file(s):</p><ul><li><a href='specification_data_files/www.amwa.tv_c0f7b64/block/SpecID/artefacts/Elements.xml' target='_blank'>specification_data_files/www.amwa.tv_c0f7b64/block/SpecID/artefacts/Elements.xml</a></li><li><a href='specification_data_files/www.amwa.tv_c0f7b64/block/SpecID/artefacts/Types.xml' target='_blank'>specification_data_files/www.amwa.tv_c0f7b64/block/SpecID/artefacts/Types.xml</a></li></ul><hr>
                                     </div>
                                 </li>
                                 <li data-jstree='{"icon":"include/note.png"}' id='d30da1c668079866c35c129c74edc947'>
                                     <div class='content_container clearfix'>
-                                        <b>SMPTE Registers Node: Specification_Identification (Elements Register)</b>
+<b>SMPTE Registers Node: Specification_Identification (Elements Register)</b>
                                     </div>
                                     <ul>
                                     <li data-jstree='{"icon":"include/file.png"}' id='d30da1c668079866c35c129c74edc947-info'>
@@ -1294,7 +1295,7 @@
                                     </li>
                                     <li data-jstree='{"icon":"include/noteartefact.png"}' id='9d054439ffebaacb07018fa4beb9f64f'>
                                         <div class='content_container clearfix'>
-                                            <h3>SMPTE Metadata Registers &ndash; Elements</h3><table class="table table-bordered table-hover table-condensed"><thead><tr><th>Kind</th><th>UL</th><th>Symbol</th><th>Definition</th><th>Type Symbol</th><th>Restrictions</th></tr></thead><tbody><tr><td>NODE</td><td>urn:smpte:ul:060e2b34.01010101.0d010801.01000000</td><td>Specification_Identification</td><td class="smpte_registers_class_definition_column"></td><td></td><td></td></tr></tbody></table><p>View the SMPTE Metadata Registers XML file(s):<ul><li><a href='specification_data_files/www.amwa.tv_c0f7b64/note/Specification_Identification_E/artefacts/Elements.xml' target='_blank'>specification_data_files/www.amwa.tv_c0f7b64/note/Specification_Identification_E/artefacts/Elements.xml</a></li></ul></p><hr>
+<h3>SMPTE Metadata Registers &ndash; Elements</h3><table class="table table-bordered table-hover table-condensed"><thead><tr><th>Kind</th><th>UL</th><th>Symbol</th><th>Definition</th><th>Type Symbol</th><th>Restrictions</th></tr></thead><tbody><tr><td>NODE</td><td>urn:smpte:ul:060e2b34.01010101.0d010801.01000000</td><td>Specification_Identification</td><td class="smpte_registers_class_definition_column"></td><td></td><td></td></tr></tbody></table><p>View the SMPTE Metadata Registers XML file(s):</p><ul><li><a href='specification_data_files/www.amwa.tv_c0f7b64/note/Specification_Identification_E/artefacts/Elements.xml' target='_blank'>specification_data_files/www.amwa.tv_c0f7b64/note/Specification_Identification_E/artefacts/Elements.xml</a></li></ul><hr>
                                         </div>
                                     </li>
                                     </ul>
@@ -1305,12 +1306,12 @@
                         </li>
                         <li data-jstree='{"icon":"include/artefact.png"}' id='695b577c101b457a6c7f63bdcfda06bb'>
                             <div class='content_container clearfix'>
-                                <p>The value of this Element includes the Label <a class='btn btn-default btn-xs' data-toggle='tooltip' title='BLOCK: Click to show in the tree' href='#15b59002df4a3e860247cb7bc567df36'>Blocks_FF_7</a>.</p>
+<p>The value of this Element includes the Label <a class='btn btn-default btn-xs' data-toggle='tooltip' title='BLOCK: Click to show in the tree' href='#15b59002df4a3e860247cb7bc567df36'>Blocks_FF_7</a>.</p>
                             </div>
                         <ul>
                             <li data-jstree='{"icon":"include/block.png"}' id='15b59002df4a3e860247cb7bc567df36'>
                                 <div class='content_container clearfix'>
-                                    <b>Blocks_FF_7</b>
+<b>Blocks_FF_7</b>
                                 </div>
                                 <ul>
                                 <li data-jstree='{"icon":"include/file.png"}' id='15b59002df4a3e860247cb7bc567df36-info'>
@@ -1325,7 +1326,7 @@
                                 </li>
                                 <li data-jstree='{"icon":"include/artefact.png"}' id='edbfa3ccfab5510dd0aeae940270f213'>
                                     <div class='content_container clearfix'>
-                                        <h3>SMPTE Metadata Registers &ndash; Labels</h3><table class="table table-bordered table-hover table-condensed"><thead><tr><th>Kind</th><th>UL</th><th>Symbol</th><th>Definition</th></tr></thead><tbody><tr><td>LEAF</td><td>urn:smpte:ul:060e2b34.04010101.0d010801.05080000</td><td>Blocks_FF_7</td><td class="smpte_registers_class_definition_column">Blocks File Format 7</td></tr></tbody></table><p>View the SMPTE Metadata Registers XML file(s):<ul><li><a href='specification_data_files/www.amwa.tv_c0f7b64/block/SpecID_L7/artefacts/Labels.xml' target='_blank'>specification_data_files/www.amwa.tv_c0f7b64/block/SpecID_L7/artefacts/Labels.xml</a></li></ul></p><hr>
+<h3>SMPTE Metadata Registers &ndash; Labels</h3><table class="table table-bordered table-hover table-condensed"><thead><tr><th>Kind</th><th>UL</th><th>Symbol</th><th>Definition</th></tr></thead><tbody><tr><td>LEAF</td><td>urn:smpte:ul:060e2b34.04010101.0d010801.05080000</td><td>Blocks_FF_7</td><td class="smpte_registers_class_definition_column">Blocks File Format 7</td></tr></tbody></table><p>View the SMPTE Metadata Registers XML file(s):</p><ul><li><a href='specification_data_files/www.amwa.tv_c0f7b64/block/SpecID_L7/artefacts/Labels.xml' target='_blank'>specification_data_files/www.amwa.tv_c0f7b64/block/SpecID_L7/artefacts/Labels.xml</a></li></ul><hr>
                                     </div>
                                 </li>
                                 </ul>
@@ -1336,7 +1337,7 @@
                     </li>
                     <li data-jstree='{"icon":"include/block.png"}' id='03196baa7f3e5f2f94ce121703251ecd'>
                         <div class='content_container clearfix'>
-                            <b>Timecode constraints</b>
+<b>Timecode constraints</b>
                         </div>
                         <ul>
                         <li data-jstree='{"icon":"include/file.png"}' id='03196baa7f3e5f2f94ce121703251ecd-info'>
@@ -1351,7 +1352,7 @@
                         </li>
                         <li data-jstree='{"icon":"include/block.png"}' id='6d269759c55c8ac4034f3178540664a9'>
                             <div class='content_container clearfix'>
-                                <b>Timecode Track Presence</b>
+<b>Timecode Track Presence</b>
                             </div>
                             <ul>
                             <li data-jstree='{"icon":"include/file.png"}' id='6d269759c55c8ac4034f3178540664a9-info'>
@@ -1366,12 +1367,12 @@
                             </li>
                             <li data-jstree='{"icon":"include/artefact.png"}' id='4ba1ad140740bcfd412b0630db0a9df8'>
                                 <div class='content_container clearfix'>
-                                    <p>The <a class='' data-toggle='tooltip' href='#2d90a6d5e37bc488b754432604d27810' title='An MXF data structure that describe an output timeline of the file.'>Material Package</a> contains exactly one <a class='' data-toggle='tooltip' href='#577a597a799ec651dace5ea5bf204b2e' title='An MXF &lt;Track&gt; that stores one or more &lt;Timecode Component&gt;s.'>Timecode Track</a>.</p>
+<p>The <a class='' data-toggle='tooltip' href='#2d90a6d5e37bc488b754432604d27810' title='An MXF data structure that describe an output timeline of the file.'>Material Package</a> contains exactly one <a class='' data-toggle='tooltip' href='#577a597a799ec651dace5ea5bf204b2e' title='An MXF &lt;Track&gt; that stores one or more &lt;Timecode Component&gt;s.'>Timecode Track</a>.</p>
                                 </div>
                             </li>
                             <li data-jstree='{"icon":"include/note.png"}' id='16f99f1f4a9da3dd9cab01dcce03d15c'>
                                 <div class='content_container clearfix'>
-                                    <b>Implementation Notes</b>
+<b>Implementation Notes</b>
                                 </div>
                                 <ul>
                                 <li data-jstree='{"icon":"include/file.png"}' id='16f99f1f4a9da3dd9cab01dcce03d15c-info'>
@@ -1386,7 +1387,7 @@
                                 </li>
                                 <li data-jstree='{"icon":"include/noteartefact.png"}' id='d9e827318fbf517be09a4e9d258cdc12'>
                                     <div class='content_container clearfix'>
-                                        <p>This Timecode Track provides "Synthetic Timecode" because its Timecode is "generated" from a single "Start Timecode" value that is associated with the beginning of the Material Package. This means that the Timecode is necessarily continuous throughout the entire playback of the MXF file.</p>
+<p>This Timecode Track provides "Synthetic Timecode" because its Timecode is "generated" from a single "Start Timecode" value that is associated with the beginning of the Material Package. This means that the Timecode is necessarily continuous throughout the entire playback of the MXF file.</p>
                                     </div>
                                 </li>
                                 </ul>
@@ -1395,7 +1396,7 @@
                         </li>
                         <li data-jstree='{"icon":"include/block.png"}' id='648a81468a9a4e550e794531945ab304'>
                             <div class='content_container clearfix'>
-                                <b>Constrained Timecode Track in Material Package</b>
+<b>Constrained Timecode Track in Material Package</b>
                             </div>
                             <ul>
                             <li data-jstree='{"icon":"include/file.png"}' id='648a81468a9a4e550e794531945ab304-info'>
@@ -1410,12 +1411,12 @@
                             </li>
                             <li data-jstree='{"icon":"include/artefact.png"}' id='24ae5f4b776b938496735d0d2ae594e7'>
                                 <div class='content_container clearfix'>
-                                    <p>The <a class='' data-toggle='tooltip' href='#577a597a799ec651dace5ea5bf204b2e' title='An MXF &lt;Track&gt; that stores one or more &lt;Timecode Component&gt;s.'>Timecode Track</a> in the <a class='' data-toggle='tooltip' href='#2d90a6d5e37bc488b754432604d27810' title='An MXF data structure that describe an output timeline of the file.'>Material Package</a> is a <a class='btn btn-default btn-xs' data-toggle='tooltip' title='BLOCK: Click to show in the tree' href='#294fd351e55e0cc0f8c41368445ef14c'>Constrained Timecode Track</a>.</p>
+<p>The <a class='' data-toggle='tooltip' href='#577a597a799ec651dace5ea5bf204b2e' title='An MXF &lt;Track&gt; that stores one or more &lt;Timecode Component&gt;s.'>Timecode Track</a> in the <a class='' data-toggle='tooltip' href='#2d90a6d5e37bc488b754432604d27810' title='An MXF data structure that describe an output timeline of the file.'>Material Package</a> is a <a class='btn btn-default btn-xs' data-toggle='tooltip' title='BLOCK: Click to show in the tree' href='#294fd351e55e0cc0f8c41368445ef14c'>Constrained Timecode Track</a>.</p>
                                 </div>
                             <ul>
                                 <li data-jstree='{"icon":"include/block.png"}' id='294fd351e55e0cc0f8c41368445ef14c'>
                                     <div class='content_container clearfix'>
-                                        <b>Constrained Timecode Track</b>
+<b>Constrained Timecode Track</b>
                                     </div>
                                     <ul>
                                     <li data-jstree='{"icon":"include/file.png"}' id='294fd351e55e0cc0f8c41368445ef14c-info'>
@@ -1430,22 +1431,22 @@
                                     </li>
                                     <li data-jstree='{"icon":"include/artefact.png"}' id='b2315ef15cad1a040d623d9bc5996ce7'>
                                         <div class='content_container clearfix'>
-                                            <p>A <a class='btn btn-default btn-xs' data-toggle='tooltip' title='BLOCK: Click to show in the tree' href='#294fd351e55e0cc0f8c41368445ef14c'>Constrained Timecode Track</a> is a <a class='' data-toggle='tooltip' href='#577a597a799ec651dace5ea5bf204b2e' title='An MXF &lt;Track&gt; that stores one or more &lt;Timecode Component&gt;s.'>Timecode Track</a>.</p>
+<p>A <a class='btn btn-default btn-xs' data-toggle='tooltip' title='BLOCK: Click to show in the tree' href='#294fd351e55e0cc0f8c41368445ef14c'>Constrained Timecode Track</a> is a <a class='' data-toggle='tooltip' href='#577a597a799ec651dace5ea5bf204b2e' title='An MXF &lt;Track&gt; that stores one or more &lt;Timecode Component&gt;s.'>Timecode Track</a>.</p>
                                         </div>
                                     </li>
                                     <li data-jstree='{"icon":"include/artefact.png"}' id='c497d9a3baaf6d2418934369df814b30'>
                                         <div class='content_container clearfix'>
-                                            <p>The value of the "Edit Rate" property of this <a class='' data-toggle='tooltip' href='#577a597a799ec651dace5ea5bf204b2e' title='An MXF &lt;Track&gt; that stores one or more &lt;Timecode Component&gt;s.'>Timecode Track</a> is the same as the value of the "Edit Rate" property of the <a class='' data-toggle='tooltip' href='#61ae5ca960e94c34054d4a60b33c278d' title='A type of &lt;Essence Track&gt; that references &lt;Picture Essence&gt;.'>Picture Track</a> in the same <a class='' data-toggle='tooltip' href='#27f5b2b6cc736b6f71ff7587142ca024' title='An MXF structure that aggregates one or more &lt;Track&gt;s.'>Package</a>.</p>
+<p>The value of the "Edit Rate" property of this <a class='' data-toggle='tooltip' href='#577a597a799ec651dace5ea5bf204b2e' title='An MXF &lt;Track&gt; that stores one or more &lt;Timecode Component&gt;s.'>Timecode Track</a> is the same as the value of the "Edit Rate" property of the <a class='' data-toggle='tooltip' href='#61ae5ca960e94c34054d4a60b33c278d' title='A type of &lt;Essence Track&gt; that references &lt;Picture Essence&gt;.'>Picture Track</a> in the same <a class='' data-toggle='tooltip' href='#27f5b2b6cc736b6f71ff7587142ca024' title='An MXF structure that aggregates one or more &lt;Track&gt;s.'>Package</a>.</p>
                                         </div>
                                     </li>
                                     <li data-jstree='{"icon":"include/artefact.png"}' id='22479408baff62ea2d163dc15067662d'>
                                         <div class='content_container clearfix'>
-                                            <p>There is exactly one <a class='' data-toggle='tooltip' href='#81bb200e8bf4ec107239fa1dd9b936e9' title='An MXF structure that stores &lt;Timecode&gt; information.'>Timecode Component</a> in this <a class='' data-toggle='tooltip' href='#577a597a799ec651dace5ea5bf204b2e' title='An MXF &lt;Track&gt; that stores one or more &lt;Timecode Component&gt;s.'>Timecode Track</a>.</p>
+<p>There is exactly one <a class='' data-toggle='tooltip' href='#81bb200e8bf4ec107239fa1dd9b936e9' title='An MXF structure that stores &lt;Timecode&gt; information.'>Timecode Component</a> in this <a class='' data-toggle='tooltip' href='#577a597a799ec651dace5ea5bf204b2e' title='An MXF &lt;Track&gt; that stores one or more &lt;Timecode Component&gt;s.'>Timecode Track</a>.</p>
                                         </div>
                                     </li>
                                     <li data-jstree='{"icon":"include/artefact.png"}' id='ec4d661fe21c567789e963ae06941490'>
                                         <div class='content_container clearfix'>
-                                            <p>The value of the "Rounded Timecode Base" property of the <a class='' data-toggle='tooltip' href='#81bb200e8bf4ec107239fa1dd9b936e9' title='An MXF structure that stores &lt;Timecode&gt; information.'>Timecode Component</a> is the "Edit Rate" of this <a class='' data-toggle='tooltip' href='#577a597a799ec651dace5ea5bf204b2e' title='An MXF &lt;Track&gt; that stores one or more &lt;Timecode Component&gt;s.'>Timecode Track</a> rounded to the nearest integer.</p>
+<p>The value of the "Rounded Timecode Base" property of the <a class='' data-toggle='tooltip' href='#81bb200e8bf4ec107239fa1dd9b936e9' title='An MXF structure that stores &lt;Timecode&gt; information.'>Timecode Component</a> is the "Edit Rate" of this <a class='' data-toggle='tooltip' href='#577a597a799ec651dace5ea5bf204b2e' title='An MXF &lt;Track&gt; that stores one or more &lt;Timecode Component&gt;s.'>Timecode Track</a> rounded to the nearest integer.</p>
                                         </div>
                                     </li>
                                     </ul>
@@ -1456,7 +1457,7 @@
                         </li>
                         <li data-jstree='{"icon":"include/block.png"}' id='c7c798eb9b2a1f45919461c0b27c9f16'>
                             <div class='content_container clearfix'>
-                                <b>Timecode mode signalling</b>
+<b>Timecode mode signalling</b>
                             </div>
                             <ul>
                             <li data-jstree='{"icon":"include/file.png"}' id='c7c798eb9b2a1f45919461c0b27c9f16-info'>
@@ -1471,17 +1472,17 @@
                             </li>
                             <li data-jstree='{"icon":"include/artefact.png"}' id='d21f875a8149e1a0b23bcfbcda75c965'>
                                 <div class='content_container clearfix'>
-                                    <p>The value of the "Drop Frame" property of the <a class='' data-toggle='tooltip' href='#81bb200e8bf4ec107239fa1dd9b936e9' title='An MXF structure that stores &lt;Timecode&gt; information.'>Timecode Component</a> in the <a class='' data-toggle='tooltip' href='#577a597a799ec651dace5ea5bf204b2e' title='An MXF &lt;Track&gt; that stores one or more &lt;Timecode Component&gt;s.'>Timecode Track</a> in the <a class='' data-toggle='tooltip' href='#2d90a6d5e37bc488b754432604d27810' title='An MXF data structure that describe an output timeline of the file.'>Material Package</a> is "False" (indicating non-drop frame timecode is in use) except in any of the following scenarios (in which case it is "True", indicating drop frame timecode is in use):</p>
-                                    
-                                    <ul>
-                                    <li>The "Rounded Timecode Base" property of the <a class='' data-toggle='tooltip' href='#81bb200e8bf4ec107239fa1dd9b936e9' title='An MXF structure that stores &lt;Timecode&gt; information.'>Timecode Component</a> is <code>60</code> and the "Edit Rate" of the <a class='' data-toggle='tooltip' href='#577a597a799ec651dace5ea5bf204b2e' title='An MXF &lt;Track&gt; that stores one or more &lt;Timecode Component&gt;s.'>Timecode Track</a> is mathematically equal to <code>60000/1001</code></li>
-                                    <li>The "Rounded Timecode Base" property of the <a class='' data-toggle='tooltip' href='#81bb200e8bf4ec107239fa1dd9b936e9' title='An MXF structure that stores &lt;Timecode&gt; information.'>Timecode Component</a> is <code>30</code> and the "Edit Rate" of the <a class='' data-toggle='tooltip' href='#577a597a799ec651dace5ea5bf204b2e' title='An MXF &lt;Track&gt; that stores one or more &lt;Timecode Component&gt;s.'>Timecode Track</a> is mathematically equal to <code>30000/1001</code></li>
-                                    </ul>
+<p>The value of the "Drop Frame" property of the <a class='' data-toggle='tooltip' href='#81bb200e8bf4ec107239fa1dd9b936e9' title='An MXF structure that stores &lt;Timecode&gt; information.'>Timecode Component</a> in the <a class='' data-toggle='tooltip' href='#577a597a799ec651dace5ea5bf204b2e' title='An MXF &lt;Track&gt; that stores one or more &lt;Timecode Component&gt;s.'>Timecode Track</a> in the <a class='' data-toggle='tooltip' href='#2d90a6d5e37bc488b754432604d27810' title='An MXF data structure that describe an output timeline of the file.'>Material Package</a> is "False" (indicating non-drop frame timecode is in use) except in any of the following scenarios (in which case it is "True", indicating drop frame timecode is in use):</p>
+
+<ul>
+<li>The "Rounded Timecode Base" property of the <a class='' data-toggle='tooltip' href='#81bb200e8bf4ec107239fa1dd9b936e9' title='An MXF structure that stores &lt;Timecode&gt; information.'>Timecode Component</a> is <code>60</code> and the "Edit Rate" of the <a class='' data-toggle='tooltip' href='#577a597a799ec651dace5ea5bf204b2e' title='An MXF &lt;Track&gt; that stores one or more &lt;Timecode Component&gt;s.'>Timecode Track</a> is mathematically equal to <code>60000/1001</code></li>
+<li>The "Rounded Timecode Base" property of the <a class='' data-toggle='tooltip' href='#81bb200e8bf4ec107239fa1dd9b936e9' title='An MXF structure that stores &lt;Timecode&gt; information.'>Timecode Component</a> is <code>30</code> and the "Edit Rate" of the <a class='' data-toggle='tooltip' href='#577a597a799ec651dace5ea5bf204b2e' title='An MXF &lt;Track&gt; that stores one or more &lt;Timecode Component&gt;s.'>Timecode Track</a> is mathematically equal to <code>30000/1001</code></li>
+</ul>
                                 </div>
                             </li>
                             <li data-jstree='{"icon":"include/note.png"}' id='d07cc80366fd97d46f05fd8c07dbce8f'>
                                 <div class='content_container clearfix'>
-                                    <b>Rational Numbers</b>
+<b>Rational Numbers</b>
                                 </div>
                                 <ul>
                                 <li data-jstree='{"icon":"include/file.png"}' id='d07cc80366fd97d46f05fd8c07dbce8f-info'>
@@ -1496,16 +1497,16 @@
                                 </li>
                                 <li data-jstree='{"icon":"include/noteartefact.png"}' id='c182e7a7b936e18d900fc75c459b9125'>
                                     <div class='content_container clearfix'>
-                                        <p>Care must be taken when dealing with numbers expressed as a ratio of two integers ("rationals"). They are often used to represent temporal rates or image aspect ratios.</p>
-                                        
-                                        <p>When making comparisons of these values, it is insufficient to simply compare each of the numerators and each of the denominators. For example, <code>7/5</code> is mathematically equal to <code>14/10</code>.</p>
+<p>Care must be taken when dealing with numbers expressed as a ratio of two integers ("rationals"). They are often used to represent temporal rates or image aspect ratios.</p>
+
+<p>When making comparisons of these values, it is insufficient to simply compare each of the numerators and each of the denominators. For example, <code>7/5</code> is mathematically equal to <code>14/10</code>.</p>
                                     </div>
                                 </li>
                                 </ul>
                             </li>
                             <li data-jstree='{"icon":"include/note.png"}' id='12fe6781a7aa94e35a0bc90153f97c3c'>
                                 <div class='content_container clearfix'>
-                                    <b>Implementation Notes</b>
+<b>Implementation Notes</b>
                                 </div>
                                 <ul>
                                 <li data-jstree='{"icon":"include/file.png"}' id='12fe6781a7aa94e35a0bc90153f97c3c-info'>
@@ -1520,7 +1521,7 @@
                                 </li>
                                 <li data-jstree='{"icon":"include/noteartefact.png"}' id='40ec663dd28d249b1d6ee56874fe64a0'>
                                     <div class='content_container clearfix'>
-                                        <p>Note that for an "Edit Rate" of 24000/1001 the "Drop Frame" property will be "False" because drop frame timecode is not applicable to this rate.</p>
+<p>Note that for an "Edit Rate" of 24000/1001 the "Drop Frame" property will be "False" because drop frame timecode is not applicable to this rate.</p>
                                     </div>
                                 </li>
                                 </ul>
@@ -1529,7 +1530,7 @@
                         </li>
                         <li data-jstree='{"icon":"include/block.png"}' id='d849b81a198e1facc2b6e8621ba61527'>
                             <div class='content_container clearfix'>
-                                <b>Timecode Track Precedence</b>
+<b>Timecode Track Precedence</b>
                             </div>
                             <ul>
                             <li data-jstree='{"icon":"include/file.png"}' id='d849b81a198e1facc2b6e8621ba61527-info'>
@@ -1544,12 +1545,12 @@
                             </li>
                             <li data-jstree='{"icon":"include/artefact.png"}' id='9f006c8acea752217938bc976b6b3ac2'>
                                 <div class='content_container clearfix'>
-                                    <p>The <a class='' data-toggle='tooltip' href='#577a597a799ec651dace5ea5bf204b2e' title='An MXF &lt;Track&gt; that stores one or more &lt;Timecode Component&gt;s.'>Timecode Track</a> in the <a class='' data-toggle='tooltip' href='#2d90a6d5e37bc488b754432604d27810' title='An MXF data structure that describe an output timeline of the file.'>Material Package</a> defines the authoritative program timecode.</p>
+<p>The <a class='' data-toggle='tooltip' href='#577a597a799ec651dace5ea5bf204b2e' title='An MXF &lt;Track&gt; that stores one or more &lt;Timecode Component&gt;s.'>Timecode Track</a> in the <a class='' data-toggle='tooltip' href='#2d90a6d5e37bc488b754432604d27810' title='An MXF data structure that describe an output timeline of the file.'>Material Package</a> defines the authoritative program timecode.</p>
                                 </div>
                             </li>
                             <li data-jstree='{"icon":"include/note.png"}' id='ad0b9f06b07480b53afbd5de4a07365c'>
                                 <div class='content_container clearfix'>
-                                    <b>Implementation Notes</b>
+<b>Implementation Notes</b>
                                 </div>
                                 <ul>
                                 <li data-jstree='{"icon":"include/file.png"}' id='ad0b9f06b07480b53afbd5de4a07365c-info'>
@@ -1564,7 +1565,7 @@
                                 </li>
                                 <li data-jstree='{"icon":"include/noteartefact.png"}' id='0eaee3f4a54517fb2f3fff26eb4eb3f0'>
                                     <div class='content_container clearfix'>
-                                        <p>The <a class='' data-toggle='tooltip' href='#67a74025143b849bb64a0e3b39ac98f6' title='An annotation of elapsed time along a &lt;Track&gt;.'>Timecode</a> defined by the <a class='' data-toggle='tooltip' href='#577a597a799ec651dace5ea5bf204b2e' title='An MXF &lt;Track&gt; that stores one or more &lt;Timecode Component&gt;s.'>Timecode Track</a> in the <a class='' data-toggle='tooltip' href='#2d90a6d5e37bc488b754432604d27810' title='An MXF data structure that describe an output timeline of the file.'>Material Package</a> must be used by all the components of a system that handles the file. Other <a class='' data-toggle='tooltip' href='#67a74025143b849bb64a0e3b39ac98f6' title='An annotation of elapsed time along a &lt;Track&gt;.'>Timecode</a>s could be present in the file but these are not authoritative -- these other <a class='' data-toggle='tooltip' href='#67a74025143b849bb64a0e3b39ac98f6' title='An annotation of elapsed time along a &lt;Track&gt;.'>Timecode</a>s could be used by certain systems for very specialist purposes (such as keeping track of where each frame of content originated from) but they must never be used as the authoritative / principal <a class='' data-toggle='tooltip' href='#67a74025143b849bb64a0e3b39ac98f6' title='An annotation of elapsed time along a &lt;Track&gt;.'>Timecode</a> for the content.</p>
+<p>The <a class='' data-toggle='tooltip' href='#67a74025143b849bb64a0e3b39ac98f6' title='An annotation of elapsed time along a &lt;Track&gt;.'>Timecode</a> defined by the <a class='' data-toggle='tooltip' href='#577a597a799ec651dace5ea5bf204b2e' title='An MXF &lt;Track&gt; that stores one or more &lt;Timecode Component&gt;s.'>Timecode Track</a> in the <a class='' data-toggle='tooltip' href='#2d90a6d5e37bc488b754432604d27810' title='An MXF data structure that describe an output timeline of the file.'>Material Package</a> must be used by all the components of a system that handles the file. Other <a class='' data-toggle='tooltip' href='#67a74025143b849bb64a0e3b39ac98f6' title='An annotation of elapsed time along a &lt;Track&gt;.'>Timecode</a>s could be present in the file but these are not authoritative -- these other <a class='' data-toggle='tooltip' href='#67a74025143b849bb64a0e3b39ac98f6' title='An annotation of elapsed time along a &lt;Track&gt;.'>Timecode</a>s could be used by certain systems for very specialist purposes (such as keeping track of where each frame of content originated from) but they must never be used as the authoritative / principal <a class='' data-toggle='tooltip' href='#67a74025143b849bb64a0e3b39ac98f6' title='An annotation of elapsed time along a &lt;Track&gt;.'>Timecode</a> for the content.</p>
                                     </div>
                                 </li>
                                 </ul>
@@ -1575,7 +1576,7 @@
                     </li>
                     <li data-jstree='{"icon":"include/block.png"}' id='4a28d8e74e3cda2c931e7a1dfd883bbf'>
                         <div class='content_container clearfix'>
-                            <b>Miscellaneous Content Constraints</b>
+<b>Miscellaneous Content Constraints</b>
                         </div>
                         <ul>
                         <li data-jstree='{"icon":"include/file.png"}' id='4a28d8e74e3cda2c931e7a1dfd883bbf-info'>
@@ -1590,7 +1591,7 @@
                         </li>
                         <li data-jstree='{"icon":"include/block.png"}' id='e759fc244127fe5ea0989f8712a590ae'>
                             <div class='content_container clearfix'>
-                                <b>AFD present</b>
+<b>AFD present</b>
                             </div>
                             <ul>
                             <li data-jstree='{"icon":"include/file.png"}' id='e759fc244127fe5ea0989f8712a590ae-info'>
@@ -1605,12 +1606,12 @@
                             </li>
                             <li data-jstree='{"icon":"include/artefact.png"}' id='8efd6aa7b3fbd52aee23fbf985ed3efb'>
                                 <div class='content_container clearfix'>
-                                    <p>The "Active Format Descriptor" property of the <a class='' data-toggle='tooltip' href='#b4c6cd034e75a36e00895373823b64c9' title='MXF technical metadata that describes the &lt;Picture Essence&gt;.'>Picture Essence Descriptor</a> is present in the file.</p>
+<p>The "Active Format Descriptor" property of the <a class='' data-toggle='tooltip' href='#b4c6cd034e75a36e00895373823b64c9' title='MXF technical metadata that describes the &lt;Picture Essence&gt;.'>Picture Essence Descriptor</a> is present in the file.</p>
                                 </div>
                             </li>
                             <li data-jstree='{"icon":"include/note.png"}' id='3e58fedf9e54f586406b9ac36e0f11e3'>
                                 <div class='content_container clearfix'>
-                                    <b>Implementation Notes</b>
+<b>Implementation Notes</b>
                                 </div>
                                 <ul>
                                 <li data-jstree='{"icon":"include/file.png"}' id='3e58fedf9e54f586406b9ac36e0f11e3-info'>
@@ -1625,7 +1626,7 @@
                                 </li>
                                 <li data-jstree='{"icon":"include/noteartefact.png"}' id='51afcc22bae30d1b5c220600b009120b'>
                                     <div class='content_container clearfix'>
-                                        <p>Section G.2.5 of SMPTE ST 377-1:2011 describes compliant encoder and decoder behavior with respect to SMPTE ST 2016-1:2009.</p>
+<p>Section G.2.5 of SMPTE ST 377-1:2011 describes compliant encoder and decoder behavior with respect to SMPTE ST 2016-1:2009.</p>
                                     </div>
                                 </li>
                                 </ul>
@@ -1634,7 +1635,7 @@
                         </li>
                         <li data-jstree='{"icon":"include/block.png"}' id='3f232a7067cb7633af79a0be40fb7663'>
                             <div class='content_container clearfix'>
-                                <b>AFD 9 10 14</b>
+<b>AFD 9 10 14</b>
                             </div>
                             <ul>
                             <li data-jstree='{"icon":"include/file.png"}' id='3f232a7067cb7633af79a0be40fb7663-info'>
@@ -1649,12 +1650,12 @@
                             </li>
                             <li data-jstree='{"icon":"include/artefact.png"}' id='c71f4ca98e1c6455b293a8315707dc96'>
                                 <div class='content_container clearfix'>
-                                    <p>The 4-bit AFD encoded in the "Active Format Descriptor" property of the <a class='' data-toggle='tooltip' href='#b4c6cd034e75a36e00895373823b64c9' title='MXF technical metadata that describes the &lt;Picture Essence&gt;.'>Picture Essence Descriptor</a> is one of the following decimal values: 9 or 10 or 14.</p>
+<p>The 4-bit AFD encoded in the "Active Format Descriptor" property of the <a class='' data-toggle='tooltip' href='#b4c6cd034e75a36e00895373823b64c9' title='MXF technical metadata that describes the &lt;Picture Essence&gt;.'>Picture Essence Descriptor</a> is one of the following decimal values: 9 or 10 or 14.</p>
                                 </div>
                             </li>
                             <li data-jstree='{"icon":"include/note.png"}' id='d2cef36b832c9b6347fd1c0aaf821c76'>
                                 <div class='content_container clearfix'>
-                                    <b>Implementation Notes</b>
+<b>Implementation Notes</b>
                                 </div>
                                 <ul>
                                 <li data-jstree='{"icon":"include/file.png"}' id='d2cef36b832c9b6347fd1c0aaf821c76-info'>
@@ -1669,9 +1670,9 @@
                                 </li>
                                 <li data-jstree='{"icon":"include/noteartefact.png"}' id='34b7f8418a25972e17a00b164ff0ec07'>
                                     <div class='content_container clearfix'>
-                                        <p>Section G.2.5 of SMPTE ST 377-1:2011 requires that the value of the "Active Format Descriptor" property be constant for the duration of the associated Picture Track.</p>
-                                        
-                                        <p>The AFD (as it is used here, where only a very restricted set of values are permitted) can be considered as telling the decoder what video transformations it can reasonably make when displaying the video. For example when displaying the video on a "problematic" screen the decoder could wish to "zoom and crop" or "pillarbox" or "letterbox" the video as appropriate (where a "problematic" screen could be one where the dimensions of the screen mean that if the video is displayed full-screen it does not have the stated "aspect ratio").</p>
+<p>Section G.2.5 of SMPTE ST 377-1:2011 requires that the value of the "Active Format Descriptor" property be constant for the duration of the associated Picture Track.</p>
+
+<p>The AFD (as it is used here, where only a very restricted set of values are permitted) can be considered as telling the decoder what video transformations it can reasonably make when displaying the video. For example when displaying the video on a "problematic" screen the decoder could wish to "zoom and crop" or "pillarbox" or "letterbox" the video as appropriate (where a "problematic" screen could be one where the dimensions of the screen mean that if the video is displayed full-screen it does not have the stated "aspect ratio").</p>
                                     </div>
                                 </li>
                                 </ul>
@@ -1680,7 +1681,7 @@
                         </li>
                         <li data-jstree='{"icon":"include/block.png"}' id='03c16a967f7c040cfc98e1ba03575ae3'>
                             <div class='content_container clearfix'>
-                                <b>4 audio channels</b>
+<b>4 audio channels</b>
                             </div>
                             <ul>
                             <li data-jstree='{"icon":"include/file.png"}' id='03c16a967f7c040cfc98e1ba03575ae3-info'>
@@ -1695,14 +1696,14 @@
                             </li>
                             <li data-jstree='{"icon":"include/artefact.png"}' id='b0c703154027151217066efe91478779'>
                                 <div class='content_container clearfix'>
-                                    <p>Only the channels in the <a class='' data-toggle='tooltip' href='#d4acccead3d82a87fb945f9ad1694ad1' title='A way of multiplexing up to eight channels of AES3 audio data.'>8-channel AES3 element</a> with a "channel number" of 1, 2, 3 or 4 are valid.</p>
+<p>Only the channels in the <a class='' data-toggle='tooltip' href='#d4acccead3d82a87fb945f9ad1694ad1' title='A way of multiplexing up to eight channels of AES3 audio data.'>8-channel AES3 element</a> with a "channel number" of 1, 2, 3 or 4 are valid.</p>
                                 </div>
                             </li>
                             </ul>
                         </li>
                         <li data-jstree='{"icon":"include/block.png"}' id='dc9c6a8fab278b1f413079e2e4625fed'>
                             <div class='content_container clearfix'>
-                                <b>Audio Channel Layout</b>
+<b>Audio Channel Layout</b>
                             </div>
                             <ul>
                             <li data-jstree='{"icon":"include/file.png"}' id='dc9c6a8fab278b1f413079e2e4625fed-info'>
@@ -1717,16 +1718,16 @@
                             </li>
                             <li data-jstree='{"icon":"include/artefact.png"}' id='4f010827c3f8b62eb740c290a5cf0ec7'>
                                 <div class='content_container clearfix'>
-                                    <p>The audio channel with the "channel number" of 1 is the Left channel of Stereo Main Programme.</p>
-                                    
-                                    <p>The audio channel with the "channel number" of 2 is the Right channel of Stereo Main Programme.</p>
+<p>The audio channel with the "channel number" of 1 is the Left channel of Stereo Main Programme.</p>
+
+<p>The audio channel with the "channel number" of 2 is the Right channel of Stereo Main Programme.</p>
                                 </div>
                             </li>
                             </ul>
                         </li>
                         <li data-jstree='{"icon":"include/note.png"}' id='19a3127ca1579e80bb20e6e6ea5646dc'>
                             <div class='content_container clearfix'>
-                                <b>Implementation Notes</b>
+<b>Implementation Notes</b>
                             </div>
                             <ul>
                             <li data-jstree='{"icon":"include/file.png"}' id='19a3127ca1579e80bb20e6e6ea5646dc-info'>
@@ -1741,9 +1742,9 @@
                             </li>
                             <li data-jstree='{"icon":"include/noteartefact.png"}' id='e85e8d8fa6a093d356b6e7244ed25b11'>
                                 <div class='content_container clearfix'>
-                                    <h3 id="use-of-audio-channels-3-4">Use of Audio Channels 3 &amp; 4</h3>
-                                    
-                                    <p>This Block imposes no restrictions on the contents of the audio channels with "channel number" 3 and 4. There is, however, no means to indicate (within the file) what they do contain.</p>
+<h3>Use of Audio Channels 3 &amp; 4</h3>
+
+<p>This Block imposes no restrictions on the contents of the audio channels with "channel number" 3 and 4. There is, however, no means to indicate (within the file) what they do contain.</p>
                                 </div>
                             </li>
                         </ul>
@@ -1785,7 +1786,7 @@
                              
                         <div class='info tInfo'><b>ID: </b><a href='http://www.amwa.tv/projects/rules/01/term/2-byte%20Local%20Length%20Encoding/' target='_blank'>http://www.amwa.tv/projects/rules/01/term/2-byte%20Local%20Length%20Encoding/</a></div>
                         
-                            <div class='info tInfo'><b>Defined By: </b><a href='#2ac1cb7a194dfe7fe8269a9760dcd495'>SMPTE ST 377-1</a></div>
+                            <div class='info tInfo_permanent'><b>Defined By: </b><a class='' data-toggle='tooltip' href='#2ac1cb7a194dfe7fe8269a9760dcd495' title='Material Exchange Format (MXF) — File Format Specification'>SMPTE ST 377-1</a></div>
                         
                     
                     </td></tr>
@@ -1800,7 +1801,7 @@
                              
                         <div class='info tInfo'><b>ID: </b><a href='http://www.amwa.tv/projects/rules/01/term/8-channel%20AES3%20element/' target='_blank'>http://www.amwa.tv/projects/rules/01/term/8-channel%20AES3%20element/</a></div>
                         
-                            <div class='info tInfo'><b>Defined By: </b><a href='#781f0a6d6a9ee16d2563502270514c43'>SMPTE ST 331</a></div>
+                            <div class='info tInfo_permanent'><b>Defined By: </b><a class='' data-toggle='tooltip' href='#781f0a6d6a9ee16d2563502270514c43' title='Element and Metadata Definitions for the SDTI-CP'>SMPTE ST 331</a></div>
                         
                     
                     </td></tr>
@@ -1815,7 +1816,7 @@
                              
                         <div class='info tInfo'><b>ID: </b><a href='http://www.amwa.tv/projects/rules/01/term/Audio%20Channel/' target='_blank'>http://www.amwa.tv/projects/rules/01/term/Audio%20Channel/</a></div>
                         
-                            <div class='info tInfo'><b>Defined By: </b><a href='#bdd9a4b9a9a14c700af4d9d4125e1550'>SMPTE ST 377-4</a></div>
+                            <div class='info tInfo_permanent'><b>Defined By: </b><a class='' data-toggle='tooltip' href='#bdd9a4b9a9a14c700af4d9d4125e1550' title='MXF Multichannel Audio Labeling Framework'>SMPTE ST 377-4</a></div>
                         
                     
                     </td></tr>
@@ -1830,7 +1831,7 @@
                              
                         <div class='info tInfo'><b>ID: </b><a href='http://www.amwa.tv/projects/rules/01/term/Descriptive%20Metadata/' target='_blank'>http://www.amwa.tv/projects/rules/01/term/Descriptive%20Metadata/</a></div>
                         
-                            <div class='info tInfo'><b>Defined By: </b><a href='#2ac1cb7a194dfe7fe8269a9760dcd495'>SMPTE ST 377-1</a></div>
+                            <div class='info tInfo_permanent'><b>Defined By: </b><a class='' data-toggle='tooltip' href='#2ac1cb7a194dfe7fe8269a9760dcd495' title='Material Exchange Format (MXF) — File Format Specification'>SMPTE ST 377-1</a></div>
                         
                     
                     </td></tr>
@@ -1845,7 +1846,7 @@
                              
                         <div class='info tInfo'><b>ID: </b><a href='http://www.amwa.tv/projects/rules/01/term/DM%20Framework/' target='_blank'>http://www.amwa.tv/projects/rules/01/term/DM%20Framework/</a></div>
                         
-                            <div class='info tInfo'><b>Defined By: </b><a href='#2ac1cb7a194dfe7fe8269a9760dcd495'>SMPTE ST 377-1</a></div>
+                            <div class='info tInfo_permanent'><b>Defined By: </b><a class='' data-toggle='tooltip' href='#2ac1cb7a194dfe7fe8269a9760dcd495' title='Material Exchange Format (MXF) — File Format Specification'>SMPTE ST 377-1</a></div>
                         
                     
                     </td></tr>
@@ -1860,7 +1861,7 @@
                              
                         <div class='info tInfo'><b>ID: </b><a href='http://www.amwa.tv/projects/rules/01/term/DM%20Scheme/' target='_blank'>http://www.amwa.tv/projects/rules/01/term/DM%20Scheme/</a></div>
                         
-                            <div class='info tInfo'><b>Defined By: </b><a href='#2ac1cb7a194dfe7fe8269a9760dcd495'>SMPTE ST 377-1</a></div>
+                            <div class='info tInfo_permanent'><b>Defined By: </b><a class='' data-toggle='tooltip' href='#2ac1cb7a194dfe7fe8269a9760dcd495' title='Material Exchange Format (MXF) — File Format Specification'>SMPTE ST 377-1</a></div>
                         
                     
                     </td></tr>
@@ -1875,7 +1876,7 @@
                              
                         <div class='info tInfo'><b>ID: </b><a href='http://www.amwa.tv/projects/rules/01/term/DM%20Scheme%20Label/' target='_blank'>http://www.amwa.tv/projects/rules/01/term/DM%20Scheme%20Label/</a></div>
                         
-                            <div class='info tInfo'><b>Defined By: </b><a href='#2ac1cb7a194dfe7fe8269a9760dcd495'>SMPTE ST 377-1</a></div>
+                            <div class='info tInfo_permanent'><b>Defined By: </b><a class='' data-toggle='tooltip' href='#2ac1cb7a194dfe7fe8269a9760dcd495' title='Material Exchange Format (MXF) — File Format Specification'>SMPTE ST 377-1</a></div>
                         
                     
                     </td></tr>
@@ -1890,7 +1891,7 @@
                              
                         <div class='info tInfo'><b>ID: </b><a href='http://www.amwa.tv/projects/rules/01/term/DM%20Segment/' target='_blank'>http://www.amwa.tv/projects/rules/01/term/DM%20Segment/</a></div>
                         
-                            <div class='info tInfo'><b>Defined By: </b><a href='#2ac1cb7a194dfe7fe8269a9760dcd495'>SMPTE ST 377-1</a></div>
+                            <div class='info tInfo_permanent'><b>Defined By: </b><a class='' data-toggle='tooltip' href='#2ac1cb7a194dfe7fe8269a9760dcd495' title='Material Exchange Format (MXF) — File Format Specification'>SMPTE ST 377-1</a></div>
                         
                     
                     </td></tr>
@@ -1905,7 +1906,7 @@
                              
                         <div class='info tInfo'><b>ID: </b><a href='http://www.amwa.tv/projects/rules/01/term/Edit%20Unit/' target='_blank'>http://www.amwa.tv/projects/rules/01/term/Edit%20Unit/</a></div>
                         
-                            <div class='info tInfo'><b>Defined By: </b><a href='#2ac1cb7a194dfe7fe8269a9760dcd495'>SMPTE ST 377-1</a></div>
+                            <div class='info tInfo_permanent'><b>Defined By: </b><a class='' data-toggle='tooltip' href='#2ac1cb7a194dfe7fe8269a9760dcd495' title='Material Exchange Format (MXF) — File Format Specification'>SMPTE ST 377-1</a></div>
                         
                     
                     </td></tr>
@@ -1920,7 +1921,7 @@
                              
                         <div class='info tInfo'><b>ID: </b><a href='http://www.amwa.tv/projects/rules/01/term/Essence/' target='_blank'>http://www.amwa.tv/projects/rules/01/term/Essence/</a></div>
                         
-                            <div class='info tInfo'><b>Defined By: </b><a href='#2ac1cb7a194dfe7fe8269a9760dcd495'>SMPTE ST 377-1</a></div>
+                            <div class='info tInfo_permanent'><b>Defined By: </b><a class='' data-toggle='tooltip' href='#2ac1cb7a194dfe7fe8269a9760dcd495' title='Material Exchange Format (MXF) — File Format Specification'>SMPTE ST 377-1</a></div>
                         
                     
                     </td></tr>
@@ -1935,7 +1936,7 @@
                              
                         <div class='info tInfo'><b>ID: </b><a href='http://www.amwa.tv/projects/rules/01/term/Essence%20Element/' target='_blank'>http://www.amwa.tv/projects/rules/01/term/Essence%20Element/</a></div>
                         
-                            <div class='info tInfo'><b>Defined By: </b><a href='#ee556d59cf1a949872bb1994e840b7a5'>SMPTE ST 379-2</a></div>
+                            <div class='info tInfo_permanent'><b>Defined By: </b><a class='' data-toggle='tooltip' href='#ee556d59cf1a949872bb1994e840b7a5' title='MXF Generic Container'>SMPTE ST 379-2</a></div>
                         
                     
                     </td></tr>
@@ -1950,7 +1951,7 @@
                              
                         <div class='info tInfo'><b>ID: </b><a href='http://www.amwa.tv/projects/rules/01/term/Essence%20Track/' target='_blank'>http://www.amwa.tv/projects/rules/01/term/Essence%20Track/</a></div>
                         
-                            <div class='info tInfo'><b>Defined By: </b><a href='#2ac1cb7a194dfe7fe8269a9760dcd495'>SMPTE ST 377-1</a></div>
+                            <div class='info tInfo_permanent'><b>Defined By: </b><a class='' data-toggle='tooltip' href='#2ac1cb7a194dfe7fe8269a9760dcd495' title='Material Exchange Format (MXF) — File Format Specification'>SMPTE ST 377-1</a></div>
                         
                     
                     </td></tr>
@@ -1965,7 +1966,7 @@
                              
                         <div class='info tInfo'><b>ID: </b><a href='http://www.amwa.tv/projects/rules/01/term/Filler/' target='_blank'>http://www.amwa.tv/projects/rules/01/term/Filler/</a></div>
                         
-                            <div class='info tInfo'><b>Defined By: </b><a href='#2ac1cb7a194dfe7fe8269a9760dcd495'>SMPTE ST 377-1</a></div>
+                            <div class='info tInfo_permanent'><b>Defined By: </b><a class='' data-toggle='tooltip' href='#2ac1cb7a194dfe7fe8269a9760dcd495' title='Material Exchange Format (MXF) — File Format Specification'>SMPTE ST 377-1</a></div>
                         
                     
                     </td></tr>
@@ -1980,7 +1981,7 @@
                              
                         <div class='info tInfo'><b>ID: </b><a href='http://www.amwa.tv/projects/rules/01/term/Frame%20Wrapping/' target='_blank'>http://www.amwa.tv/projects/rules/01/term/Frame%20Wrapping/</a></div>
                         
-                            <div class='info tInfo'><b>Defined By: </b><a href='#ee556d59cf1a949872bb1994e840b7a5'>SMPTE ST 379-2</a></div>
+                            <div class='info tInfo_permanent'><b>Defined By: </b><a class='' data-toggle='tooltip' href='#ee556d59cf1a949872bb1994e840b7a5' title='MXF Generic Container'>SMPTE ST 379-2</a></div>
                         
                     
                     </td></tr>
@@ -1995,7 +1996,7 @@
                              
                         <div class='info tInfo'><b>ID: </b><a href='http://www.amwa.tv/projects/rules/01/term/Generic%20Container/' target='_blank'>http://www.amwa.tv/projects/rules/01/term/Generic%20Container/</a></div>
                         
-                            <div class='info tInfo'><b>Defined By: </b><a href='#ee556d59cf1a949872bb1994e840b7a5'>SMPTE ST 379-2</a></div>
+                            <div class='info tInfo_permanent'><b>Defined By: </b><a class='' data-toggle='tooltip' href='#ee556d59cf1a949872bb1994e840b7a5' title='MXF Generic Container'>SMPTE ST 379-2</a></div>
                         
                     
                     </td></tr>
@@ -2010,7 +2011,7 @@
                              
                         <div class='info tInfo'><b>ID: </b><a href='http://www.amwa.tv/projects/rules/01/term/Header%20Metadata/' target='_blank'>http://www.amwa.tv/projects/rules/01/term/Header%20Metadata/</a></div>
                         
-                            <div class='info tInfo'><b>Defined By: </b><a href='#2ac1cb7a194dfe7fe8269a9760dcd495'>SMPTE ST 377-1</a></div>
+                            <div class='info tInfo_permanent'><b>Defined By: </b><a class='' data-toggle='tooltip' href='#2ac1cb7a194dfe7fe8269a9760dcd495' title='Material Exchange Format (MXF) — File Format Specification'>SMPTE ST 377-1</a></div>
                         
                     
                     </td></tr>
@@ -2025,7 +2026,7 @@
                              
                         <div class='info tInfo'><b>ID: </b><a href='http://www.amwa.tv/projects/rules/01/term/Header%20Partition/' target='_blank'>http://www.amwa.tv/projects/rules/01/term/Header%20Partition/</a></div>
                         
-                            <div class='info tInfo'><b>Defined By: </b><a href='#2ac1cb7a194dfe7fe8269a9760dcd495'>SMPTE ST 377-1</a></div>
+                            <div class='info tInfo_permanent'><b>Defined By: </b><a class='' data-toggle='tooltip' href='#2ac1cb7a194dfe7fe8269a9760dcd495' title='Material Exchange Format (MXF) — File Format Specification'>SMPTE ST 377-1</a></div>
                         
                     
                     </td></tr>
@@ -2040,7 +2041,7 @@
                              
                         <div class='info tInfo'><b>ID: </b><a href='http://www.amwa.tv/projects/rules/01/term/Index%20Table/' target='_blank'>http://www.amwa.tv/projects/rules/01/term/Index%20Table/</a></div>
                         
-                            <div class='info tInfo'><b>Defined By: </b><a href='#2ac1cb7a194dfe7fe8269a9760dcd495'>SMPTE ST 377-1</a></div>
+                            <div class='info tInfo_permanent'><b>Defined By: </b><a class='' data-toggle='tooltip' href='#2ac1cb7a194dfe7fe8269a9760dcd495' title='Material Exchange Format (MXF) — File Format Specification'>SMPTE ST 377-1</a></div>
                         
                     
                     </td></tr>
@@ -2055,7 +2056,7 @@
                              
                         <div class='info tInfo'><b>ID: </b><a href='http://www.amwa.tv/projects/rules/01/term/KLV%20Fill/' target='_blank'>http://www.amwa.tv/projects/rules/01/term/KLV%20Fill/</a></div>
                         
-                            <div class='info tInfo'><b>Defined By: </b><a href='#2ac1cb7a194dfe7fe8269a9760dcd495'>SMPTE ST 377-1</a></div>
+                            <div class='info tInfo_permanent'><b>Defined By: </b><a class='' data-toggle='tooltip' href='#2ac1cb7a194dfe7fe8269a9760dcd495' title='Material Exchange Format (MXF) — File Format Specification'>SMPTE ST 377-1</a></div>
                         
                     
                     </td></tr>
@@ -2070,7 +2071,7 @@
                              
                         <div class='info tInfo'><b>ID: </b><a href='http://www.amwa.tv/projects/rules/01/term/Material%20Package/' target='_blank'>http://www.amwa.tv/projects/rules/01/term/Material%20Package/</a></div>
                         
-                            <div class='info tInfo'><b>Defined By: </b><a href='#2ac1cb7a194dfe7fe8269a9760dcd495'>SMPTE ST 377-1</a></div>
+                            <div class='info tInfo_permanent'><b>Defined By: </b><a class='' data-toggle='tooltip' href='#2ac1cb7a194dfe7fe8269a9760dcd495' title='Material Exchange Format (MXF) — File Format Specification'>SMPTE ST 377-1</a></div>
                         
                     
                     </td></tr>
@@ -2085,7 +2086,7 @@
                              
                         <div class='info tInfo'><b>ID: </b><a href='http://www.amwa.tv/projects/rules/01/term/Package/' target='_blank'>http://www.amwa.tv/projects/rules/01/term/Package/</a></div>
                         
-                            <div class='info tInfo'><b>Defined By: </b><a href='#2ac1cb7a194dfe7fe8269a9760dcd495'>SMPTE ST 377-1</a></div>
+                            <div class='info tInfo_permanent'><b>Defined By: </b><a class='' data-toggle='tooltip' href='#2ac1cb7a194dfe7fe8269a9760dcd495' title='Material Exchange Format (MXF) — File Format Specification'>SMPTE ST 377-1</a></div>
                         
                     
                     </td></tr>
@@ -2100,7 +2101,7 @@
                              
                         <div class='info tInfo'><b>ID: </b><a href='http://www.amwa.tv/projects/rules/01/term/Partition/' target='_blank'>http://www.amwa.tv/projects/rules/01/term/Partition/</a></div>
                         
-                            <div class='info tInfo'><b>Defined By: </b><a href='#2ac1cb7a194dfe7fe8269a9760dcd495'>SMPTE ST 377-1</a></div>
+                            <div class='info tInfo_permanent'><b>Defined By: </b><a class='' data-toggle='tooltip' href='#2ac1cb7a194dfe7fe8269a9760dcd495' title='Material Exchange Format (MXF) — File Format Specification'>SMPTE ST 377-1</a></div>
                         
                     
                     </td></tr>
@@ -2115,7 +2116,7 @@
                              
                         <div class='info tInfo'><b>ID: </b><a href='http://www.amwa.tv/projects/rules/01/term/Picture%20Essence/' target='_blank'>http://www.amwa.tv/projects/rules/01/term/Picture%20Essence/</a></div>
                         
-                            <div class='info tInfo'><b>Defined By: </b><a href='#2ac1cb7a194dfe7fe8269a9760dcd495'>SMPTE ST 377-1</a></div>
+                            <div class='info tInfo_permanent'><b>Defined By: </b><a class='' data-toggle='tooltip' href='#2ac1cb7a194dfe7fe8269a9760dcd495' title='Material Exchange Format (MXF) — File Format Specification'>SMPTE ST 377-1</a></div>
                         
                     
                     </td></tr>
@@ -2130,7 +2131,7 @@
                              
                         <div class='info tInfo'><b>ID: </b><a href='http://www.amwa.tv/projects/rules/01/term/Picture%20Essence%20Descriptor/' target='_blank'>http://www.amwa.tv/projects/rules/01/term/Picture%20Essence%20Descriptor/</a></div>
                         
-                            <div class='info tInfo'><b>Defined By: </b><a href='#2ac1cb7a194dfe7fe8269a9760dcd495'>SMPTE ST 377-1</a></div>
+                            <div class='info tInfo_permanent'><b>Defined By: </b><a class='' data-toggle='tooltip' href='#2ac1cb7a194dfe7fe8269a9760dcd495' title='Material Exchange Format (MXF) — File Format Specification'>SMPTE ST 377-1</a></div>
                         
                     
                     </td></tr>
@@ -2145,7 +2146,7 @@
                              
                         <div class='info tInfo'><b>ID: </b><a href='http://www.amwa.tv/projects/rules/01/term/Picture%20Track/' target='_blank'>http://www.amwa.tv/projects/rules/01/term/Picture%20Track/</a></div>
                         
-                            <div class='info tInfo'><b>Defined By: </b><a href='#2ac1cb7a194dfe7fe8269a9760dcd495'>SMPTE ST 377-1</a></div>
+                            <div class='info tInfo_permanent'><b>Defined By: </b><a class='' data-toggle='tooltip' href='#2ac1cb7a194dfe7fe8269a9760dcd495' title='Material Exchange Format (MXF) — File Format Specification'>SMPTE ST 377-1</a></div>
                         
                     
                     </td></tr>
@@ -2160,7 +2161,7 @@
                              
                         <div class='info tInfo'><b>ID: </b><a href='http://www.amwa.tv/projects/rules/01/term/Preface/' target='_blank'>http://www.amwa.tv/projects/rules/01/term/Preface/</a></div>
                         
-                            <div class='info tInfo'><b>Defined By: </b><a href='#2ac1cb7a194dfe7fe8269a9760dcd495'>SMPTE ST 377-1</a></div>
+                            <div class='info tInfo_permanent'><b>Defined By: </b><a class='' data-toggle='tooltip' href='#2ac1cb7a194dfe7fe8269a9760dcd495' title='Material Exchange Format (MXF) — File Format Specification'>SMPTE ST 377-1</a></div>
                         
                     
                     </td></tr>
@@ -2175,7 +2176,7 @@
                              
                         <div class='info tInfo'><b>ID: </b><a href='http://www.amwa.tv/projects/rules/01/term/Sequence/' target='_blank'>http://www.amwa.tv/projects/rules/01/term/Sequence/</a></div>
                         
-                            <div class='info tInfo'><b>Defined By: </b><a href='#2ac1cb7a194dfe7fe8269a9760dcd495'>SMPTE ST 377-1</a></div>
+                            <div class='info tInfo_permanent'><b>Defined By: </b><a class='' data-toggle='tooltip' href='#2ac1cb7a194dfe7fe8269a9760dcd495' title='Material Exchange Format (MXF) — File Format Specification'>SMPTE ST 377-1</a></div>
                         
                     
                     </td></tr>
@@ -2190,7 +2191,7 @@
                              
                         <div class='info tInfo'><b>ID: </b><a href='http://www.amwa.tv/projects/rules/01/term/Sound%20Essence/' target='_blank'>http://www.amwa.tv/projects/rules/01/term/Sound%20Essence/</a></div>
                         
-                            <div class='info tInfo'><b>Defined By: </b><a href='#2ac1cb7a194dfe7fe8269a9760dcd495'>SMPTE ST 377-1</a></div>
+                            <div class='info tInfo_permanent'><b>Defined By: </b><a class='' data-toggle='tooltip' href='#2ac1cb7a194dfe7fe8269a9760dcd495' title='Material Exchange Format (MXF) — File Format Specification'>SMPTE ST 377-1</a></div>
                         
                     
                     </td></tr>
@@ -2205,7 +2206,7 @@
                              
                         <div class='info tInfo'><b>ID: </b><a href='http://www.amwa.tv/projects/rules/01/term/Source%20Essence/' target='_blank'>http://www.amwa.tv/projects/rules/01/term/Source%20Essence/</a></div>
                         
-                            <div class='info tInfo'><b>Defined By: </b><a href='#2ac1cb7a194dfe7fe8269a9760dcd495'>SMPTE ST 377-1</a></div>
+                            <div class='info tInfo_permanent'><b>Defined By: </b><a class='' data-toggle='tooltip' href='#2ac1cb7a194dfe7fe8269a9760dcd495' title='Material Exchange Format (MXF) — File Format Specification'>SMPTE ST 377-1</a></div>
                         
                     
                     </td></tr>
@@ -2220,7 +2221,7 @@
                              
                         <div class='info tInfo'><b>ID: </b><a href='http://www.amwa.tv/projects/rules/01/term/Source%20Package/' target='_blank'>http://www.amwa.tv/projects/rules/01/term/Source%20Package/</a></div>
                         
-                            <div class='info tInfo'><b>Defined By: </b><a href='#2ac1cb7a194dfe7fe8269a9760dcd495'>SMPTE ST 377-1</a></div>
+                            <div class='info tInfo_permanent'><b>Defined By: </b><a class='' data-toggle='tooltip' href='#2ac1cb7a194dfe7fe8269a9760dcd495' title='Material Exchange Format (MXF) — File Format Specification'>SMPTE ST 377-1</a></div>
                         
                     
                     </td></tr>
@@ -2235,7 +2236,7 @@
                              
                         <div class='info tInfo'><b>ID: </b><a href='http://www.amwa.tv/projects/rules/01/term/Static%20Track%20(DM)/' target='_blank'>http://www.amwa.tv/projects/rules/01/term/Static%20Track%20(DM)/</a></div>
                         
-                            <div class='info tInfo'><b>Defined By: </b><a href='#2ac1cb7a194dfe7fe8269a9760dcd495'>SMPTE ST 377-1</a></div>
+                            <div class='info tInfo_permanent'><b>Defined By: </b><a class='' data-toggle='tooltip' href='#2ac1cb7a194dfe7fe8269a9760dcd495' title='Material Exchange Format (MXF) — File Format Specification'>SMPTE ST 377-1</a></div>
                         
                     
                     </td></tr>
@@ -2250,7 +2251,7 @@
                              
                         <div class='info tInfo'><b>ID: </b><a href='http://www.amwa.tv/projects/rules/01/term/Timecode/' target='_blank'>http://www.amwa.tv/projects/rules/01/term/Timecode/</a></div>
                         
-                            <div class='info tInfo'><b>Defined By: </b><a href='#2ac1cb7a194dfe7fe8269a9760dcd495'>SMPTE ST 377-1</a></div>
+                            <div class='info tInfo_permanent'><b>Defined By: </b><a class='' data-toggle='tooltip' href='#2ac1cb7a194dfe7fe8269a9760dcd495' title='Material Exchange Format (MXF) — File Format Specification'>SMPTE ST 377-1</a></div>
                         
                     
                     </td></tr>
@@ -2265,7 +2266,7 @@
                              
                         <div class='info tInfo'><b>ID: </b><a href='http://www.amwa.tv/projects/rules/01/term/Timecode%20Component/' target='_blank'>http://www.amwa.tv/projects/rules/01/term/Timecode%20Component/</a></div>
                         
-                            <div class='info tInfo'><b>Defined By: </b><a href='#2ac1cb7a194dfe7fe8269a9760dcd495'>SMPTE ST 377-1</a></div>
+                            <div class='info tInfo_permanent'><b>Defined By: </b><a class='' data-toggle='tooltip' href='#2ac1cb7a194dfe7fe8269a9760dcd495' title='Material Exchange Format (MXF) — File Format Specification'>SMPTE ST 377-1</a></div>
                         
                     
                     </td></tr>
@@ -2280,7 +2281,7 @@
                              
                         <div class='info tInfo'><b>ID: </b><a href='http://www.amwa.tv/projects/rules/01/term/Timecode%20Track/' target='_blank'>http://www.amwa.tv/projects/rules/01/term/Timecode%20Track/</a></div>
                         
-                            <div class='info tInfo'><b>Defined By: </b><a href='#2ac1cb7a194dfe7fe8269a9760dcd495'>SMPTE ST 377-1</a></div>
+                            <div class='info tInfo_permanent'><b>Defined By: </b><a class='' data-toggle='tooltip' href='#2ac1cb7a194dfe7fe8269a9760dcd495' title='Material Exchange Format (MXF) — File Format Specification'>SMPTE ST 377-1</a></div>
                         
                     
                     </td></tr>
@@ -2295,7 +2296,7 @@
                              
                         <div class='info tInfo'><b>ID: </b><a href='http://www.amwa.tv/projects/rules/01/term/Timeline%20Track/' target='_blank'>http://www.amwa.tv/projects/rules/01/term/Timeline%20Track/</a></div>
                         
-                            <div class='info tInfo'><b>Defined By: </b><a href='#2ac1cb7a194dfe7fe8269a9760dcd495'>SMPTE ST 377-1</a></div>
+                            <div class='info tInfo_permanent'><b>Defined By: </b><a class='' data-toggle='tooltip' href='#2ac1cb7a194dfe7fe8269a9760dcd495' title='Material Exchange Format (MXF) — File Format Specification'>SMPTE ST 377-1</a></div>
                         
                     
                     </td></tr>
@@ -2310,7 +2311,7 @@
                              
                         <div class='info tInfo'><b>ID: </b><a href='http://www.amwa.tv/projects/rules/01/term/Top-Level%20File%20Package/' target='_blank'>http://www.amwa.tv/projects/rules/01/term/Top-Level%20File%20Package/</a></div>
                         
-                            <div class='info tInfo'><b>Defined By: </b><a href='#2ac1cb7a194dfe7fe8269a9760dcd495'>SMPTE ST 377-1</a></div>
+                            <div class='info tInfo_permanent'><b>Defined By: </b><a class='' data-toggle='tooltip' href='#2ac1cb7a194dfe7fe8269a9760dcd495' title='Material Exchange Format (MXF) — File Format Specification'>SMPTE ST 377-1</a></div>
                         
                     
                     </td></tr>
@@ -2325,7 +2326,7 @@
                              
                         <div class='info tInfo'><b>ID: </b><a href='http://www.amwa.tv/projects/rules/01/term/Track/' target='_blank'>http://www.amwa.tv/projects/rules/01/term/Track/</a></div>
                         
-                            <div class='info tInfo'><b>Defined By: </b><a href='#2ac1cb7a194dfe7fe8269a9760dcd495'>SMPTE ST 377-1</a></div>
+                            <div class='info tInfo_permanent'><b>Defined By: </b><a class='' data-toggle='tooltip' href='#2ac1cb7a194dfe7fe8269a9760dcd495' title='Material Exchange Format (MXF) — File Format Specification'>SMPTE ST 377-1</a></div>
                         
                     
                     </td></tr>
@@ -2625,6 +2626,7 @@ project are available from the <a href="http://amwa.tv/">AMWA</a></p>
     </div>
 
     <script src="./include/jquery.js"></script>
+    <script src="./include/prettify/prettify.js"></script>
     <script src="./include/jstree/jstree.js"></script>
     <script src="./include/bootstrap-3.3.5-dist/js/bootstrap.min.js"></script>
     
