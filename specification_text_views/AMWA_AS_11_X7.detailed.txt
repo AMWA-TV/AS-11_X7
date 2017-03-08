@@ -1,6 +1,10 @@
 # **[Proposed Specification]** AS-11 X7 (MXF Program Contribution - SD)
 
-_This file is one rendering / view of this AMWA Specification and is a part of the Specification repository. Visit the AMWA [web page for this Specification](http://amwa.tv/projects/AS-11-X7.shtml) which has information about revisions and current development._
+|*Important links*| |
+|-----------------|-|
+|[Specification Repository on GitHub](https://github.com/AMWA-TV/AS-11_X7/)|This repository is where the entire Specification (including this file and alternative renderings / views of the Specification) is stored and version controlled|
+|[Project Page on the AMWA Website](http://amwa.tv/projects/AS-11-X7.shtml)|The home of the Specification on the AMWA website|
+|[Development and Implementation Resources](https://github.com/AMWA-TV/AS-11_Overview/)|Provides resources such as Specification issue tracking, MXF sample files, and tools|
 
 
 # AS-11: Media Contribution File Formats
@@ -29,7 +33,7 @@ This Specification aims to define a file format for the delivery of finished SD 
 # Understanding the Specification Blocks Tree
 
 ## The Rules-Based Specification Framework
-This Specification has been written using a 'Rules-based Specification Framework'. In this framework, each 'constraint' or 'rule' is expressed as a 'Component' which can be unambiguosly identified by its ID (which is a URL). These Components assemble into 'networks' or 'webs' to form complete Specifications, with many Components being re-used across a number of Specifications. Through this approach machine processable Specifications are developed which are less ambiguous and easier to implement and test.
+This Specification has been written using a 'Rules-based Specification Framework'. In this framework, each 'constraint' or 'rule' is expressed as a 'Component' which can be unambiguously identified by its ID (the Component ID is a web address / URL; there need not be any content available at this web address). These Components assemble into 'networks' or 'webs' to form complete Specifications, with many Components being re-used across a number of Specifications. Through this approach machine processable Specifications are developed which are less ambiguous and easier to implement and test. To read a more detailed introduction to the Rules-based Specification Framework refer to [Rules-Based Specifications: Modelling and Processing](http://www.bbc.co.uk/rd/publications/whitepaper319).
 
 * **Blocks (B)** are the fundamental 'building bricks' of a Specification -- they provide its _structure_.
 * A Block can either link to **Artefacts (A)** that it 'owns' or link to other Blocks.
@@ -37,8 +41,8 @@ This Specification has been written using a 'Rules-based Specification Framework
 * Artefacts often refer to **Terms (T)** and **References (R)** as well as Blocks.
 * Blocks are sometimes described by **Notes (N)**.
 * There are two special types of Block which allow the value of one Block to be set by another Block:
-  * **Parameter Key Block (K)** -- this is a Block whose value must be set elsewhere in the Specification (it effectively defines a "variable" or an "argument").
-  * **Parameter Value Block (V)** -- this is a Block which sets the value of a specific Parameter Key Block.
+    * **Parameter Key Block (K)** -- this is a Block whose value must be set elsewhere in the Specification (it effectively defines a "variable" or an "argument").
+    * **Parameter Value Block (V)** -- this is a Block which sets the value of a specific Parameter Key Block.
 
 In this document the network of Blocks (and other Components) that form the Specification are shown as a 'tree': the Specification Blocks Tree. The letters in brackets above are used in the tree to identify the different kinds of Component.
 
@@ -60,276 +64,276 @@ An implementation complies with this Specification if it complies with the Compo
 # The Specification Blocks Tree
 
 [B] File Format
-    <URL: http://www.amwa.tv/projects/rules/01/block/FF_7/>
+    <Component ID: http://www.amwa.tv/projects/rules/01/block/FF_7/>
     [B] Core MXF constraints
         Conformance: mandatory
-        <URL: http://www.amwa.tv/projects/rules/01/block/MXF_Core_12/>
+        <Component ID: http://www.amwa.tv/projects/rules/01/block/MXF_Core_12/>
         [B] MXF File Format
             Conformance: mandatory
-            <URL: http://www.amwa.tv/projects/rules/01/block/005/>
+            <Component ID: http://www.amwa.tv/projects/rules/01/block/005/>
             [A] The file conforms to <SMPTE ST 377:2004>.
-                <URL: http://www.amwa.tv/projects/rules/01/block/005/artefacts/1.md>
+                <Component ID: http://www.amwa.tv/projects/rules/01/block/005/artefacts/1.md>
                 [R] SMPTE ST 377:2004
-                    <URL: http://www.amwa.tv/projects/rules/01/external_reference_revision/SMPTE%20ST%20377-1-2004/>
+                    <Component ID: http://www.amwa.tv/projects/rules/01/external_reference_revision/SMPTE%20ST%20377-1-2004/>
             [N] Later versions of MXF
-                <URL: http://www.amwa.tv/projects/rules/01/note/030/>
+                <Component ID: http://www.amwa.tv/projects/rules/01/note/030/>
                 [A] This does not prohibit the use of MXF version 1.3 (SMPTE ST 377-1:2011) for SD files. SMPTE encourages users to apply the most recent edition of standards where possible.
-                    <URL: http://www.amwa.tv/projects/rules/01/note/030/artefacts/1.md>
+                    <Component ID: http://www.amwa.tv/projects/rules/01/note/030/artefacts/1.md>
         [B] Operational pattern 1a
             Conformance: mandatory
-            <URL: http://www.amwa.tv/projects/rules/01/block/010/>
+            <Component ID: http://www.amwa.tv/projects/rules/01/block/010/>
             [A] The file conforms to <SMPTE ST 378:2004>.
-                <URL: http://www.amwa.tv/projects/rules/01/block/010/artefacts/1.md>
+                <Component ID: http://www.amwa.tv/projects/rules/01/block/010/artefacts/1.md>
                 [R] SMPTE ST 378:2004
-                    <URL: http://www.amwa.tv/projects/rules/01/external_reference_revision/SMPTE%20ST%20378-2004/>
+                    <Component ID: http://www.amwa.tv/projects/rules/01/external_reference_revision/SMPTE%20ST%20378-2004/>
             [N] Implementation Notes
-                <URL: http://www.amwa.tv/projects/rules/01/note/011/>
+                <Component ID: http://www.amwa.tv/projects/rules/01/note/011/>
                 [A] The file must be labelled as OP1a in the Operational Pattern property of all Partition Packs and the Preface Set, as required by <SMPTE ST 377-1:2011> in Section 7.1 and Annex A, respectively.
-                    <URL: http://www.amwa.tv/projects/rules/01/note/011/artefacts/1.md>
+                    <Component ID: http://www.amwa.tv/projects/rules/01/note/011/artefacts/1.md>
                     [R] SMPTE ST 377-1:2011
-                        <URL: http://www.amwa.tv/projects/rules/01/external_reference_revision/SMPTE%20ST%20377-1-2011/>
+                        <Component ID: http://www.amwa.tv/projects/rules/01/external_reference_revision/SMPTE%20ST%20377-1-2011/>
         [B] Closed Complete Header
             Conformance: mandatory
-            <URL: http://www.amwa.tv/projects/rules/01/block/020/>
+            <Component ID: http://www.amwa.tv/projects/rules/01/block/020/>
             [A] The <Header Partition> is "Closed" and "Complete".
-                <URL: http://www.amwa.tv/projects/rules/01/block/020/artefacts/1.md>
+                <Component ID: http://www.amwa.tv/projects/rules/01/block/020/artefacts/1.md>
                 [T] Header Partition
                     The first <Partition> in the MXF file. This <Partition> always contains a copy of the <Header Metadata>.
-                    <URL: http://www.amwa.tv/projects/rules/01/term/Header%20Partition/>
+                    <Component ID: http://www.amwa.tv/projects/rules/01/term/Header%20Partition/>
                     [T] Partition
                         A portion of the MXF file. An MXF file consists of a sequence of Partitions.
-                        <URL: http://www.amwa.tv/projects/rules/01/term/Partition/>
+                        <Component ID: http://www.amwa.tv/projects/rules/01/term/Partition/>
                     [T] Header Metadata
                         MXF data structures that collectively describe the data in the <Essence> data in an MXF file.
-                        <URL: http://www.amwa.tv/projects/rules/01/term/Header%20Metadata/>
+                        <Component ID: http://www.amwa.tv/projects/rules/01/term/Header%20Metadata/>
                         [T] Essence
                             A bitstream comprising picture, sound or data.
-                            <URL: http://www.amwa.tv/projects/rules/01/term/Essence/>
+                            <Component ID: http://www.amwa.tv/projects/rules/01/term/Essence/>
             [N] Implementation Notes
-                <URL: http://www.amwa.tv/projects/rules/01/note/014/>
+                <Component ID: http://www.amwa.tv/projects/rules/01/note/014/>
                 [A] Byte 15 of the Header Partition Pack Key must be set to 04h and all Header Metadata must have correct values. Hence 'Distinguished Values' cannot be used for 'Best Effort' properties. See Section 6.2.3 of SMPTE ST 377-1:2011 for a full explanation.
-                    <URL: http://www.amwa.tv/projects/rules/01/note/014/artefacts/1.md>
+                    <Component ID: http://www.amwa.tv/projects/rules/01/note/014/artefacts/1.md>
         [B] Generic Container
             Conformance: mandatory
-            <URL: http://www.amwa.tv/projects/rules/01/block/090/>
+            <Component ID: http://www.amwa.tv/projects/rules/01/block/090/>
             [A] The file uses the <Generic Container>.
-                <URL: http://www.amwa.tv/projects/rules/01/block/090/artefacts/1.md>
+                <Component ID: http://www.amwa.tv/projects/rules/01/block/090/artefacts/1.md>
                 [T] Generic Container
                     MXF data structure used to store <Essence> data in an MXF file.
-                    <URL: http://www.amwa.tv/projects/rules/01/term/Generic%20Container/>
+                    <Component ID: http://www.amwa.tv/projects/rules/01/term/Generic%20Container/>
                     [T] Essence
                         A bitstream comprising picture, sound or data.
-                        <URL: http://www.amwa.tv/projects/rules/01/term/Essence/>
+                        <Component ID: http://www.amwa.tv/projects/rules/01/term/Essence/>
         [B] Internal Essence
             Conformance: mandatory
-            <URL: http://www.amwa.tv/projects/rules/01/block/100/>
+            <Component ID: http://www.amwa.tv/projects/rules/01/block/100/>
             [A] The <Generic Container> is internal to the file.
-                <URL: http://www.amwa.tv/projects/rules/01/block/100/artefacts/1.md>
+                <Component ID: http://www.amwa.tv/projects/rules/01/block/100/artefacts/1.md>
                 [T] Generic Container
                     MXF data structure used to store <Essence> data in an MXF file.
-                    <URL: http://www.amwa.tv/projects/rules/01/term/Generic%20Container/>
+                    <Component ID: http://www.amwa.tv/projects/rules/01/term/Generic%20Container/>
                     [T] Essence
                         A bitstream comprising picture, sound or data.
-                        <URL: http://www.amwa.tv/projects/rules/01/term/Essence/>
+                        <Component ID: http://www.amwa.tv/projects/rules/01/term/Essence/>
         [B] Strict Frame Wrapping
             Conformance: mandatory
-            <URL: http://www.amwa.tv/projects/rules/01/block/110/>
+            <Component ID: http://www.amwa.tv/projects/rules/01/block/110/>
             [A] The <Generic Container> uses <Frame Wrapping>.
-                <URL: http://www.amwa.tv/projects/rules/01/block/110/artefacts/1.md>
+                <Component ID: http://www.amwa.tv/projects/rules/01/block/110/artefacts/1.md>
                 [T] Generic Container
                     MXF data structure used to store <Essence> data in an MXF file.
-                    <URL: http://www.amwa.tv/projects/rules/01/term/Generic%20Container/>
+                    <Component ID: http://www.amwa.tv/projects/rules/01/term/Generic%20Container/>
                     [T] Essence
                         A bitstream comprising picture, sound or data.
-                        <URL: http://www.amwa.tv/projects/rules/01/term/Essence/>
+                        <Component ID: http://www.amwa.tv/projects/rules/01/term/Essence/>
                 [T] Frame Wrapping
                     A method for dividing and interleaving <Essence Element>s for each frame of <Picture Essence>.
-                    <URL: http://www.amwa.tv/projects/rules/01/term/Frame%20Wrapping/>
+                    <Component ID: http://www.amwa.tv/projects/rules/01/term/Frame%20Wrapping/>
                     [T] Essence Element
                         The entire essence stream of a single <Track>.
-                        <URL: http://www.amwa.tv/projects/rules/01/term/Essence%20Element/>
+                        <Component ID: http://www.amwa.tv/projects/rules/01/term/Essence%20Element/>
                         [T] Track
                             MXF data structure used to describe the content structure.
-                            <URL: http://www.amwa.tv/projects/rules/01/term/Track/>
+                            <Component ID: http://www.amwa.tv/projects/rules/01/term/Track/>
                     [T] Picture Essence
                         A type of <Essence> containing predominantly picture data.
-                        <URL: http://www.amwa.tv/projects/rules/01/term/Picture%20Essence/>
+                        <Component ID: http://www.amwa.tv/projects/rules/01/term/Picture%20Essence/>
                         [T] Essence
                             A bitstream comprising picture, sound or data.
-                            <URL: http://www.amwa.tv/projects/rules/01/term/Essence/>
+                            <Component ID: http://www.amwa.tv/projects/rules/01/term/Essence/>
             [A] If the <Generic Container> contains <Picture Essence> then the related <Edit Unit> duration is equal to the duration of a video frame of the <Picture Essence>.
-                <URL: http://www.amwa.tv/projects/rules/01/block/110/artefacts/2.md>
+                <Component ID: http://www.amwa.tv/projects/rules/01/block/110/artefacts/2.md>
                 [T] Generic Container
                     MXF data structure used to store <Essence> data in an MXF file.
-                    <URL: http://www.amwa.tv/projects/rules/01/term/Generic%20Container/>
+                    <Component ID: http://www.amwa.tv/projects/rules/01/term/Generic%20Container/>
                     [T] Essence
                         A bitstream comprising picture, sound or data.
-                        <URL: http://www.amwa.tv/projects/rules/01/term/Essence/>
+                        <Component ID: http://www.amwa.tv/projects/rules/01/term/Essence/>
                 [T] Picture Essence
                     A type of <Essence> containing predominantly picture data.
-                    <URL: http://www.amwa.tv/projects/rules/01/term/Picture%20Essence/>
+                    <Component ID: http://www.amwa.tv/projects/rules/01/term/Picture%20Essence/>
                     [T] Essence
                         A bitstream comprising picture, sound or data.
-                        <URL: http://www.amwa.tv/projects/rules/01/term/Essence/>
+                        <Component ID: http://www.amwa.tv/projects/rules/01/term/Essence/>
                 [T] Edit Unit
                     A temporal division of a <Track>.
-                    <URL: http://www.amwa.tv/projects/rules/01/term/Edit%20Unit/>
+                    <Component ID: http://www.amwa.tv/projects/rules/01/term/Edit%20Unit/>
                     [T] Track
                         MXF data structure used to describe the content structure.
-                        <URL: http://www.amwa.tv/projects/rules/01/term/Track/>
+                        <Component ID: http://www.amwa.tv/projects/rules/01/term/Track/>
             [N] Implementation Notes
-                <URL: http://www.amwa.tv/projects/rules/01/note/E8/>
+                <Component ID: http://www.amwa.tv/projects/rules/01/note/E8/>
                 [A] For example, this means that if the <Picture Essence> is field-encoded then each <Edit Unit> contains the data assosiated with both of the video fields for a video frame.
-                    <URL: http://www.amwa.tv/projects/rules/01/note/E8/artefacts/1.md>
+                    <Component ID: http://www.amwa.tv/projects/rules/01/note/E8/artefacts/1.md>
                     [T] Picture Essence
                         A type of <Essence> containing predominantly picture data.
-                        <URL: http://www.amwa.tv/projects/rules/01/term/Picture%20Essence/>
+                        <Component ID: http://www.amwa.tv/projects/rules/01/term/Picture%20Essence/>
                         [T] Essence
                             A bitstream comprising picture, sound or data.
-                            <URL: http://www.amwa.tv/projects/rules/01/term/Essence/>
+                            <Component ID: http://www.amwa.tv/projects/rules/01/term/Essence/>
                     [T] Edit Unit
                         A temporal division of a <Track>.
-                        <URL: http://www.amwa.tv/projects/rules/01/term/Edit%20Unit/>
+                        <Component ID: http://www.amwa.tv/projects/rules/01/term/Edit%20Unit/>
                         [T] Track
                             MXF data structure used to describe the content structure.
-                            <URL: http://www.amwa.tv/projects/rules/01/term/Track/>
+                            <Component ID: http://www.amwa.tv/projects/rules/01/term/Track/>
         [B] One-to-one Track mapping
             Conformance: mandatory
-            <URL: http://www.amwa.tv/projects/rules/01/block/120/>
+            <Component ID: http://www.amwa.tv/projects/rules/01/block/120/>
             [A] Each <Essence Track> in the <Top-Level File Package> is referenced by exactly one <Essence Track> in the <Material Package>.
-                <URL: http://www.amwa.tv/projects/rules/01/block/120/artefacts/1.md>
+                <Component ID: http://www.amwa.tv/projects/rules/01/block/120/artefacts/1.md>
                 [T] Essence Track
                     A type of <Track> that references <Essence>.
-                    <URL: http://www.amwa.tv/projects/rules/01/term/Essence%20Track/>
+                    <Component ID: http://www.amwa.tv/projects/rules/01/term/Essence%20Track/>
                     [T] Track
                         MXF data structure used to describe the content structure.
-                        <URL: http://www.amwa.tv/projects/rules/01/term/Track/>
+                        <Component ID: http://www.amwa.tv/projects/rules/01/term/Track/>
                     [T] Essence
                         A bitstream comprising picture, sound or data.
-                        <URL: http://www.amwa.tv/projects/rules/01/term/Essence/>
+                        <Component ID: http://www.amwa.tv/projects/rules/01/term/Essence/>
                 [T] Top-Level File Package
                     A <Source Package> that is internal to the file and which is directly referenced by a <Material Package> of the file.
-                    <URL: http://www.amwa.tv/projects/rules/01/term/Top-Level%20File%20Package/>
+                    <Component ID: http://www.amwa.tv/projects/rules/01/term/Top-Level%20File%20Package/>
                     [T] Source Package
                         MXF data structure that describes source <Essence>.
-                        <URL: http://www.amwa.tv/projects/rules/01/term/Source%20Package/>
+                        <Component ID: http://www.amwa.tv/projects/rules/01/term/Source%20Package/>
                         [T] Essence
                             A bitstream comprising picture, sound or data.
-                            <URL: http://www.amwa.tv/projects/rules/01/term/Essence/>
+                            <Component ID: http://www.amwa.tv/projects/rules/01/term/Essence/>
                     [T] Material Package
                         An MXF data structure that describe an output timeline of the file.
-                        <URL: http://www.amwa.tv/projects/rules/01/term/Material%20Package/>
+                        <Component ID: http://www.amwa.tv/projects/rules/01/term/Material%20Package/>
                 [T] Material Package
                     An MXF data structure that describe an output timeline of the file.
-                    <URL: http://www.amwa.tv/projects/rules/01/term/Material%20Package/>
+                    <Component ID: http://www.amwa.tv/projects/rules/01/term/Material%20Package/>
             [N] No division/combination of Audio Channels between Sound Tracks
-                <URL: http://www.amwa.tv/projects/rules/01/note/E19/>
+                <Component ID: http://www.amwa.tv/projects/rules/01/note/E19/>
                 [A] This prohibits:
                     
                     * the mapping of audio channels from a multi-channel Sound Track in a Source Package to single-channel Sound Tracks in the Material Package
                     * the mapping of audio channels from single-channel Sound Tracks in a Source Package to multi-channel Sound Tracks in the Material Package
                     
                     which is specified in Annex E of SMPTE ST 382:2007.
-                    <URL: http://www.amwa.tv/projects/rules/01/note/E19/artefacts/1.md>
+                    <Component ID: http://www.amwa.tv/projects/rules/01/note/E19/artefacts/1.md>
     [B] Header Metadata KLV Fill
         Conformance: recommended
-        <URL: http://www.amwa.tv/projects/rules/01/block/KLVF_B/>
+        <Component ID: http://www.amwa.tv/projects/rules/01/block/KLVF_B/>
         [A] When first created, the file includes a <KLV Fill> item of at least 4 MB in total length following the <Header Metadata>.
-            <URL: http://www.amwa.tv/projects/rules/01/block/KLVF_B/artefacts/1.md>
+            <Component ID: http://www.amwa.tv/projects/rules/01/block/KLVF_B/artefacts/1.md>
             [T] KLV Fill
                 Refers to the well-defined means of inserting empty, "fill", data in an MXF file.
-                <URL: http://www.amwa.tv/projects/rules/01/term/KLV%20Fill/>
+                <Component ID: http://www.amwa.tv/projects/rules/01/term/KLV%20Fill/>
             [T] Header Metadata
                 MXF data structures that collectively describe the data in the <Essence> data in an MXF file.
-                <URL: http://www.amwa.tv/projects/rules/01/term/Header%20Metadata/>
+                <Component ID: http://www.amwa.tv/projects/rules/01/term/Header%20Metadata/>
                 [T] Essence
                     A bitstream comprising picture, sound or data.
-                    <URL: http://www.amwa.tv/projects/rules/01/term/Essence/>
+                    <Component ID: http://www.amwa.tv/projects/rules/01/term/Essence/>
         [N] Implementation Notes
-            <URL: http://www.amwa.tv/projects/rules/01/note/002/>
+            <Component ID: http://www.amwa.tv/projects/rules/01/note/002/>
             [A] The "total length" is of the entire item and includes the length of the Key and Length fields.
                 
                 The extra space afforded by the KLV Fill allows Header Metadata to be edited and added to without rewriting the entire file.
-                <URL: http://www.amwa.tv/projects/rules/01/note/002/artefacts/1.md>
+                <Component ID: http://www.amwa.tv/projects/rules/01/note/002/artefacts/1.md>
         [N] Definition of megabyte
-            <URL: http://www.amwa.tv/projects/rules/01/note/E37/>
+            <Component ID: http://www.amwa.tv/projects/rules/01/note/E37/>
             [A] The unit symbol "MB" refers to a megabyte, which is 1 000 000 bytes.
-                <URL: http://www.amwa.tv/projects/rules/01/note/E37/artefacts/1.md>
+                <Component ID: http://www.amwa.tv/projects/rules/01/note/E37/artefacts/1.md>
     [B] MXF Indexing and Partitioning strategy for CBE Essence
         Conformance: mandatory
-        <URL: http://www.amwa.tv/projects/rules/01/block/MXF_Intra/>
+        <Component ID: http://www.amwa.tv/projects/rules/01/block/MXF_Intra/>
         [B] Index precedes Essence
             Conformance: mandatory
-            <URL: http://www.amwa.tv/projects/rules/01/block/060/>
+            <Component ID: http://www.amwa.tv/projects/rules/01/block/060/>
             [A] The file contains a complete <Index Table> before the <Essence>.
-                <URL: http://www.amwa.tv/projects/rules/01/block/060/artefacts/1.md>
+                <Component ID: http://www.amwa.tv/projects/rules/01/block/060/artefacts/1.md>
                 [T] Index Table
                     A structure in an MXF file used to efficiently access <Essence> data.
-                    <URL: http://www.amwa.tv/projects/rules/01/term/Index%20Table/>
+                    <Component ID: http://www.amwa.tv/projects/rules/01/term/Index%20Table/>
                     [T] Essence
                         A bitstream comprising picture, sound or data.
-                        <URL: http://www.amwa.tv/projects/rules/01/term/Essence/>
+                        <Component ID: http://www.amwa.tv/projects/rules/01/term/Essence/>
                 [T] Essence
                     A bitstream comprising picture, sound or data.
-                    <URL: http://www.amwa.tv/projects/rules/01/term/Essence/>
+                    <Component ID: http://www.amwa.tv/projects/rules/01/term/Essence/>
         [B] Index all Essence
             Conformance: mandatory
-            <URL: http://www.amwa.tv/projects/rules/01/block/070/>
+            <Component ID: http://www.amwa.tv/projects/rules/01/block/070/>
             [A] The <Index Table> indexes every <Edit Unit> of every <Essence Element> in the file.
-                <URL: http://www.amwa.tv/projects/rules/01/block/070/artefacts/1.md>
+                <Component ID: http://www.amwa.tv/projects/rules/01/block/070/artefacts/1.md>
                 [T] Index Table
                     A structure in an MXF file used to efficiently access <Essence> data.
-                    <URL: http://www.amwa.tv/projects/rules/01/term/Index%20Table/>
+                    <Component ID: http://www.amwa.tv/projects/rules/01/term/Index%20Table/>
                     [T] Essence
                         A bitstream comprising picture, sound or data.
-                        <URL: http://www.amwa.tv/projects/rules/01/term/Essence/>
+                        <Component ID: http://www.amwa.tv/projects/rules/01/term/Essence/>
                 [T] Edit Unit
                     A temporal division of a <Track>.
-                    <URL: http://www.amwa.tv/projects/rules/01/term/Edit%20Unit/>
+                    <Component ID: http://www.amwa.tv/projects/rules/01/term/Edit%20Unit/>
                     [T] Track
                         MXF data structure used to describe the content structure.
-                        <URL: http://www.amwa.tv/projects/rules/01/term/Track/>
+                        <Component ID: http://www.amwa.tv/projects/rules/01/term/Track/>
                 [T] Essence Element
                     The entire essence stream of a single <Track>.
-                    <URL: http://www.amwa.tv/projects/rules/01/term/Essence%20Element/>
+                    <Component ID: http://www.amwa.tv/projects/rules/01/term/Essence%20Element/>
                     [T] Track
                         MXF data structure used to describe the content structure.
-                        <URL: http://www.amwa.tv/projects/rules/01/term/Track/>
+                        <Component ID: http://www.amwa.tv/projects/rules/01/term/Track/>
         [B] Single Essence Partition
             Conformance: mandatory
-            <URL: http://www.amwa.tv/projects/rules/01/block/101/>
+            <Component ID: http://www.amwa.tv/projects/rules/01/block/101/>
             [A] The <Generic Container> is entirely contained in exactly one <Partition>.
-                <URL: http://www.amwa.tv/projects/rules/01/block/101/artefacts/1.md>
+                <Component ID: http://www.amwa.tv/projects/rules/01/block/101/artefacts/1.md>
                 [T] Generic Container
                     MXF data structure used to store <Essence> data in an MXF file.
-                    <URL: http://www.amwa.tv/projects/rules/01/term/Generic%20Container/>
+                    <Component ID: http://www.amwa.tv/projects/rules/01/term/Generic%20Container/>
                     [T] Essence
                         A bitstream comprising picture, sound or data.
-                        <URL: http://www.amwa.tv/projects/rules/01/term/Essence/>
+                        <Component ID: http://www.amwa.tv/projects/rules/01/term/Essence/>
                 [T] Partition
                     A portion of the MXF file. An MXF file consists of a sequence of Partitions.
-                    <URL: http://www.amwa.tv/projects/rules/01/term/Partition/>
+                    <Component ID: http://www.amwa.tv/projects/rules/01/term/Partition/>
         [N] Indexing and Partitions
-            <URL: http://www.amwa.tv/projects/rules/01/note/007/>
+            <Component ID: http://www.amwa.tv/projects/rules/01/note/007/>
             [A] It's generally considered good MXF practice to have one 'thing' per Partition, so you'd have separate Partitions for Header Metadata, Essence, and Index Tables. This isn't a requirement but following best practice is encouraged.
                 
                 The Index Table could be placed in the Header Partition, its own Body Partition or in a Body Partition with the Essence. Indeed it could be distributed across all three of these locations. Decoders need to be able to cope with all of these posibilities.
-                <URL: http://www.amwa.tv/projects/rules/01/note/007/artefacts/1.md>
+                <Component ID: http://www.amwa.tv/projects/rules/01/note/007/artefacts/1.md>
     [B] ST 386 with D-10 625i25 at 50 Mbps
         Conformance: mandatory
-        <URL: http://www.amwa.tv/projects/rules/01/block/PE2/>
+        <Component ID: http://www.amwa.tv/projects/rules/01/block/PE2/>
         [A] The file conforms to <SMPTE ST 386:2004> where the <Picture Essence> operates at "50 Mbit/s" using a "625/50 system".
-            <URL: http://www.amwa.tv/projects/rules/01/block/PE2/artefacts/130.md>
+            <Component ID: http://www.amwa.tv/projects/rules/01/block/PE2/artefacts/130.md>
             [R] SMPTE ST 386:2004
-                <URL: http://www.amwa.tv/projects/rules/01/external_reference_revision/SMPTE%20ST%20386-2004/>
+                <Component ID: http://www.amwa.tv/projects/rules/01/external_reference_revision/SMPTE%20ST%20386-2004/>
             [T] Picture Essence
                 A type of <Essence> containing predominantly picture data.
-                <URL: http://www.amwa.tv/projects/rules/01/term/Picture%20Essence/>
+                <Component ID: http://www.amwa.tv/projects/rules/01/term/Picture%20Essence/>
                 [T] Essence
                     A bitstream comprising picture, sound or data.
-                    <URL: http://www.amwa.tv/projects/rules/01/term/Essence/>
+                    <Component ID: http://www.amwa.tv/projects/rules/01/term/Essence/>
         [N] Implementation Notes
-            <URL: http://www.amwa.tv/projects/rules/01/note/E33/>
+            <Component ID: http://www.amwa.tv/projects/rules/01/note/E33/>
             [A] All aspects of SMPTE ST 386:2004 must be followed. In addition to the mapping of the AES3 Sound Essence and D-10 Picture Essence, it also covers other things such as Index Tables and KAG size.
                 
                 The KLV Alignment Grid of any Partition containing an Essence Container must be 512.
@@ -344,664 +348,664 @@ An implementation complies with this Specification if it complies with the Compo
                 The constraints on Picture Essence encoding here imply a "level" of "main".
                 
                 Standard Definition content can have an aspect ratio of 16/9 or 4/3.
-                <URL: http://www.amwa.tv/projects/rules/01/note/E33/artefacts/1.md>
+                <Component ID: http://www.amwa.tv/projects/rules/01/note/E33/artefacts/1.md>
     [B] Uncompressed 24-bit PCM audio at 48 kHz
         Conformance: mandatory
-        <URL: http://www.amwa.tv/projects/rules/01/block/230/>
+        <Component ID: http://www.amwa.tv/projects/rules/01/block/230/>
         [A] For each <Audio Channel> the <Sound Essence> is "uncompressed PCM audio data" per <SMPTE ST 382:2007>, sampled at 48 kHz with 24 bits per sample.
-            <URL: http://www.amwa.tv/projects/rules/01/block/230/artefacts/1.md>
+            <Component ID: http://www.amwa.tv/projects/rules/01/block/230/artefacts/1.md>
             [T] Audio Channel
                 A distinct collection of sequenced audio samples that are intended for delivery to a single loudspeaker or other reproduction device.
-                <URL: http://www.amwa.tv/projects/rules/01/term/Audio%20Channel/>
+                <Component ID: http://www.amwa.tv/projects/rules/01/term/Audio%20Channel/>
             [T] Sound Essence
                 A type of <Essence> containing sound data.
-                <URL: http://www.amwa.tv/projects/rules/01/term/Sound%20Essence/>
+                <Component ID: http://www.amwa.tv/projects/rules/01/term/Sound%20Essence/>
                 [T] Essence
                     A bitstream comprising picture, sound or data.
-                    <URL: http://www.amwa.tv/projects/rules/01/term/Essence/>
+                    <Component ID: http://www.amwa.tv/projects/rules/01/term/Essence/>
             [R] SMPTE ST 382:2007
-                <URL: http://www.amwa.tv/projects/rules/01/external_reference_revision/SMPTE%20ST%20382-2007/>
+                <Component ID: http://www.amwa.tv/projects/rules/01/external_reference_revision/SMPTE%20ST%20382-2007/>
         [N] Implementation Notes
-            <URL: http://www.amwa.tv/projects/rules/01/note/029/>
+            <Component ID: http://www.amwa.tv/projects/rules/01/note/029/>
             [A] As per Section 6 of <SMPTE ST 382:2007> samples are stored as little-endian integers.
-                <URL: http://www.amwa.tv/projects/rules/01/note/029/artefacts/1.md>
+                <Component ID: http://www.amwa.tv/projects/rules/01/note/029/artefacts/1.md>
                 [R] SMPTE ST 382:2007
-                    <URL: http://www.amwa.tv/projects/rules/01/external_reference_revision/SMPTE%20ST%20382-2007/>
+                    <Component ID: http://www.amwa.tv/projects/rules/01/external_reference_revision/SMPTE%20ST%20382-2007/>
     [B] Embedded XML Documents
         Conformance: mandatory
-        <URL: http://www.amwa.tv/projects/rules/01/block/DM1/>
+        <Component ID: http://www.amwa.tv/projects/rules/01/block/DM1/>
         [A] An XML document defined by <XML DM for Programmes> is embedded in the file using <XML Document in Header Metadata Carriage>.
-            <URL: http://www.amwa.tv/projects/rules/01/block/DM1/artefacts/1.md>
+            <Component ID: http://www.amwa.tv/projects/rules/01/block/DM1/artefacts/1.md>
             [B] XML DM for Programmes
-                <URL: http://www.amwa.tv/projects/rules/01/block/XML_DM_Programmes/>
+                <Component ID: http://www.amwa.tv/projects/rules/01/block/XML_DM_Programmes/>
                 [A] The namespace of the document's root element is <Programmes Descriptive Metadata>; the name of the document's root element is "Programmes_DM"; the Media type (MIME type) for the document is "application/xml"
-                    <URL: http://www.amwa.tv/projects/rules/01/block/XML_DM_Programmes/artefacts/1.md>
+                    <Component ID: http://www.amwa.tv/projects/rules/01/block/XML_DM_Programmes/artefacts/1.md>
                     [B] Programmes Descriptive Metadata
-                        <URL: http://www.amwa.tv/projects/rules/01/block/DM_Programmes/>
-                        [A] http://www.amwa.tv/projects/rules/01/block/DM_Programmes/artefacts/DM_Programmes.xsd
-                            <URL: http://www.amwa.tv/projects/rules/01/block/DM_Programmes/artefacts/DM_Programmes.xsd>
+                        <Component ID: http://www.amwa.tv/projects/rules/01/block/DM_Programmes/>
+                        [A] Artefact copied to: ../specification_data_files/www.amwa.tv_c0f7b64/block/DM_Programmes/artefacts/DM_Programmes.xsd
+                            <Component ID: http://www.amwa.tv/projects/rules/01/block/DM_Programmes/artefacts/DM_Programmes.xsd>
             [B] XML Document in Header Metadata Carriage
-                <URL: http://www.amwa.tv/projects/rules/01/block/XML0/>
+                <Component ID: http://www.amwa.tv/projects/rules/01/block/XML0/>
                 [A] The XML document is a complete XML document (with a single root element) that is UTF-8 encoded without a "Byte-Order Mark" (BOM).
-                    <URL: http://www.amwa.tv/projects/rules/01/block/XML0/artefacts/0.md>
+                    <Component ID: http://www.amwa.tv/projects/rules/01/block/XML0/artefacts/0.md>
                 [A] The XML document is carried in the <Header Metadata> according to <SMPTE RP 2057:2011>.
-                    <URL: http://www.amwa.tv/projects/rules/01/block/XML0/artefacts/1.md>
+                    <Component ID: http://www.amwa.tv/projects/rules/01/block/XML0/artefacts/1.md>
                     [T] Header Metadata
                         MXF data structures that collectively describe the data in the <Essence> data in an MXF file.
-                        <URL: http://www.amwa.tv/projects/rules/01/term/Header%20Metadata/>
+                        <Component ID: http://www.amwa.tv/projects/rules/01/term/Header%20Metadata/>
                         [T] Essence
                             A bitstream comprising picture, sound or data.
-                            <URL: http://www.amwa.tv/projects/rules/01/term/Essence/>
+                            <Component ID: http://www.amwa.tv/projects/rules/01/term/Essence/>
                     [R] SMPTE RP 2057:2011
-                        <URL: http://www.amwa.tv/projects/rules/01/external_reference_revision/SMPTE%20RP%202057-2011/>
+                        <Component ID: http://www.amwa.tv/projects/rules/01/external_reference_revision/SMPTE%20RP%202057-2011/>
                 [A] The instance of "Text-Based DM Framework" is strongly referenced from a <Constrained Static DM Track>.
-                    <URL: http://www.amwa.tv/projects/rules/01/block/XML0/artefacts/2.md>
+                    <Component ID: http://www.amwa.tv/projects/rules/01/block/XML0/artefacts/2.md>
                     [B] Constrained Static DM Track
-                        <URL: http://www.amwa.tv/projects/rules/01/block/056/>
+                        <Component ID: http://www.amwa.tv/projects/rules/01/block/056/>
                         [A] A <Constrained Static DM Track> is a <Static Track (DM)> in the <Material Package> that contains a <Sequence>, which contains exactly one <DM Segment>, which strongly references an instance of a <DM Framework>.
-                            <URL: http://www.amwa.tv/projects/rules/01/block/056/artefacts/1.md>
+                            <Component ID: http://www.amwa.tv/projects/rules/01/block/056/artefacts/1.md>
                             [T] Static Track (DM)
                                 A <Track> carrying unchanging <Descriptive Metadata>.
-                                <URL: http://www.amwa.tv/projects/rules/01/term/Static%20Track%20(DM)/>
+                                <Component ID: http://www.amwa.tv/projects/rules/01/term/Static%20Track%20(DM)/>
                                 [T] Track
                                     MXF data structure used to describe the content structure.
-                                    <URL: http://www.amwa.tv/projects/rules/01/term/Track/>
+                                    <Component ID: http://www.amwa.tv/projects/rules/01/term/Track/>
                                 [T] Descriptive Metadata
                                     Generic term used for descriptive data whose purpose is to describe <Essence> data.
-                                    <URL: http://www.amwa.tv/projects/rules/01/term/Descriptive%20Metadata/>
+                                    <Component ID: http://www.amwa.tv/projects/rules/01/term/Descriptive%20Metadata/>
                                     [T] Essence
                                         A bitstream comprising picture, sound or data.
-                                        <URL: http://www.amwa.tv/projects/rules/01/term/Essence/>
+                                        <Component ID: http://www.amwa.tv/projects/rules/01/term/Essence/>
                             [T] Material Package
                                 An MXF data structure that describe an output timeline of the file.
-                                <URL: http://www.amwa.tv/projects/rules/01/term/Material%20Package/>
+                                <Component ID: http://www.amwa.tv/projects/rules/01/term/Material%20Package/>
                             [T] Sequence
                                 A Structural Metadata Class that is a Subclass of Structural Component.
-                                <URL: http://www.amwa.tv/projects/rules/01/term/Sequence/>
+                                <Component ID: http://www.amwa.tv/projects/rules/01/term/Sequence/>
                             [T] DM Segment
                                 An MXF structure used to generically contain <Descriptive Metadata> on a <Track>.
-                                <URL: http://www.amwa.tv/projects/rules/01/term/DM%20Segment/>
+                                <Component ID: http://www.amwa.tv/projects/rules/01/term/DM%20Segment/>
                                 [T] Descriptive Metadata
                                     Generic term used for descriptive data whose purpose is to describe <Essence> data.
-                                    <URL: http://www.amwa.tv/projects/rules/01/term/Descriptive%20Metadata/>
+                                    <Component ID: http://www.amwa.tv/projects/rules/01/term/Descriptive%20Metadata/>
                                     [T] Essence
                                         A bitstream comprising picture, sound or data.
-                                        <URL: http://www.amwa.tv/projects/rules/01/term/Essence/>
+                                        <Component ID: http://www.amwa.tv/projects/rules/01/term/Essence/>
                                 [T] Track
                                     MXF data structure used to describe the content structure.
-                                    <URL: http://www.amwa.tv/projects/rules/01/term/Track/>
+                                    <Component ID: http://www.amwa.tv/projects/rules/01/term/Track/>
                             [T] DM Framework
                                 A <Descriptive Metadata> Class that is a Subclass of Descriptive Framework.
-                                <URL: http://www.amwa.tv/projects/rules/01/term/DM%20Framework/>
+                                <Component ID: http://www.amwa.tv/projects/rules/01/term/DM%20Framework/>
                                 [T] Descriptive Metadata
                                     Generic term used for descriptive data whose purpose is to describe <Essence> data.
-                                    <URL: http://www.amwa.tv/projects/rules/01/term/Descriptive%20Metadata/>
+                                    <Component ID: http://www.amwa.tv/projects/rules/01/term/Descriptive%20Metadata/>
                                     [T] Essence
                                         A bitstream comprising picture, sound or data.
-                                        <URL: http://www.amwa.tv/projects/rules/01/term/Essence/>
+                                        <Component ID: http://www.amwa.tv/projects/rules/01/term/Essence/>
                         [N] Track Name
-                            <URL: http://www.amwa.tv/projects/rules/01/note/039/>
+                            <Component ID: http://www.amwa.tv/projects/rules/01/note/039/>
                             [A] The "Track Name" property of an <Constrained Static DM Track> does not identify the <DM Scheme> whose <DM Framework> it references. In the absence of other requirements for "Track Name", it is suggested that files use a value corresponding to the <DM Scheme> used in the track, e.g. "AS_11_Core", "AS_11_UKDPP".
-                                <URL: http://www.amwa.tv/projects/rules/01/note/039/artefacts/1.md>
+                                <Component ID: http://www.amwa.tv/projects/rules/01/note/039/artefacts/1.md>
                                 [T] DM Scheme
                                     A mechanism for defining collections of <Descriptive Metadata>.
-                                    <URL: http://www.amwa.tv/projects/rules/01/term/DM%20Scheme/>
+                                    <Component ID: http://www.amwa.tv/projects/rules/01/term/DM%20Scheme/>
                                     [T] Descriptive Metadata
                                         Generic term used for descriptive data whose purpose is to describe <Essence> data.
-                                        <URL: http://www.amwa.tv/projects/rules/01/term/Descriptive%20Metadata/>
+                                        <Component ID: http://www.amwa.tv/projects/rules/01/term/Descriptive%20Metadata/>
                                         [T] Essence
                                             A bitstream comprising picture, sound or data.
-                                            <URL: http://www.amwa.tv/projects/rules/01/term/Essence/>
+                                            <Component ID: http://www.amwa.tv/projects/rules/01/term/Essence/>
                                 [T] DM Framework
                                     A <Descriptive Metadata> Class that is a Subclass of Descriptive Framework.
-                                    <URL: http://www.amwa.tv/projects/rules/01/term/DM%20Framework/>
+                                    <Component ID: http://www.amwa.tv/projects/rules/01/term/DM%20Framework/>
                                     [T] Descriptive Metadata
                                         Generic term used for descriptive data whose purpose is to describe <Essence> data.
-                                        <URL: http://www.amwa.tv/projects/rules/01/term/Descriptive%20Metadata/>
+                                        <Component ID: http://www.amwa.tv/projects/rules/01/term/Descriptive%20Metadata/>
                                         [T] Essence
                                             A bitstream comprising picture, sound or data.
-                                            <URL: http://www.amwa.tv/projects/rules/01/term/Essence/>
+                                            <Component ID: http://www.amwa.tv/projects/rules/01/term/Essence/>
                 [A] The XML document is carried in the "UTF-8 Text Data" property of the "UTF-8 Text-based Set".
-                    <URL: http://www.amwa.tv/projects/rules/01/block/XML0/artefacts/3.md>
+                    <Component ID: http://www.amwa.tv/projects/rules/01/block/XML0/artefacts/3.md>
                 [A] In the "UTF-8 Text-based Set" the property "Text-based Metadata Payload Scheme ID" has the value of <DM_XML_Document>.
-                    <URL: http://www.amwa.tv/projects/rules/01/block/XML0/artefacts/4.md>
+                    <Component ID: http://www.amwa.tv/projects/rules/01/block/XML0/artefacts/4.md>
                     [B] DM_XML_Document
-                        <URL: http://www.amwa.tv/projects/rules/01/block/XMLDMLabel/>
-                        [A] http://www.amwa.tv/projects/rules/01/block/XMLDMLabel/artefacts/Labels.xml
-                            <URL: http://www.amwa.tv/projects/rules/01/block/XMLDMLabel/artefacts/Labels.xml>
+                        <Component ID: http://www.amwa.tv/projects/rules/01/block/XMLDMLabel/>
+                        [A] Artefact copied to: ../specification_data_files/www.amwa.tv_c0f7b64/block/XMLDMLabel/artefacts/Labels.xml
+                            <Component ID: http://www.amwa.tv/projects/rules/01/block/XMLDMLabel/artefacts/Labels.xml>
                         [N] SMPTE Registers Node: MetadataPayloadSchemes
-                            <URL: http://www.amwa.tv/projects/rules/01/note/MetadataPayloadSchemes/>
-                            [A] http://www.amwa.tv/projects/rules/01/note/MetadataPayloadSchemes/artefacts/Labels.xml
-                                <URL: http://www.amwa.tv/projects/rules/01/note/MetadataPayloadSchemes/artefacts/Labels.xml>
+                            <Component ID: http://www.amwa.tv/projects/rules/01/note/MetadataPayloadSchemes/>
+                            [A] Artefact copied to: ../specification_data_files/www.amwa.tv_c0f7b64/note/MetadataPayloadSchemes/artefacts/Labels.xml
+                                <Component ID: http://www.amwa.tv/projects/rules/01/note/MetadataPayloadSchemes/artefacts/Labels.xml>
                 [A] In the "UTF-8 Text-based Set" the property "Text Data Description" is present and has a value equal to the namespace of the root element of the XML document.
-                    <URL: http://www.amwa.tv/projects/rules/01/block/XML0/artefacts/5.md>
+                    <Component ID: http://www.amwa.tv/projects/rules/01/block/XML0/artefacts/5.md>
                 [A] <2-byte Local Length Encoding> is used for both the "Text-Based DM Framework" and the "UTF-8 Text-based Set".
-                    <URL: http://www.amwa.tv/projects/rules/01/block/XML0/artefacts/6.md>
+                    <Component ID: http://www.amwa.tv/projects/rules/01/block/XML0/artefacts/6.md>
                     [T] 2-byte Local Length Encoding
                         A syntax encoding for "Local Sets" that uses 2-byte Tags and 2-byte Lengths.
-                        <URL: http://www.amwa.tv/projects/rules/01/term/2-byte%20Local%20Length%20Encoding/>
+                        <Component ID: http://www.amwa.tv/projects/rules/01/term/2-byte%20Local%20Length%20Encoding/>
                 [N] ST 2057 Implementation Notes
-                    <URL: http://www.amwa.tv/projects/rules/01/note/E9/>
+                    <Component ID: http://www.amwa.tv/projects/rules/01/note/E9/>
                     [A] ## XML Document size limits
                         The constraints mean that Byte 6 of the two set keys will be 53h. The amount of text data must be equal to or less than 65535 bytes.
                         
                         ## Amendment
                         A crucial amendment to ST 2057 exists and must be read carefully -- it changes the ULs of various keys used in the Standard.
-                        <URL: http://www.amwa.tv/projects/rules/01/note/E9/artefacts/1.md>
+                        <Component ID: http://www.amwa.tv/projects/rules/01/note/E9/artefacts/1.md>
     [B] AS-11 Segmentation DM (Descriptive Metadata)
         Conformance: mandatory
-        <URL: http://www.amwa.tv/projects/rules/01/block/530/>
+        <Component ID: http://www.amwa.tv/projects/rules/01/block/530/>
         [A] The file contains exactly one <Program Segmentation Track>.
-            <URL: http://www.amwa.tv/projects/rules/01/block/530/artefacts/530.md>
+            <Component ID: http://www.amwa.tv/projects/rules/01/block/530/artefacts/530.md>
             [B] Program Segmentation Track
-                <URL: http://www.amwa.tv/projects/rules/01/block/532/>
+                <Component ID: http://www.amwa.tv/projects/rules/01/block/532/>
                 [A] A <Program Segmentation Track> is a <Timeline Track> that contains a <Sequence> that is composed of zero or more <Filler> objects and one or more <DM Segment> objects.
-                    <URL: http://www.amwa.tv/projects/rules/01/block/532/artefacts/532.md>
+                    <Component ID: http://www.amwa.tv/projects/rules/01/block/532/artefacts/532.md>
                     [T] Timeline Track
                         A specialized MXF <Track> that describes a timeline by specifying an origin and rate.
-                        <URL: http://www.amwa.tv/projects/rules/01/term/Timeline%20Track/>
+                        <Component ID: http://www.amwa.tv/projects/rules/01/term/Timeline%20Track/>
                         [T] Track
                             MXF data structure used to describe the content structure.
-                            <URL: http://www.amwa.tv/projects/rules/01/term/Track/>
+                            <Component ID: http://www.amwa.tv/projects/rules/01/term/Track/>
                     [T] Sequence
                         A Structural Metadata Class that is a Subclass of Structural Component.
-                        <URL: http://www.amwa.tv/projects/rules/01/term/Sequence/>
+                        <Component ID: http://www.amwa.tv/projects/rules/01/term/Sequence/>
                     [T] Filler
                         An MXF structure used to describe empty space on a <Timeline Track>.
-                        <URL: http://www.amwa.tv/projects/rules/01/term/Filler/>
+                        <Component ID: http://www.amwa.tv/projects/rules/01/term/Filler/>
                     [T] DM Segment
                         An MXF structure used to generically contain <Descriptive Metadata> on a <Track>.
-                        <URL: http://www.amwa.tv/projects/rules/01/term/DM%20Segment/>
+                        <Component ID: http://www.amwa.tv/projects/rules/01/term/DM%20Segment/>
                         [T] Descriptive Metadata
                             Generic term used for descriptive data whose purpose is to describe <Essence> data.
-                            <URL: http://www.amwa.tv/projects/rules/01/term/Descriptive%20Metadata/>
+                            <Component ID: http://www.amwa.tv/projects/rules/01/term/Descriptive%20Metadata/>
                             [T] Essence
                                 A bitstream comprising picture, sound or data.
-                                <URL: http://www.amwa.tv/projects/rules/01/term/Essence/>
+                                <Component ID: http://www.amwa.tv/projects/rules/01/term/Essence/>
                         [T] Track
                             MXF data structure used to describe the content structure.
-                            <URL: http://www.amwa.tv/projects/rules/01/term/Track/>
+                            <Component ID: http://www.amwa.tv/projects/rules/01/term/Track/>
                 [A] Each <DM Segment> object in the <Program Segmentation Track> represents, and aligns with, a region of program content in the <Source Essence>.
-                    <URL: http://www.amwa.tv/projects/rules/01/block/532/artefacts/534.md>
+                    <Component ID: http://www.amwa.tv/projects/rules/01/block/532/artefacts/534.md>
                     [T] DM Segment
                         An MXF structure used to generically contain <Descriptive Metadata> on a <Track>.
-                        <URL: http://www.amwa.tv/projects/rules/01/term/DM%20Segment/>
+                        <Component ID: http://www.amwa.tv/projects/rules/01/term/DM%20Segment/>
                         [T] Descriptive Metadata
                             Generic term used for descriptive data whose purpose is to describe <Essence> data.
-                            <URL: http://www.amwa.tv/projects/rules/01/term/Descriptive%20Metadata/>
+                            <Component ID: http://www.amwa.tv/projects/rules/01/term/Descriptive%20Metadata/>
                             [T] Essence
                                 A bitstream comprising picture, sound or data.
-                                <URL: http://www.amwa.tv/projects/rules/01/term/Essence/>
+                                <Component ID: http://www.amwa.tv/projects/rules/01/term/Essence/>
                         [T] Track
                             MXF data structure used to describe the content structure.
-                            <URL: http://www.amwa.tv/projects/rules/01/term/Track/>
+                            <Component ID: http://www.amwa.tv/projects/rules/01/term/Track/>
                     [T] Source Essence
                         <Essence> data referenced by a <Source Package>.
-                        <URL: http://www.amwa.tv/projects/rules/01/term/Source%20Essence/>
+                        <Component ID: http://www.amwa.tv/projects/rules/01/term/Source%20Essence/>
                         [T] Essence
                             A bitstream comprising picture, sound or data.
-                            <URL: http://www.amwa.tv/projects/rules/01/term/Essence/>
+                            <Component ID: http://www.amwa.tv/projects/rules/01/term/Essence/>
                         [T] Source Package
                             MXF data structure that describes source <Essence>.
-                            <URL: http://www.amwa.tv/projects/rules/01/term/Source%20Package/>
+                            <Component ID: http://www.amwa.tv/projects/rules/01/term/Source%20Package/>
                 [A] Each <Filler> object in the <Program Segmentation Track> represents, and aligns with, a region of non-program content in the <Source Essence>.
-                    <URL: http://www.amwa.tv/projects/rules/01/block/532/artefacts/536.md>
+                    <Component ID: http://www.amwa.tv/projects/rules/01/block/532/artefacts/536.md>
                     [T] Filler
                         An MXF structure used to describe empty space on a <Timeline Track>.
-                        <URL: http://www.amwa.tv/projects/rules/01/term/Filler/>
+                        <Component ID: http://www.amwa.tv/projects/rules/01/term/Filler/>
                         [T] Timeline Track
                             A specialized MXF <Track> that describes a timeline by specifying an origin and rate.
-                            <URL: http://www.amwa.tv/projects/rules/01/term/Timeline%20Track/>
+                            <Component ID: http://www.amwa.tv/projects/rules/01/term/Timeline%20Track/>
                             [T] Track
                                 MXF data structure used to describe the content structure.
-                                <URL: http://www.amwa.tv/projects/rules/01/term/Track/>
+                                <Component ID: http://www.amwa.tv/projects/rules/01/term/Track/>
                     [T] Source Essence
                         <Essence> data referenced by a <Source Package>.
-                        <URL: http://www.amwa.tv/projects/rules/01/term/Source%20Essence/>
+                        <Component ID: http://www.amwa.tv/projects/rules/01/term/Source%20Essence/>
                         [T] Essence
                             A bitstream comprising picture, sound or data.
-                            <URL: http://www.amwa.tv/projects/rules/01/term/Essence/>
+                            <Component ID: http://www.amwa.tv/projects/rules/01/term/Essence/>
                         [T] Source Package
                             MXF data structure that describes source <Essence>.
-                            <URL: http://www.amwa.tv/projects/rules/01/term/Source%20Package/>
+                            <Component ID: http://www.amwa.tv/projects/rules/01/term/Source%20Package/>
                 [N] Track Name
-                    <URL: http://www.amwa.tv/projects/rules/01/note/038/>
+                    <Component ID: http://www.amwa.tv/projects/rules/01/note/038/>
                     [A] The "Track Name" property of the <Program Segmentation Track> does not identify the segmentation metadata scheme. In the absence of other requirements for "Track Name", it is suggested that files use a value corresponding to the <DM Scheme> used in the track, e.g.  "AS_11_Segmentation".
-                        <URL: http://www.amwa.tv/projects/rules/01/note/038/artefacts/1.md>
+                        <Component ID: http://www.amwa.tv/projects/rules/01/note/038/artefacts/1.md>
                         [T] DM Scheme
                             A mechanism for defining collections of <Descriptive Metadata>.
-                            <URL: http://www.amwa.tv/projects/rules/01/term/DM%20Scheme/>
+                            <Component ID: http://www.amwa.tv/projects/rules/01/term/DM%20Scheme/>
                             [T] Descriptive Metadata
                                 Generic term used for descriptive data whose purpose is to describe <Essence> data.
-                                <URL: http://www.amwa.tv/projects/rules/01/term/Descriptive%20Metadata/>
+                                <Component ID: http://www.amwa.tv/projects/rules/01/term/Descriptive%20Metadata/>
                                 [T] Essence
                                     A bitstream comprising picture, sound or data.
-                                    <URL: http://www.amwa.tv/projects/rules/01/term/Essence/>
+                                    <Component ID: http://www.amwa.tv/projects/rules/01/term/Essence/>
                 [N] Determining SOM and EOM
-                    <URL: http://www.amwa.tv/projects/rules/01/note/040/>
+                    <Component ID: http://www.amwa.tv/projects/rules/01/note/040/>
                     [A] The start and end timecodes for program regions, commonly referred to as "start of material" (som) and "end of material" (eom), can be determined based on the location of <DM Segment> objects on the <Program Segmentation Track> relative to the adjacent <Timecode Track> in the <Material Package> that contains the <Program Segmentation Track>.
-                        <URL: http://www.amwa.tv/projects/rules/01/note/040/artefacts/1.md>
+                        <Component ID: http://www.amwa.tv/projects/rules/01/note/040/artefacts/1.md>
                         [T] DM Segment
                             An MXF structure used to generically contain <Descriptive Metadata> on a <Track>.
-                            <URL: http://www.amwa.tv/projects/rules/01/term/DM%20Segment/>
+                            <Component ID: http://www.amwa.tv/projects/rules/01/term/DM%20Segment/>
                             [T] Descriptive Metadata
                                 Generic term used for descriptive data whose purpose is to describe <Essence> data.
-                                <URL: http://www.amwa.tv/projects/rules/01/term/Descriptive%20Metadata/>
+                                <Component ID: http://www.amwa.tv/projects/rules/01/term/Descriptive%20Metadata/>
                                 [T] Essence
                                     A bitstream comprising picture, sound or data.
-                                    <URL: http://www.amwa.tv/projects/rules/01/term/Essence/>
+                                    <Component ID: http://www.amwa.tv/projects/rules/01/term/Essence/>
                             [T] Track
                                 MXF data structure used to describe the content structure.
-                                <URL: http://www.amwa.tv/projects/rules/01/term/Track/>
+                                <Component ID: http://www.amwa.tv/projects/rules/01/term/Track/>
                         [T] Timecode Track
                             An MXF <Track> that stores one or more <Timecode Component>s.
-                            <URL: http://www.amwa.tv/projects/rules/01/term/Timecode%20Track/>
+                            <Component ID: http://www.amwa.tv/projects/rules/01/term/Timecode%20Track/>
                             [T] Track
                                 MXF data structure used to describe the content structure.
-                                <URL: http://www.amwa.tv/projects/rules/01/term/Track/>
+                                <Component ID: http://www.amwa.tv/projects/rules/01/term/Track/>
                             [T] Timecode Component
                                 An MXF structure that stores <Timecode> information.
-                                <URL: http://www.amwa.tv/projects/rules/01/term/Timecode%20Component/>
+                                <Component ID: http://www.amwa.tv/projects/rules/01/term/Timecode%20Component/>
                                 [T] Timecode
                                     An annotation of elapsed time along a <Track>.
-                                    <URL: http://www.amwa.tv/projects/rules/01/term/Timecode/>
+                                    <Component ID: http://www.amwa.tv/projects/rules/01/term/Timecode/>
                         [T] Material Package
                             An MXF data structure that describe an output timeline of the file.
-                            <URL: http://www.amwa.tv/projects/rules/01/term/Material%20Package/>
+                            <Component ID: http://www.amwa.tv/projects/rules/01/term/Material%20Package/>
                 [N] Non-Programme Content
-                    <URL: http://www.amwa.tv/projects/rules/01/note/048/>
+                    <Component ID: http://www.amwa.tv/projects/rules/01/note/048/>
                     [A] Examples of non-programme content include: black, ident, clock.
-                        <URL: http://www.amwa.tv/projects/rules/01/note/048/artefacts/1.md>
+                        <Component ID: http://www.amwa.tv/projects/rules/01/note/048/artefacts/1.md>
                 [N] Track Composition
-                    <URL: http://www.amwa.tv/projects/rules/01/note/050/>
+                    <Component ID: http://www.amwa.tv/projects/rules/01/note/050/>
                     [A] Constraints set out in <SMPTE ST 377-1:2011> and <SMPTE ST 378:2004> mean that the <Program Segmentation Track> is necessarily full from start to finish and is the same length as all other <Timeline Track>s in the <Material Package>.
-                        <URL: http://www.amwa.tv/projects/rules/01/note/050/artefacts/1.md>
+                        <Component ID: http://www.amwa.tv/projects/rules/01/note/050/artefacts/1.md>
                         [R] SMPTE ST 377-1:2011
-                            <URL: http://www.amwa.tv/projects/rules/01/external_reference_revision/SMPTE%20ST%20377-1-2011/>
+                            <Component ID: http://www.amwa.tv/projects/rules/01/external_reference_revision/SMPTE%20ST%20377-1-2011/>
                         [R] SMPTE ST 378:2004
-                            <URL: http://www.amwa.tv/projects/rules/01/external_reference_revision/SMPTE%20ST%20378-2004/>
+                            <Component ID: http://www.amwa.tv/projects/rules/01/external_reference_revision/SMPTE%20ST%20378-2004/>
                         [T] Timeline Track
                             A specialized MXF <Track> that describes a timeline by specifying an origin and rate.
-                            <URL: http://www.amwa.tv/projects/rules/01/term/Timeline%20Track/>
+                            <Component ID: http://www.amwa.tv/projects/rules/01/term/Timeline%20Track/>
                             [T] Track
                                 MXF data structure used to describe the content structure.
-                                <URL: http://www.amwa.tv/projects/rules/01/term/Track/>
+                                <Component ID: http://www.amwa.tv/projects/rules/01/term/Track/>
                         [T] Material Package
                             An MXF data structure that describe an output timeline of the file.
-                            <URL: http://www.amwa.tv/projects/rules/01/term/Material%20Package/>
+                            <Component ID: http://www.amwa.tv/projects/rules/01/term/Material%20Package/>
         [A] This <Track> is in the <Material Package>.
-            <URL: http://www.amwa.tv/projects/rules/01/block/530/artefacts/531.md>
+            <Component ID: http://www.amwa.tv/projects/rules/01/block/530/artefacts/531.md>
             [T] Track
                 MXF data structure used to describe the content structure.
-                <URL: http://www.amwa.tv/projects/rules/01/term/Track/>
+                <Component ID: http://www.amwa.tv/projects/rules/01/term/Track/>
             [T] Material Package
                 An MXF data structure that describe an output timeline of the file.
-                <URL: http://www.amwa.tv/projects/rules/01/term/Material%20Package/>
+                <Component ID: http://www.amwa.tv/projects/rules/01/term/Material%20Package/>
         [A] Each <DM Segment> object in the <Track> strongly references an instance of <DM_AS_11_Segmentation>.
-            <URL: http://www.amwa.tv/projects/rules/01/block/530/artefacts/538.md>
+            <Component ID: http://www.amwa.tv/projects/rules/01/block/530/artefacts/538.md>
             [T] DM Segment
                 An MXF structure used to generically contain <Descriptive Metadata> on a <Track>.
-                <URL: http://www.amwa.tv/projects/rules/01/term/DM%20Segment/>
+                <Component ID: http://www.amwa.tv/projects/rules/01/term/DM%20Segment/>
                 [T] Descriptive Metadata
                     Generic term used for descriptive data whose purpose is to describe <Essence> data.
-                    <URL: http://www.amwa.tv/projects/rules/01/term/Descriptive%20Metadata/>
+                    <Component ID: http://www.amwa.tv/projects/rules/01/term/Descriptive%20Metadata/>
                     [T] Essence
                         A bitstream comprising picture, sound or data.
-                        <URL: http://www.amwa.tv/projects/rules/01/term/Essence/>
+                        <Component ID: http://www.amwa.tv/projects/rules/01/term/Essence/>
                 [T] Track
                     MXF data structure used to describe the content structure.
-                    <URL: http://www.amwa.tv/projects/rules/01/term/Track/>
+                    <Component ID: http://www.amwa.tv/projects/rules/01/term/Track/>
             [T] Track
                 MXF data structure used to describe the content structure.
-                <URL: http://www.amwa.tv/projects/rules/01/term/Track/>
+                <Component ID: http://www.amwa.tv/projects/rules/01/term/Track/>
             [B] DM_AS_11_Segmentation
-                <URL: http://www.amwa.tv/projects/rules/01/block/505S/>
+                <Component ID: http://www.amwa.tv/projects/rules/01/block/505S/>
                 [A] This <DM Scheme> is identified by <DM_AS_11_Segmentation> (the <DM Scheme Label>) and has the following members: <DM_AS_11_Segmentation_Framework> (the <DM Framework>).
-                    <URL: http://www.amwa.tv/projects/rules/01/block/505S/artefacts/1.md>
+                    <Component ID: http://www.amwa.tv/projects/rules/01/block/505S/artefacts/1.md>
                     [T] DM Scheme
                         A mechanism for defining collections of <Descriptive Metadata>.
-                        <URL: http://www.amwa.tv/projects/rules/01/term/DM%20Scheme/>
+                        <Component ID: http://www.amwa.tv/projects/rules/01/term/DM%20Scheme/>
                         [T] Descriptive Metadata
                             Generic term used for descriptive data whose purpose is to describe <Essence> data.
-                            <URL: http://www.amwa.tv/projects/rules/01/term/Descriptive%20Metadata/>
+                            <Component ID: http://www.amwa.tv/projects/rules/01/term/Descriptive%20Metadata/>
                             [T] Essence
                                 A bitstream comprising picture, sound or data.
-                                <URL: http://www.amwa.tv/projects/rules/01/term/Essence/>
+                                <Component ID: http://www.amwa.tv/projects/rules/01/term/Essence/>
                     [B] DM_AS_11_Segmentation
-                        <URL: http://www.amwa.tv/projects/rules/01/block/505L/>
-                        [A] http://www.amwa.tv/projects/rules/01/block/505L/artefacts/Labels.xml
-                            <URL: http://www.amwa.tv/projects/rules/01/block/505L/artefacts/Labels.xml>
+                        <Component ID: http://www.amwa.tv/projects/rules/01/block/505L/>
+                        [A] Artefact copied to: ../specification_data_files/www.amwa.tv_c0f7b64/block/505L/artefacts/Labels.xml
+                            <Component ID: http://www.amwa.tv/projects/rules/01/block/505L/artefacts/Labels.xml>
                     [T] DM Scheme Label
                         An identifier for a <DM Scheme>. It is stored in an MXF file's Preface::DMSchemes property to signify the use of that <DM Scheme> in the file.
-                        <URL: http://www.amwa.tv/projects/rules/01/term/DM%20Scheme%20Label/>
+                        <Component ID: http://www.amwa.tv/projects/rules/01/term/DM%20Scheme%20Label/>
                     [B] DM_AS_11_Segmentation_Framework
-                        <URL: http://www.amwa.tv/projects/rules/01/block/505F/>
-                        [A] http://www.amwa.tv/projects/rules/01/block/505F/artefacts/Groups.xml
-                            <URL: http://www.amwa.tv/projects/rules/01/block/505F/artefacts/Groups.xml>
-                        [A] http://www.amwa.tv/projects/rules/01/block/505F/artefacts/Elements.xml
-                            <URL: http://www.amwa.tv/projects/rules/01/block/505F/artefacts/Elements.xml>
-                        [A] http://www.amwa.tv/projects/rules/01/block/505F/artefacts/Types.xml
-                            <URL: http://www.amwa.tv/projects/rules/01/block/505F/artefacts/Types.xml>
+                        <Component ID: http://www.amwa.tv/projects/rules/01/block/505F/>
+                        [A] Artefact copied to: ../specification_data_files/www.amwa.tv_c0f7b64/block/505F/artefacts/Groups.xml
+                            <Component ID: http://www.amwa.tv/projects/rules/01/block/505F/artefacts/Groups.xml>
+                        [A] Artefact copied to: ../specification_data_files/www.amwa.tv_c0f7b64/block/505F/artefacts/Elements.xml
+                            <Component ID: http://www.amwa.tv/projects/rules/01/block/505F/artefacts/Elements.xml>
+                        [A] Artefact copied to: ../specification_data_files/www.amwa.tv_c0f7b64/block/505F/artefacts/Types.xml
+                            <Component ID: http://www.amwa.tv/projects/rules/01/block/505F/artefacts/Types.xml>
                     [T] DM Framework
                         A <Descriptive Metadata> Class that is a Subclass of Descriptive Framework.
-                        <URL: http://www.amwa.tv/projects/rules/01/term/DM%20Framework/>
+                        <Component ID: http://www.amwa.tv/projects/rules/01/term/DM%20Framework/>
                         [T] Descriptive Metadata
                             Generic term used for descriptive data whose purpose is to describe <Essence> data.
-                            <URL: http://www.amwa.tv/projects/rules/01/term/Descriptive%20Metadata/>
+                            <Component ID: http://www.amwa.tv/projects/rules/01/term/Descriptive%20Metadata/>
                             [T] Essence
                                 A bitstream comprising picture, sound or data.
-                                <URL: http://www.amwa.tv/projects/rules/01/term/Essence/>
+                                <Component ID: http://www.amwa.tv/projects/rules/01/term/Essence/>
         [N] Implementation Notes
-            <URL: http://www.amwa.tv/projects/rules/01/note/049/>
+            <Component ID: http://www.amwa.tv/projects/rules/01/note/049/>
             [A] The <Track> can be identified by an MXF reader by the presence of <DM Segment> objects that each strongly reference an instance of the "DM_AS_11_Segmentation_Framework" <DM Framework>.
-                <URL: http://www.amwa.tv/projects/rules/01/note/049/artefacts/1.md>
+                <Component ID: http://www.amwa.tv/projects/rules/01/note/049/artefacts/1.md>
                 [T] Track
                     MXF data structure used to describe the content structure.
-                    <URL: http://www.amwa.tv/projects/rules/01/term/Track/>
+                    <Component ID: http://www.amwa.tv/projects/rules/01/term/Track/>
                 [T] DM Segment
                     An MXF structure used to generically contain <Descriptive Metadata> on a <Track>.
-                    <URL: http://www.amwa.tv/projects/rules/01/term/DM%20Segment/>
+                    <Component ID: http://www.amwa.tv/projects/rules/01/term/DM%20Segment/>
                     [T] Descriptive Metadata
                         Generic term used for descriptive data whose purpose is to describe <Essence> data.
-                        <URL: http://www.amwa.tv/projects/rules/01/term/Descriptive%20Metadata/>
+                        <Component ID: http://www.amwa.tv/projects/rules/01/term/Descriptive%20Metadata/>
                         [T] Essence
                             A bitstream comprising picture, sound or data.
-                            <URL: http://www.amwa.tv/projects/rules/01/term/Essence/>
+                            <Component ID: http://www.amwa.tv/projects/rules/01/term/Essence/>
                 [T] DM Framework
                     A <Descriptive Metadata> Class that is a Subclass of Descriptive Framework.
-                    <URL: http://www.amwa.tv/projects/rules/01/term/DM%20Framework/>
+                    <Component ID: http://www.amwa.tv/projects/rules/01/term/DM%20Framework/>
                     [T] Descriptive Metadata
                         Generic term used for descriptive data whose purpose is to describe <Essence> data.
-                        <URL: http://www.amwa.tv/projects/rules/01/term/Descriptive%20Metadata/>
+                        <Component ID: http://www.amwa.tv/projects/rules/01/term/Descriptive%20Metadata/>
                         [T] Essence
                             A bitstream comprising picture, sound or data.
-                            <URL: http://www.amwa.tv/projects/rules/01/term/Essence/>
+                            <Component ID: http://www.amwa.tv/projects/rules/01/term/Essence/>
         [N] Repetition of Header Metadata
-            <URL: http://www.amwa.tv/projects/rules/01/note/051/>
+            <Component ID: http://www.amwa.tv/projects/rules/01/note/051/>
             [A] Repetition of Header Metadata in the Footer Partition is not considered to be another instance of any of the components of that Header Metadata.
-                <URL: http://www.amwa.tv/projects/rules/01/note/051/artefacts/1.md>
+                <Component ID: http://www.amwa.tv/projects/rules/01/note/051/artefacts/1.md>
     [B] Specification Identification
         Conformance: mandatory
-        <URL: http://www.amwa.tv/projects/rules/01/block/SpecID_FF_7/>
+        <Component ID: http://www.amwa.tv/projects/rules/01/block/SpecID_FF_7/>
         [A] The <Specification_Identifiers> Element is present in the <Preface> of the <Header Partition>.
-            <URL: http://www.amwa.tv/projects/rules/01/block/SpecID_FF_7/artefacts/1.md>
+            <Component ID: http://www.amwa.tv/projects/rules/01/block/SpecID_FF_7/artefacts/1.md>
             [B] Specification_Identifiers
-                <URL: http://www.amwa.tv/projects/rules/01/block/SpecID/>
-                [A] http://www.amwa.tv/projects/rules/01/block/SpecID/artefacts/Elements.xml
-                    <URL: http://www.amwa.tv/projects/rules/01/block/SpecID/artefacts/Elements.xml>
-                [A] http://www.amwa.tv/projects/rules/01/block/SpecID/artefacts/Types.xml
-                    <URL: http://www.amwa.tv/projects/rules/01/block/SpecID/artefacts/Types.xml>
+                <Component ID: http://www.amwa.tv/projects/rules/01/block/SpecID/>
+                [A] Artefact copied to: ../specification_data_files/www.amwa.tv_c0f7b64/block/SpecID/artefacts/Elements.xml
+                    <Component ID: http://www.amwa.tv/projects/rules/01/block/SpecID/artefacts/Elements.xml>
+                [A] Artefact copied to: ../specification_data_files/www.amwa.tv_c0f7b64/block/SpecID/artefacts/Types.xml
+                    <Component ID: http://www.amwa.tv/projects/rules/01/block/SpecID/artefacts/Types.xml>
                 [N] SMPTE Registers Node: Specification_Identification (Elements Register)
-                    <URL: http://www.amwa.tv/projects/rules/01/note/Specification_Identification_E/>
-                    [A] http://www.amwa.tv/projects/rules/01/note/Specification_Identification_E/artefacts/Elements.xml
-                        <URL: http://www.amwa.tv/projects/rules/01/note/Specification_Identification_E/artefacts/Elements.xml>
+                    <Component ID: http://www.amwa.tv/projects/rules/01/note/Specification_Identification_E/>
+                    [A] Artefact copied to: ../specification_data_files/www.amwa.tv_c0f7b64/note/Specification_Identification_E/artefacts/Elements.xml
+                        <Component ID: http://www.amwa.tv/projects/rules/01/note/Specification_Identification_E/artefacts/Elements.xml>
             [T] Preface
                 The root of the Strong Reference tree of the <Header Metadata>.
-                <URL: http://www.amwa.tv/projects/rules/01/term/Preface/>
+                <Component ID: http://www.amwa.tv/projects/rules/01/term/Preface/>
                 [T] Header Metadata
                     MXF data structures that collectively describe the data in the <Essence> data in an MXF file.
-                    <URL: http://www.amwa.tv/projects/rules/01/term/Header%20Metadata/>
+                    <Component ID: http://www.amwa.tv/projects/rules/01/term/Header%20Metadata/>
                     [T] Essence
                         A bitstream comprising picture, sound or data.
-                        <URL: http://www.amwa.tv/projects/rules/01/term/Essence/>
+                        <Component ID: http://www.amwa.tv/projects/rules/01/term/Essence/>
             [T] Header Partition
                 The first <Partition> in the MXF file. This <Partition> always contains a copy of the <Header Metadata>.
-                <URL: http://www.amwa.tv/projects/rules/01/term/Header%20Partition/>
+                <Component ID: http://www.amwa.tv/projects/rules/01/term/Header%20Partition/>
                 [T] Partition
                     A portion of the MXF file. An MXF file consists of a sequence of Partitions.
-                    <URL: http://www.amwa.tv/projects/rules/01/term/Partition/>
+                    <Component ID: http://www.amwa.tv/projects/rules/01/term/Partition/>
                 [T] Header Metadata
                     MXF data structures that collectively describe the data in the <Essence> data in an MXF file.
-                    <URL: http://www.amwa.tv/projects/rules/01/term/Header%20Metadata/>
+                    <Component ID: http://www.amwa.tv/projects/rules/01/term/Header%20Metadata/>
                     [T] Essence
                         A bitstream comprising picture, sound or data.
-                        <URL: http://www.amwa.tv/projects/rules/01/term/Essence/>
+                        <Component ID: http://www.amwa.tv/projects/rules/01/term/Essence/>
         [A] The value of this Element includes the Label <Blocks_FF_7>.
-            <URL: http://www.amwa.tv/projects/rules/01/block/SpecID_FF_7/artefacts/2.md>
+            <Component ID: http://www.amwa.tv/projects/rules/01/block/SpecID_FF_7/artefacts/2.md>
             [B] Blocks_FF_7
-                <URL: http://www.amwa.tv/projects/rules/01/block/SpecID_L7/>
-                [A] http://www.amwa.tv/projects/rules/01/block/SpecID_L7/artefacts/Labels.xml
-                    <URL: http://www.amwa.tv/projects/rules/01/block/SpecID_L7/artefacts/Labels.xml>
+                <Component ID: http://www.amwa.tv/projects/rules/01/block/SpecID_L7/>
+                [A] Artefact copied to: ../specification_data_files/www.amwa.tv_c0f7b64/block/SpecID_L7/artefacts/Labels.xml
+                    <Component ID: http://www.amwa.tv/projects/rules/01/block/SpecID_L7/artefacts/Labels.xml>
     [B] Timecode constraints
         Conformance: mandatory
-        <URL: http://www.amwa.tv/projects/rules/01/block/TT0_r001/>
+        <Component ID: http://www.amwa.tv/projects/rules/01/block/TT0_r001/>
         [B] Timecode Track Presence
             Conformance: mandatory
-            <URL: http://www.amwa.tv/projects/rules/01/block/280/>
+            <Component ID: http://www.amwa.tv/projects/rules/01/block/280/>
             [A] The <Material Package> contains exactly one <Timecode Track>.
-                <URL: http://www.amwa.tv/projects/rules/01/block/280/artefacts/280.md>
+                <Component ID: http://www.amwa.tv/projects/rules/01/block/280/artefacts/280.md>
                 [T] Material Package
                     An MXF data structure that describe an output timeline of the file.
-                    <URL: http://www.amwa.tv/projects/rules/01/term/Material%20Package/>
+                    <Component ID: http://www.amwa.tv/projects/rules/01/term/Material%20Package/>
                 [T] Timecode Track
                     An MXF <Track> that stores one or more <Timecode Component>s.
-                    <URL: http://www.amwa.tv/projects/rules/01/term/Timecode%20Track/>
+                    <Component ID: http://www.amwa.tv/projects/rules/01/term/Timecode%20Track/>
                     [T] Track
                         MXF data structure used to describe the content structure.
-                        <URL: http://www.amwa.tv/projects/rules/01/term/Track/>
+                        <Component ID: http://www.amwa.tv/projects/rules/01/term/Track/>
                     [T] Timecode Component
                         An MXF structure that stores <Timecode> information.
-                        <URL: http://www.amwa.tv/projects/rules/01/term/Timecode%20Component/>
+                        <Component ID: http://www.amwa.tv/projects/rules/01/term/Timecode%20Component/>
                         [T] Timecode
                             An annotation of elapsed time along a <Track>.
-                            <URL: http://www.amwa.tv/projects/rules/01/term/Timecode/>
+                            <Component ID: http://www.amwa.tv/projects/rules/01/term/Timecode/>
             [N] Implementation Notes
-                <URL: http://www.amwa.tv/projects/rules/01/note/021/>
+                <Component ID: http://www.amwa.tv/projects/rules/01/note/021/>
                 [A] This Timecode Track provides "Synthetic Timecode" because its Timecode is "generated" from a single "Start Timecode" value that is associated with the beginning of the Material Package. This means that the Timecode is necessarily continuous throughout the entire playback of the MXF file.
-                    <URL: http://www.amwa.tv/projects/rules/01/note/021/artefacts/1.md>
+                    <Component ID: http://www.amwa.tv/projects/rules/01/note/021/artefacts/1.md>
         [B] Constrained Timecode Track in Material Package
             Conformance: mandatory
-            <URL: http://www.amwa.tv/projects/rules/01/block/TTC_MP/>
+            <Component ID: http://www.amwa.tv/projects/rules/01/block/TTC_MP/>
             [A] The <Timecode Track> in the <Material Package> is a <Constrained Timecode Track>.
-                <URL: http://www.amwa.tv/projects/rules/01/block/TTC_MP/artefacts/1.md>
+                <Component ID: http://www.amwa.tv/projects/rules/01/block/TTC_MP/artefacts/1.md>
                 [T] Timecode Track
                     An MXF <Track> that stores one or more <Timecode Component>s.
-                    <URL: http://www.amwa.tv/projects/rules/01/term/Timecode%20Track/>
+                    <Component ID: http://www.amwa.tv/projects/rules/01/term/Timecode%20Track/>
                     [T] Track
                         MXF data structure used to describe the content structure.
-                        <URL: http://www.amwa.tv/projects/rules/01/term/Track/>
+                        <Component ID: http://www.amwa.tv/projects/rules/01/term/Track/>
                     [T] Timecode Component
                         An MXF structure that stores <Timecode> information.
-                        <URL: http://www.amwa.tv/projects/rules/01/term/Timecode%20Component/>
+                        <Component ID: http://www.amwa.tv/projects/rules/01/term/Timecode%20Component/>
                         [T] Timecode
                             An annotation of elapsed time along a <Track>.
-                            <URL: http://www.amwa.tv/projects/rules/01/term/Timecode/>
+                            <Component ID: http://www.amwa.tv/projects/rules/01/term/Timecode/>
                 [T] Material Package
                     An MXF data structure that describe an output timeline of the file.
-                    <URL: http://www.amwa.tv/projects/rules/01/term/Material%20Package/>
+                    <Component ID: http://www.amwa.tv/projects/rules/01/term/Material%20Package/>
                 [B] Constrained Timecode Track
-                    <URL: http://www.amwa.tv/projects/rules/01/block/TTC/>
+                    <Component ID: http://www.amwa.tv/projects/rules/01/block/TTC/>
                     [A] A <Constrained Timecode Track> is a <Timecode Track>.
-                        <URL: http://www.amwa.tv/projects/rules/01/block/TTC/artefacts/0.md>
+                        <Component ID: http://www.amwa.tv/projects/rules/01/block/TTC/artefacts/0.md>
                     [A] The value of the "Edit Rate" property of this <Timecode Track> is the same as the value of the "Edit Rate" property of the <Picture Track> in the same <Package>.
-                        <URL: http://www.amwa.tv/projects/rules/01/block/TTC/artefacts/1.md>
+                        <Component ID: http://www.amwa.tv/projects/rules/01/block/TTC/artefacts/1.md>
                         [T] Picture Track
                             A type of <Essence Track> that references <Picture Essence>.
-                            <URL: http://www.amwa.tv/projects/rules/01/term/Picture%20Track/>
+                            <Component ID: http://www.amwa.tv/projects/rules/01/term/Picture%20Track/>
                             [T] Essence Track
                                 A type of <Track> that references <Essence>.
-                                <URL: http://www.amwa.tv/projects/rules/01/term/Essence%20Track/>
+                                <Component ID: http://www.amwa.tv/projects/rules/01/term/Essence%20Track/>
                                 [T] Track
                                     MXF data structure used to describe the content structure.
-                                    <URL: http://www.amwa.tv/projects/rules/01/term/Track/>
+                                    <Component ID: http://www.amwa.tv/projects/rules/01/term/Track/>
                                 [T] Essence
                                     A bitstream comprising picture, sound or data.
-                                    <URL: http://www.amwa.tv/projects/rules/01/term/Essence/>
+                                    <Component ID: http://www.amwa.tv/projects/rules/01/term/Essence/>
                             [T] Picture Essence
                                 A type of <Essence> containing predominantly picture data.
-                                <URL: http://www.amwa.tv/projects/rules/01/term/Picture%20Essence/>
+                                <Component ID: http://www.amwa.tv/projects/rules/01/term/Picture%20Essence/>
                                 [T] Essence
                                     A bitstream comprising picture, sound or data.
-                                    <URL: http://www.amwa.tv/projects/rules/01/term/Essence/>
+                                    <Component ID: http://www.amwa.tv/projects/rules/01/term/Essence/>
                         [T] Package
                             An MXF structure that aggregates one or more <Track>s.
                             
-                            <URL: http://www.amwa.tv/projects/rules/01/term/Package/>
+                            <Component ID: http://www.amwa.tv/projects/rules/01/term/Package/>
                             [T] Track
                                 MXF data structure used to describe the content structure.
-                                <URL: http://www.amwa.tv/projects/rules/01/term/Track/>
+                                <Component ID: http://www.amwa.tv/projects/rules/01/term/Track/>
                     [A] There is exactly one <Timecode Component> in this <Timecode Track>.
-                        <URL: http://www.amwa.tv/projects/rules/01/block/TTC/artefacts/2.md>
+                        <Component ID: http://www.amwa.tv/projects/rules/01/block/TTC/artefacts/2.md>
                         [T] Timecode Component
                             An MXF structure that stores <Timecode> information.
-                            <URL: http://www.amwa.tv/projects/rules/01/term/Timecode%20Component/>
+                            <Component ID: http://www.amwa.tv/projects/rules/01/term/Timecode%20Component/>
                             [T] Timecode
                                 An annotation of elapsed time along a <Track>.
-                                <URL: http://www.amwa.tv/projects/rules/01/term/Timecode/>
+                                <Component ID: http://www.amwa.tv/projects/rules/01/term/Timecode/>
                                 [T] Track
                                     MXF data structure used to describe the content structure.
-                                    <URL: http://www.amwa.tv/projects/rules/01/term/Track/>
+                                    <Component ID: http://www.amwa.tv/projects/rules/01/term/Track/>
                     [A] The value of the "Rounded Timecode Base" property of the <Timecode Component> is the "Edit Rate" of this <Timecode Track> rounded to the nearest integer.
-                        <URL: http://www.amwa.tv/projects/rules/01/block/TTC/artefacts/3.md>
+                        <Component ID: http://www.amwa.tv/projects/rules/01/block/TTC/artefacts/3.md>
                         [T] Timecode Component
                             An MXF structure that stores <Timecode> information.
-                            <URL: http://www.amwa.tv/projects/rules/01/term/Timecode%20Component/>
+                            <Component ID: http://www.amwa.tv/projects/rules/01/term/Timecode%20Component/>
                             [T] Timecode
                                 An annotation of elapsed time along a <Track>.
-                                <URL: http://www.amwa.tv/projects/rules/01/term/Timecode/>
+                                <Component ID: http://www.amwa.tv/projects/rules/01/term/Timecode/>
                                 [T] Track
                                     MXF data structure used to describe the content structure.
-                                    <URL: http://www.amwa.tv/projects/rules/01/term/Track/>
+                                    <Component ID: http://www.amwa.tv/projects/rules/01/term/Track/>
         [B] Timecode mode signalling
             Conformance: mandatory
-            <URL: http://www.amwa.tv/projects/rules/01/block/DF/>
+            <Component ID: http://www.amwa.tv/projects/rules/01/block/DF/>
             [A] The value of the "Drop Frame" property of the <Timecode Component> in the <Timecode Track> in the <Material Package> is "False" (indicating non-drop frame timecode is in use) except in any of the following scenarios (in which case it is "True", indicating drop frame timecode is in use):
                 
                 * The "Rounded Timecode Base" property of the <Timecode Component> is `60` and the "Edit Rate" of the <Timecode Track> is mathematically equal to `60000/1001`
                 * The "Rounded Timecode Base" property of the <Timecode Component> is `30` and the "Edit Rate" of the <Timecode Track> is mathematically equal to `30000/1001`
-                <URL: http://www.amwa.tv/projects/rules/01/block/DF/artefacts/1.md>
+                <Component ID: http://www.amwa.tv/projects/rules/01/block/DF/artefacts/1.md>
                 [T] Timecode Component
                     An MXF structure that stores <Timecode> information.
-                    <URL: http://www.amwa.tv/projects/rules/01/term/Timecode%20Component/>
+                    <Component ID: http://www.amwa.tv/projects/rules/01/term/Timecode%20Component/>
                     [T] Timecode
                         An annotation of elapsed time along a <Track>.
-                        <URL: http://www.amwa.tv/projects/rules/01/term/Timecode/>
+                        <Component ID: http://www.amwa.tv/projects/rules/01/term/Timecode/>
                         [T] Track
                             MXF data structure used to describe the content structure.
-                            <URL: http://www.amwa.tv/projects/rules/01/term/Track/>
+                            <Component ID: http://www.amwa.tv/projects/rules/01/term/Track/>
                 [T] Timecode Track
                     An MXF <Track> that stores one or more <Timecode Component>s.
-                    <URL: http://www.amwa.tv/projects/rules/01/term/Timecode%20Track/>
+                    <Component ID: http://www.amwa.tv/projects/rules/01/term/Timecode%20Track/>
                     [T] Track
                         MXF data structure used to describe the content structure.
-                        <URL: http://www.amwa.tv/projects/rules/01/term/Track/>
+                        <Component ID: http://www.amwa.tv/projects/rules/01/term/Track/>
                 [T] Material Package
                     An MXF data structure that describe an output timeline of the file.
-                    <URL: http://www.amwa.tv/projects/rules/01/term/Material%20Package/>
+                    <Component ID: http://www.amwa.tv/projects/rules/01/term/Material%20Package/>
             [N] Rational Numbers
-                <URL: http://www.amwa.tv/projects/rules/01/note/E69/>
+                <Component ID: http://www.amwa.tv/projects/rules/01/note/E69/>
                 [A] Care must be taken when dealing with numbers expressed as a ratio of two integers ("rationals"). They are often used to represent temporal rates or image aspect ratios.
                     
                     When making comparisons of these values, it is insufficient to simply compare each of the numerators and each of the denominators. For example, `7/5` is mathematically equal to `14/10`.
-                    <URL: http://www.amwa.tv/projects/rules/01/note/E69/artefacts/1.md>
+                    <Component ID: http://www.amwa.tv/projects/rules/01/note/E69/artefacts/1.md>
             [N] Implementation Notes
-                <URL: http://www.amwa.tv/projects/rules/01/note/E81/>
+                <Component ID: http://www.amwa.tv/projects/rules/01/note/E81/>
                 [A] Note that for an "Edit Rate" of 24000/1001 the "Drop Frame" property will be "False" because drop frame timecode is not applicable to this rate.
-                    <URL: http://www.amwa.tv/projects/rules/01/note/E81/artefacts/1.md>
+                    <Component ID: http://www.amwa.tv/projects/rules/01/note/E81/artefacts/1.md>
         [B] Timecode Track Precedence
             Conformance: mandatory
-            <URL: http://www.amwa.tv/projects/rules/01/block/290/>
+            <Component ID: http://www.amwa.tv/projects/rules/01/block/290/>
             [A] The <Timecode Track> in the <Material Package> defines the authoritative program timecode.
-                <URL: http://www.amwa.tv/projects/rules/01/block/290/artefacts/290.md>
+                <Component ID: http://www.amwa.tv/projects/rules/01/block/290/artefacts/290.md>
                 [T] Timecode Track
                     An MXF <Track> that stores one or more <Timecode Component>s.
-                    <URL: http://www.amwa.tv/projects/rules/01/term/Timecode%20Track/>
+                    <Component ID: http://www.amwa.tv/projects/rules/01/term/Timecode%20Track/>
                     [T] Track
                         MXF data structure used to describe the content structure.
-                        <URL: http://www.amwa.tv/projects/rules/01/term/Track/>
+                        <Component ID: http://www.amwa.tv/projects/rules/01/term/Track/>
                     [T] Timecode Component
                         An MXF structure that stores <Timecode> information.
-                        <URL: http://www.amwa.tv/projects/rules/01/term/Timecode%20Component/>
+                        <Component ID: http://www.amwa.tv/projects/rules/01/term/Timecode%20Component/>
                         [T] Timecode
                             An annotation of elapsed time along a <Track>.
-                            <URL: http://www.amwa.tv/projects/rules/01/term/Timecode/>
+                            <Component ID: http://www.amwa.tv/projects/rules/01/term/Timecode/>
                 [T] Material Package
                     An MXF data structure that describe an output timeline of the file.
-                    <URL: http://www.amwa.tv/projects/rules/01/term/Material%20Package/>
+                    <Component ID: http://www.amwa.tv/projects/rules/01/term/Material%20Package/>
             [N] Implementation Notes
-                <URL: http://www.amwa.tv/projects/rules/01/note/022/>
+                <Component ID: http://www.amwa.tv/projects/rules/01/note/022/>
                 [A] The <Timecode> defined by the <Timecode Track> in the <Material Package> must be used by all the components of a system that handles the file. Other <Timecode>s could be present in the file but these are not authoritative -- these other <Timecode>s could be used by certain systems for very specialist purposes (such as keeping track of where each frame of content originated from) but they must never be used as the authoritative / principal <Timecode> for the content.
-                    <URL: http://www.amwa.tv/projects/rules/01/note/022/artefacts/1.md>
+                    <Component ID: http://www.amwa.tv/projects/rules/01/note/022/artefacts/1.md>
                     [T] Timecode
                         An annotation of elapsed time along a <Track>.
-                        <URL: http://www.amwa.tv/projects/rules/01/term/Timecode/>
+                        <Component ID: http://www.amwa.tv/projects/rules/01/term/Timecode/>
                         [T] Track
                             MXF data structure used to describe the content structure.
-                            <URL: http://www.amwa.tv/projects/rules/01/term/Track/>
+                            <Component ID: http://www.amwa.tv/projects/rules/01/term/Track/>
                     [T] Timecode Track
                         An MXF <Track> that stores one or more <Timecode Component>s.
-                        <URL: http://www.amwa.tv/projects/rules/01/term/Timecode%20Track/>
+                        <Component ID: http://www.amwa.tv/projects/rules/01/term/Timecode%20Track/>
                         [T] Track
                             MXF data structure used to describe the content structure.
-                            <URL: http://www.amwa.tv/projects/rules/01/term/Track/>
+                            <Component ID: http://www.amwa.tv/projects/rules/01/term/Track/>
                         [T] Timecode Component
                             An MXF structure that stores <Timecode> information.
-                            <URL: http://www.amwa.tv/projects/rules/01/term/Timecode%20Component/>
+                            <Component ID: http://www.amwa.tv/projects/rules/01/term/Timecode%20Component/>
                     [T] Material Package
                         An MXF data structure that describe an output timeline of the file.
-                        <URL: http://www.amwa.tv/projects/rules/01/term/Material%20Package/>
+                        <Component ID: http://www.amwa.tv/projects/rules/01/term/Material%20Package/>
     [B] Miscellaneous Content Constraints
         Conformance: mandatory
-        <URL: http://www.amwa.tv/projects/rules/01/block/995/>
+        <Component ID: http://www.amwa.tv/projects/rules/01/block/995/>
         [B] AFD present
             Conformance: mandatory
-            <URL: http://www.amwa.tv/projects/rules/01/block/350/>
+            <Component ID: http://www.amwa.tv/projects/rules/01/block/350/>
             [A] The "Active Format Descriptor" property of the <Picture Essence Descriptor> is present in the file.
-                <URL: http://www.amwa.tv/projects/rules/01/block/350/artefacts/1.md>
+                <Component ID: http://www.amwa.tv/projects/rules/01/block/350/artefacts/1.md>
                 [T] Picture Essence Descriptor
                     MXF technical metadata that describes the <Picture Essence>.
-                    <URL: http://www.amwa.tv/projects/rules/01/term/Picture%20Essence%20Descriptor/>
+                    <Component ID: http://www.amwa.tv/projects/rules/01/term/Picture%20Essence%20Descriptor/>
                     [T] Picture Essence
                         A type of <Essence> containing predominantly picture data.
-                        <URL: http://www.amwa.tv/projects/rules/01/term/Picture%20Essence/>
+                        <Component ID: http://www.amwa.tv/projects/rules/01/term/Picture%20Essence/>
                         [T] Essence
                             A bitstream comprising picture, sound or data.
-                            <URL: http://www.amwa.tv/projects/rules/01/term/Essence/>
+                            <Component ID: http://www.amwa.tv/projects/rules/01/term/Essence/>
             [N] Implementation Notes
-                <URL: http://www.amwa.tv/projects/rules/01/note/036/>
+                <Component ID: http://www.amwa.tv/projects/rules/01/note/036/>
                 [A] Section G.2.5 of SMPTE ST 377-1:2011 describes compliant encoder and decoder behavior with respect to SMPTE ST 2016-1:2009.
-                    <URL: http://www.amwa.tv/projects/rules/01/note/036/artefacts/1.md>
+                    <Component ID: http://www.amwa.tv/projects/rules/01/note/036/artefacts/1.md>
         [B] AFD 9 10 14
             Conformance: mandatory
-            <URL: http://www.amwa.tv/projects/rules/01/block/351/>
+            <Component ID: http://www.amwa.tv/projects/rules/01/block/351/>
             [A] The 4-bit AFD encoded in the "Active Format Descriptor" property of the <Picture Essence Descriptor> is one of the following decimal values: 9 or 10 or 14.
-                <URL: http://www.amwa.tv/projects/rules/01/block/351/artefacts/1.md>
+                <Component ID: http://www.amwa.tv/projects/rules/01/block/351/artefacts/1.md>
                 [T] Picture Essence Descriptor
                     MXF technical metadata that describes the <Picture Essence>.
-                    <URL: http://www.amwa.tv/projects/rules/01/term/Picture%20Essence%20Descriptor/>
+                    <Component ID: http://www.amwa.tv/projects/rules/01/term/Picture%20Essence%20Descriptor/>
                     [T] Picture Essence
                         A type of <Essence> containing predominantly picture data.
-                        <URL: http://www.amwa.tv/projects/rules/01/term/Picture%20Essence/>
+                        <Component ID: http://www.amwa.tv/projects/rules/01/term/Picture%20Essence/>
                         [T] Essence
                             A bitstream comprising picture, sound or data.
-                            <URL: http://www.amwa.tv/projects/rules/01/term/Essence/>
+                            <Component ID: http://www.amwa.tv/projects/rules/01/term/Essence/>
             [N] Implementation Notes
-                <URL: http://www.amwa.tv/projects/rules/01/note/037/>
+                <Component ID: http://www.amwa.tv/projects/rules/01/note/037/>
                 [A] Section G.2.5 of SMPTE ST 377-1:2011 requires that the value of the "Active Format Descriptor" property be constant for the duration of the associated Picture Track.
                     
                     The AFD (as it is used here, where only a very restricted set of values are permitted) can be considered as telling the decoder what video transformations it can reasonably make when displaying the video. For example when displaying the video on a "problematic" screen the decoder could wish to "zoom and crop" or "pillarbox" or "letterbox" the video as appropriate (where a "problematic" screen could be one where the dimensions of the screen mean that if the video is displayed full-screen it does not have the stated "aspect ratio").
-                    <URL: http://www.amwa.tv/projects/rules/01/note/037/artefacts/1.md>
+                    <Component ID: http://www.amwa.tv/projects/rules/01/note/037/artefacts/1.md>
         [B] 4 audio channels
             Conformance: mandatory
-            <URL: http://www.amwa.tv/projects/rules/01/block/140/>
+            <Component ID: http://www.amwa.tv/projects/rules/01/block/140/>
             [A] Only the channels in the <8-channel AES3 element> with a "channel number" of 1, 2, 3 or 4 are valid.
-                <URL: http://www.amwa.tv/projects/rules/01/block/140/artefacts/1.md>
+                <Component ID: http://www.amwa.tv/projects/rules/01/block/140/artefacts/1.md>
                 [T] 8-channel AES3 element
                     A way of multiplexing up to eight channels of AES3 audio data.
-                    <URL: http://www.amwa.tv/projects/rules/01/term/8-channel%20AES3%20element/>
+                    <Component ID: http://www.amwa.tv/projects/rules/01/term/8-channel%20AES3%20element/>
         [B] Audio Channel Layout
             Conformance: mandatory
-            <URL: http://www.amwa.tv/projects/rules/01/block/AL_Default_C/>
+            <Component ID: http://www.amwa.tv/projects/rules/01/block/AL_Default_C/>
             [A] The audio channel with the "channel number" of 1 is the Left channel of Stereo Main Programme.
                 
                 The audio channel with the "channel number" of 2 is the Right channel of Stereo Main Programme.
-                <URL: http://www.amwa.tv/projects/rules/01/block/AL_Default_C/artefacts/1.md>
+                <Component ID: http://www.amwa.tv/projects/rules/01/block/AL_Default_C/artefacts/1.md>
         [N] Implementation Notes
-            <URL: http://www.amwa.tv/projects/rules/01/note/E34/>
+            <Component ID: http://www.amwa.tv/projects/rules/01/note/E34/>
             [A] # Use of Audio Channels 3 & 4
                 
                 This Block imposes no restrictions on the contents of the audio channels with "channel number" 3 and 4. There is, however, no means to indicate (within the file) what they do contain.
-                <URL: http://www.amwa.tv/projects/rules/01/note/E34/artefacts/1.md>
+                <Component ID: http://www.amwa.tv/projects/rules/01/note/E34/artefacts/1.md>
 
 
 
@@ -1017,7 +1021,7 @@ Readers are advised that any IPR contribution forms associated with this
 project are available from the [AMWA](http://amwa.tv/)
 
 
-(c) AMWA 2016, Licensed under the Apache License, Version 2.0
+(c) AMWA 2017, Licensed under the Apache License, Version 2.0
 
 The following license applies to all parts of this Specification except
 as documented below:
