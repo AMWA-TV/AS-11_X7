@@ -1,4 +1,4 @@
-# **[Specification]** AS-11 X7 (MXF Program Contribution - SD)
+# **[Specification (Published)]** AS-11 X7 (MXF Program Contribution - SD)
 
 |*Important links*| |
 |-----------------|-|

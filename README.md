@@ -1,4 +1,4 @@
-# **[Specification]** AS-11 X7 (MXF Program Contribution - SD)
+# **[Specification (Published)]** AS-11 X7 (MXF Program Contribution - SD)
 
 ### **View the latest version of this Specification online [here](https://amwa-tv.github.io/AS-11_X7/AMWA_AS_11_X7.html)**.
 
